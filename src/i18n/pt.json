@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "beta": "Beta"
+  },
+  "home": {
+    "slogan": "Dando vida a cada pixel dos seus ecrãs",
+    "title": "DarkForge UI",
+    "description": "DarkForge UI é um firmware moderno para dispositivos baseados nos microcontroladores ESP32-S3 e ESP32-P4. Ele une o ecossistema Home Assistant a uma interface tátil fluida e intuitiva. Personalize os seus ecrãs com dezenas de widgets funcionais e controle a sua casa com um único toque. Comece em poucos minutos — o firmware é instalado diretamente a partir do navegador.",
+    "primaryAction": "Beta",
+    "secondaryAction": "Saber mais",
+    "previewSubtitle": "Dashboard ao vivo para a sua casa",
+    "previewOnline": "Online",
+    "widgets": {
+      "light": {
+        "title": "Luz da sala",
+        "subtitle": "Ligada"
+      },
+      "media": {
+        "title": "Coluna da cozinha",
+        "subtitle": "Rádio lo-fi"
+      },
+      "climate": {
+        "title": "Clima do quarto",
+        "subtitle": "Aquecimento · 22°"
+      },
+      "alarm": {
+        "title": "Alarme da casa",
+        "subtitle": "Desarmado"
+      },
+      "cover": {
+        "title": "Estores panorâmicos",
+        "subtitle": "Abertos · 75%"
+      },
+      "vacuum": {
+        "title": "Robô aspirador",
+        "subtitle": "a limpar · padrão"
+      },
+      "temperature": {
+        "title": "Temperatura",
+        "subtitle": "23.4 °C"
+      },
+      "humidity": {
+        "title": "Humidade",
+        "subtitle": "46%"
+      }
+    }
+  },
+  "info": {
+    "title": "Info",
+    "placeholder": "Esta página está a ser preparada. Em breve terá mais detalhes sobre o DarkForge UI, dispositivos suportados e cenários de instalação."
+  },
+  "flasher": {
+    "device": {
+      "title": "Dispositivo de destino",
+      "select": "Selecionar dispositivo"
+    },
+    "mode": {
+      "title": "Modo de gravação",
+      "updateTitle": "Atualizar firmware",
+      "fullTitle": "Instalação completa"
+    },
+    "warning": {
+      "update": "O modo de atualização destina-se a atualizações regulares do firmware. Ele não apaga a NVS, portanto a configuração do dispositivo deve permanecer disponível após o reinício.",
+      "full": "A instalação completa apaga totalmente a memória flash antes de gravar o firmware. Wi‑Fi, dados de ligação ao Home Assistant e todas as definições de utilizador guardadas serão removidos."
+    },
+    "actions": {
+      "update": "Iniciar atualização",
+      "full": "Iniciar instalação completa",
+      "erase": "Apagar apenas a flash"
+    },
+    "status": {
+      "label": "Estado",
+      "idle": "O dispositivo não está ligado",
+      "connecting": "A ligar ao dispositivo selecionado...",
+      "loadingManifest": "A carregar manifesto do firmware...",
+      "downloadingFiles": "A descarregar ficheiros binários do firmware...",
+      "flashingUpdate": "A atualizar firmware sem apagar a NVS...",
+      "flashingFull": "A executar instalação completa com apagamento da flash...",
+      "erasing": "A apagar memória flash...",
+      "resetting": "A reiniciar o dispositivo...",
+      "success": "Operação concluída com sucesso",
+      "error": "Ocorreu um erro",
+      "ready": "Pronto"
+    },
+    "progress": {
+      "preparing": "A preparar...",
+      "done": "Concluído",
+      "erased": "Flash apagada"
+    },
+    "log": {
+      "title": "Registo da operação",
+      "emptyTitle": "Ainda não há registo",
+      "emptyText": "Selecione o seu dispositivo e inicie a gravação. O progresso detalhado e as mensagens de diagnóstico aparecerão aqui.",
+      "requestPort": "A solicitar acesso a uma porta série...",
+      "connected": "Ligado ao chip:",
+      "disconnecting": "A desligar da porta série...",
+      "resetting": "A executar reinício por hardware...",
+      "eraseStart": "A iniciar apagamento completo da flash...",
+      "eraseDone": "A memória flash foi apagada com sucesso.",
+      "eraseSuccess": "O dispositivo foi apagado e está pronto para uma nova instalação.",
+      "readManifest": "A ler manifesto do firmware:",
+      "downloadFiles": "A descarregar ficheiros binários...",
+      "download": "A descarregar:",
+      "modeFull": "Modo: instalação completa com apagamento total da flash.",
+      "modeUpdate": "Modo: atualização de firmware sem apagamento completo da flash.",
+      "writeFlash": "A iniciar writeFlash...",
+      "fullDone": "Instalação completa concluída com sucesso.",
+      "updateDone": "Atualização do firmware concluída com sucesso.",
+      "booted": "O dispositivo foi reiniciado e deverá arrancar agora.",
+      "error": "Erro:"
+    },
+    "errors": {
+      "json": "Falha ao carregar JSON:",
+      "binary": "Falha ao carregar ficheiro binário:",
+      "webSerial": "A API Web Serial não é suportada por este navegador. Use Chrome ou Microsoft Edge.",
+      "eraseUnsupported": "A versão atual do esptool-js não suporta eraseFlash()."
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "beta": "Beta"
+  },
+  "home": {
+    "slogan": "Breathing life into every pixel of your displays",
+    "title": "DarkForge UI",
+    "description": "DarkForge UI is a modern firmware for devices based on ESP32-S3 and ESP32-P4 microcontrollers. It connects the Home Assistant ecosystem with a smooth, intuitive touch interface. Personalize your screens with dozens of functional widgets and control your home with a single tap. Get started in minutes — the firmware installs directly from your browser.",
+    "primaryAction": "Beta",
+    "secondaryAction": "Learn more",
+    "previewSubtitle": "Live dashboard for your home",
+    "previewOnline": "Online",
+    "widgets": {
+      "light": {
+        "title": "Living room light",
+        "subtitle": "On"
+      },
+      "media": {
+        "title": "Kitchen speaker",
+        "subtitle": "Lo-fi radio"
+      },
+      "climate": {
+        "title": "Bedroom climate",
+        "subtitle": "Heat · 22°"
+      },
+      "alarm": {
+        "title": "Home alarm",
+        "subtitle": "Disarmed"
+      },
+      "cover": {
+        "title": "Panoramic blinds",
+        "subtitle": "Open · 75%"
+      },
+      "vacuum": {
+        "title": "Robot vacuum",
+        "subtitle": "cleaning · standard"
+      },
+      "temperature": {
+        "title": "Temperature",
+        "subtitle": "23.4 °C"
+      },
+      "humidity": {
+        "title": "Humidity",
+        "subtitle": "46%"
+      }
+    }
+  },
+  "info": {
+    "title": "Info",
+    "placeholder": "This page is being prepared. Soon it will contain more details about DarkForge UI, supported devices and installation scenarios."
+  },
+  "flasher": {
+    "device": {
+      "title": "Target device",
+      "select": "Select device"
+    },
+    "mode": {
+      "title": "Flashing mode",
+      "updateTitle": "Update firmware",
+      "fullTitle": "Full installation"
+    },
+    "warning": {
+      "update": "Update mode is intended for regular firmware upgrades. It does not erase NVS, so device configuration should remain available after reboot.",
+      "full": "Full installation performs a complete flash erase before writing firmware. Wi‑Fi, Home Assistant connection data and all stored user settings will be removed."
+    },
+    "actions": {
+      "update": "Start update",
+      "full": "Start full installation",
+      "erase": "Erase flash only"
+    },
+    "status": {
+      "label": "Status",
+      "idle": "Device is not connected",
+      "connecting": "Connecting to the selected device...",
+      "loadingManifest": "Loading firmware manifest...",
+      "downloadingFiles": "Downloading firmware binary files...",
+      "flashingUpdate": "Updating firmware without erasing NVS...",
+      "flashingFull": "Performing full installation with flash erase...",
+      "erasing": "Erasing flash memory...",
+      "resetting": "Resetting the device...",
+      "success": "Operation completed successfully",
+      "error": "An error occurred",
+      "ready": "Ready"
+    },
+    "progress": {
+      "preparing": "Preparing...",
+      "done": "Done",
+      "erased": "Flash erased"
+    },
+    "log": {
+      "title": "Operation log",
+      "emptyTitle": "No operation log yet",
+      "emptyText": "Select your device and start flashing. Detailed progress and diagnostic messages will appear here.",
+      "requestPort": "Requesting access to a serial port...",
+      "connected": "Connected to chip:",
+      "disconnecting": "Disconnecting from serial port...",
+      "resetting": "Performing hardware reset...",
+      "eraseStart": "Starting full flash erase...",
+      "eraseDone": "Flash memory has been erased successfully.",
+      "eraseSuccess": "The device has been erased and is ready for a new installation.",
+      "readManifest": "Reading firmware manifest:",
+      "downloadFiles": "Downloading binary files...",
+      "download": "Downloading:",
+      "modeFull": "Mode: full installation with complete flash erase.",
+      "modeUpdate": "Mode: firmware update without full flash erase.",
+      "writeFlash": "Starting writeFlash...",
+      "fullDone": "Full installation completed successfully.",
+      "updateDone": "Firmware update completed successfully.",
+      "booted": "The device has been reset and should boot now.",
+      "error": "Error:"
+    },
+    "errors": {
+      "json": "Failed to load JSON:",
+      "binary": "Failed to load binary file:",
+      "webSerial": "Web Serial API is not supported by this browser. Use Chrome or Microsoft Edge.",
+      "eraseUnsupported": "The current version of esptool-js does not support eraseFlash()."
+    }
+  }
+}

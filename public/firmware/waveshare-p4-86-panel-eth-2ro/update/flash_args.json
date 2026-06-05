@@ -1,0 +1,11 @@
+{
+  "flash_mode": "dio",
+  "flash_freq": "80m",
+  "flash_size": "32MB",
+  "files": [
+    {
+      "path": "universal_panel.bin",
+      "address": 131072
+    }
+  ]
+}

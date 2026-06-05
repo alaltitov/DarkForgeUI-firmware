@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "beta": "Beta"
+  },
+  "home": {
+    "slogan": "Wir hauchen jedem Pixel deiner Displays Leben ein",
+    "title": "DarkForge UI",
+    "description": "DarkForge UI ist eine moderne Firmware für Geräte auf Basis der Mikrocontroller ESP32-S3 und ESP32-P4. Sie verbindet das Home-Assistant-Ökosystem mit einer flüssigen, intuitiven Touch-Oberfläche. Personalisiere deine Bildschirme mit Dutzenden funktionaler Widgets und steuere dein Zuhause mit nur einem Fingertipp. Der Einstieg dauert nur wenige Minuten — die Firmware wird direkt aus dem Browser installiert.",
+    "primaryAction": "Beta",
+    "secondaryAction": "Mehr erfahren",
+    "previewSubtitle": "Live-Dashboard für dein Zuhause",
+    "previewOnline": "Online",
+    "widgets": {
+      "light": {
+        "title": "Wohnzimmerlicht",
+        "subtitle": "Ein"
+      },
+      "media": {
+        "title": "Küchenlautsprecher",
+        "subtitle": "Lo-fi Radio"
+      },
+      "climate": {
+        "title": "Schlafzimmerklima",
+        "subtitle": "Heizen · 22°"
+      },
+      "alarm": {
+        "title": "Hausalarm",
+        "subtitle": "Deaktiviert"
+      },
+      "cover": {
+        "title": "Panorama-Jalousien",
+        "subtitle": "Offen · 75%"
+      },
+      "vacuum": {
+        "title": "Saugroboter",
+        "subtitle": "reinigt · standard"
+      },
+      "temperature": {
+        "title": "Temperatur",
+        "subtitle": "23.4 °C"
+      },
+      "humidity": {
+        "title": "Luftfeuchtigkeit",
+        "subtitle": "46%"
+      }
+    }
+  },
+  "info": {
+    "title": "Info",
+    "placeholder": "Diese Seite wird gerade vorbereitet. Bald findest du hier weitere Details zu DarkForge UI, unterstützten Geräten und Installationsszenarien."
+  },
+  "flasher": {
+    "device": {
+      "title": "Zielgerät",
+      "select": "Gerät auswählen"
+    },
+    "mode": {
+      "title": "Flash-Modus",
+      "updateTitle": "Firmware aktualisieren",
+      "fullTitle": "Vollständige Installation"
+    },
+    "warning": {
+      "update": "Der Update-Modus ist für reguläre Firmware-Aktualisierungen vorgesehen. NVS wird nicht gelöscht, daher sollte die Gerätekonfiguration nach dem Neustart erhalten bleiben.",
+      "full": "Die vollständige Installation löscht den Flash-Speicher komplett, bevor die Firmware geschrieben wird. WLAN, Home-Assistant-Verbindungsdaten und alle gespeicherten Benutzereinstellungen werden entfernt."
+    },
+    "actions": {
+      "update": "Update starten",
+      "full": "Vollständige Installation starten",
+      "erase": "Nur Flash löschen"
+    },
+    "status": {
+      "label": "Status",
+      "idle": "Gerät ist nicht verbunden",
+      "connecting": "Verbindung zum ausgewählten Gerät wird hergestellt...",
+      "loadingManifest": "Firmware-Manifest wird geladen...",
+      "downloadingFiles": "Firmware-Binärdateien werden heruntergeladen...",
+      "flashingUpdate": "Firmware wird ohne Löschen von NVS aktualisiert...",
+      "flashingFull": "Vollständige Installation mit Flash-Löschung wird ausgeführt...",
+      "erasing": "Flash-Speicher wird gelöscht...",
+      "resetting": "Gerät wird zurückgesetzt...",
+      "success": "Vorgang erfolgreich abgeschlossen",
+      "error": "Ein Fehler ist aufgetreten",
+      "ready": "Bereit"
+    },
+    "progress": {
+      "preparing": "Vorbereitung...",
+      "done": "Fertig",
+      "erased": "Flash gelöscht"
+    },
+    "log": {
+      "title": "Vorgangsprotokoll",
+      "emptyTitle": "Noch kein Vorgangsprotokoll",
+      "emptyText": "Wähle dein Gerät aus und starte den Flash-Vorgang. Detaillierter Fortschritt und Diagnosemeldungen erscheinen hier.",
+      "requestPort": "Zugriff auf einen seriellen Port wird angefordert...",
+      "connected": "Verbunden mit Chip:",
+      "disconnecting": "Verbindung zum seriellen Port wird getrennt...",
+      "resetting": "Hardware-Reset wird ausgeführt...",
+      "eraseStart": "Vollständiges Löschen des Flash-Speichers wird gestartet...",
+      "eraseDone": "Flash-Speicher wurde erfolgreich gelöscht.",
+      "eraseSuccess": "Das Gerät wurde gelöscht und ist bereit für eine neue Installation.",
+      "readManifest": "Firmware-Manifest wird gelesen:",
+      "downloadFiles": "Binärdateien werden heruntergeladen...",
+      "download": "Download:",
+      "modeFull": "Modus: vollständige Installation mit komplettem Flash-Löschen.",
+      "modeUpdate": "Modus: Firmware-Update ohne vollständiges Flash-Löschen.",
+      "writeFlash": "writeFlash wird gestartet...",
+      "fullDone": "Vollständige Installation erfolgreich abgeschlossen.",
+      "updateDone": "Firmware-Update erfolgreich abgeschlossen.",
+      "booted": "Das Gerät wurde zurückgesetzt und sollte jetzt starten.",
+      "error": "Fehler:"
+    },
+    "errors": {
+      "json": "JSON konnte nicht geladen werden:",
+      "binary": "Binärdatei konnte nicht geladen werden:",
+      "webSerial": "Die Web Serial API wird von diesem Browser nicht unterstützt. Verwende Chrome oder Microsoft Edge.",
+      "eraseUnsupported": "Die aktuelle Version von esptool-js unterstützt eraseFlash() nicht."
+    }
+  }
+}
