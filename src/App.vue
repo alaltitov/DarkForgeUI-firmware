@@ -86,8 +86,14 @@ type LocaleOption = {
 
 const { t, locale } = useI18n()
 
+const fallbackLocale: LocaleOption = {
+  code: 'en',
+  name: 'English',
+  flag: '🇬🇧',
+}
+
 const locales: LocaleOption[] = [
-  { code: 'en', name: 'English', flag: '🇬🇧' },
+  fallbackLocale,
   { code: 'ru', name: 'Русский', flag: '🇷🇺' },
   { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
   { code: 'fr', name: 'Français', flag: '🇫🇷' },
@@ -96,8 +102,8 @@ const locales: LocaleOption[] = [
   { code: 'it', name: 'Italiano', flag: '🇮🇹' },
 ]
 
-const currentLocale = computed(() => {
-  return locales.find((item) => item.code === locale.value) ?? locales[0]
+const currentLocale = computed<LocaleOption>(() => {
+  return locales.find((item) => item.code === locale.value) ?? fallbackLocale
 })
 
 function setLocale(code: LocaleCode): void {
