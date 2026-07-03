@@ -52,7 +52,8 @@
   "flasher": {
     "device": {
       "title": "Appareil cible",
-      "select": "Sélectionner un appareil"
+      "select": "Sélectionner un appareil",
+      "comingSoon": "Bientôt"
     },
     "mode": {
       "title": "Mode de flash",

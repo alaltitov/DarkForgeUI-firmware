@@ -15,6 +15,7 @@
             :items="deviceItems"
             item-title="title"
             item-value="value"
+            :item-props="getDeviceItemProps"
             :label="t('flasher.device.select')"
             :disabled="isBusy"
             hide-details
@@ -27,14 +28,14 @@
 
           <v-radio-group
             v-model="selectedFlashMode"
-            :disabled="isBusy"
+            :disabled="isBusy || !selectedDevice || selectedDevice.disabled"
             hide-details
             class="mode-radio-group"
           >
             <v-card
               class="mode-card"
               :class="{ active: selectedFlashMode === 'update' }"
-              @click="!isBusy && (selectedFlashMode = 'update')"
+              @click="!isBusy && selectedDevice && !selectedDevice.disabled && (selectedFlashMode = 'update')"
             >
               <div class="mode-content">
                 <v-radio value="update" color="primary" />
@@ -48,7 +49,7 @@
             <v-card
               class="mode-card mode-card-full"
               :class="{ active: selectedFlashMode === 'full' }"
-              @click="!isBusy && (selectedFlashMode = 'full')"
+              @click="!isBusy && selectedDevice && !selectedDevice.disabled && (selectedFlashMode = 'full')"
             >
               <div class="mode-content">
                 <v-radio value="full" color="primary" />
@@ -79,7 +80,7 @@
               color="primary"
               size="large"
               block
-              :disabled="isBusy || !selectedDevice"
+              :disabled="isBusy || !selectedDevice || selectedDevice.disabled"
               :loading="isBusy && ['connecting', 'loadingManifest', 'downloadingFiles', 'flashing'].includes(uiState)"
               prepend-icon="mdi-flash"
               @click="connectAndFlash(selectedFlashMode)"
@@ -96,7 +97,7 @@
               size="large"
               block
               variant="tonal"
-              :disabled="isBusy"
+              :disabled="isBusy || !selectedDevice || selectedDevice.disabled"
               :loading="isBusy && uiState === 'erasing'"
               prepend-icon="mdi-delete-alert"
               @click="eraseDeviceFlash"
@@ -228,6 +229,12 @@ type UiState =
 
 type FlashMode = 'update' | 'full'
 
+type DeviceSelectItem = {
+  title: string
+  value: string
+  disabled: boolean
+}
+
 const { t } = useI18n()
 
 const isBusy = ref(false)
@@ -237,7 +244,10 @@ const logLines = ref<string[]>([])
 const uiState = ref<UiState>('idle')
 const logBoxRef = ref<HTMLElement | null>(null)
 const selectedFlashMode = ref<FlashMode>('update')
-const selectedDeviceId = ref(devices[0]?.id ?? '')
+
+const selectedDeviceId = ref(
+  devices.find((device) => !device.disabled)?.id ?? devices[0]?.id ?? '',
+)
 
 let esploader: ESPLoader | null = null
 let transport: Transport | null = null
@@ -246,10 +256,11 @@ const selectedDevice = computed<DeviceDefinition | undefined>(() => {
   return devices.find((device) => device.id === selectedDeviceId.value)
 })
 
-const deviceItems = computed(() => {
+const deviceItems = computed<DeviceSelectItem[]>(() => {
   return devices.map((device) => ({
-    title: `${device.name} · ${device.chip}`,
+    title: `${device.name} · ${device.chip}${device.disabled ? ` · ${t('flasher.device.comingSoon')}` : ''}`,
     value: device.id,
+    disabled: Boolean(device.disabled),
   }))
 })
 
@@ -279,6 +290,12 @@ const statusText = computed(() => {
       return t('flasher.status.ready')
   }
 })
+
+function getDeviceItemProps(item: DeviceSelectItem) {
+  return {
+    disabled: item.disabled,
+  }
+}
 
 function stateClass(state: UiState): string {
   if (state === 'success') return 'is-success'
@@ -408,14 +425,24 @@ async function hardResetDevice(): Promise<void> {
 }
 
 async function eraseDeviceFlash(): Promise<void> {
+  const device = selectedDevice.value
+
+  if (!device || device.disabled) {
+    return
+  }
+
   try {
     resetUiForOperation()
     await openConnection()
 
+    if (!esploader) {
+      throw new Error('ESPLoader was not initialized.')
+    }
+
     uiState.value = 'erasing'
     appendLog(t('flasher.log.eraseStart'))
 
-    if (!(esploader as any)?.eraseFlash) {
+    if (!(esploader as any).eraseFlash) {
       throw new Error(t('flasher.errors.eraseUnsupported'))
     }
 
@@ -427,7 +454,6 @@ async function eraseDeviceFlash(): Promise<void> {
     currentFileName.value = t('flasher.progress.erased')
 
     await hardResetDevice()
-    await closeConnection()
 
     uiState.value = 'success'
     appendLog(t('flasher.log.eraseSuccess'))
@@ -446,7 +472,7 @@ async function eraseDeviceFlash(): Promise<void> {
 async function connectAndFlash(mode: FlashMode): Promise<void> {
   const device = selectedDevice.value
 
-  if (!device) {
+  if (!device || device.disabled) {
     return
   }
 
@@ -456,6 +482,10 @@ async function connectAndFlash(mode: FlashMode): Promise<void> {
 
     await openConnection()
 
+    if (!esploader) {
+      throw new Error('ESPLoader was not initialized.')
+    }
+
     uiState.value = 'loadingManifest'
 
     const manifestUrl = getManifestUrl(device, mode)
@@ -463,6 +493,10 @@ async function connectAndFlash(mode: FlashMode): Promise<void> {
     appendLog(`${t('flasher.log.readManifest')} ${manifestUrl}`)
 
     const manifest = await fetchJson<FlashManifest>(manifestUrl)
+
+    if (!manifest.files.length) {
+      throw new Error('Firmware manifest does not contain any files.')
+    }
 
     uiState.value = 'downloadingFiles'
     appendLog(t('flasher.log.downloadFiles'))
@@ -490,10 +524,12 @@ async function connectAndFlash(mode: FlashMode): Promise<void> {
         : t('flasher.log.modeUpdate'),
     )
 
-    appendLog(t('flasher.log.writeFlash'))
+    appendLog(`eraseAll=${eraseAll}`)
     appendLog(
       `mode=${manifest.flash_mode}, freq=${manifest.flash_freq}, size=${manifest.flash_size}`,
     )
+
+    appendLog(t('flasher.log.writeFlash'))
 
     await (esploader as any).writeFlash({
       fileArray,
@@ -522,7 +558,6 @@ async function connectAndFlash(mode: FlashMode): Promise<void> {
     currentFileName.value = t('flasher.progress.done')
 
     await hardResetDevice()
-    await closeConnection()
 
     uiState.value = 'success'
     appendLog(t('flasher.log.booted'))

@@ -52,7 +52,8 @@
   "flasher": {
     "device": {
       "title": "Dispositivo de destino",
-      "select": "Selecionar dispositivo"
+      "select": "Selecionar dispositivo",
+      "comingSoon": "Em breve"
     },
     "mode": {
       "title": "Modo de gravação",
