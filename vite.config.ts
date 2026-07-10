@@ -5,7 +5,7 @@ import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
 
 export default defineConfig({
-  base: '/DarkForgeUI-site/',
+  base: '/DarkForgeUI-firmware/',
   plugins: [
     vue(),
     vuetify({
