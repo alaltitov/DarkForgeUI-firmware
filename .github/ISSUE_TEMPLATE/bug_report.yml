@@ -1,0 +1,84 @@
+name: Bug report
+description: Report something that is not working as expected
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select what best describes the problem.
+      options:
+        - Firmware flashing
+        - User interface (LVGL)
+        - User interface (Webserver)
+        - Home Assistant integration
+        - Device compatibility
+        - Translation
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device
+      description: Which device or board are you using?
+      placeholder: "Example: Guition JC1060P470C, Waveshare P4 86 Panel ETH 2RO"
+    validations:
+      required: false
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Briefly describe the bug.
+      placeholder: "Describe the issue..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the steps that lead to the issue.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Click...
+        4. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should have happened instead?
+      placeholder: "Expected result..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Paste logs, browser console output, screenshots, or flasher messages if available.
+      render: shell
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      description: Please confirm the following.
+      options:
+        - label: I have checked that this issue is reproducible.
+          required: true
+        - label: I have checked existing issues and did not find a duplicate.
+          required: true
+        - label: I understand that full installation may erase Wi‑Fi, Home Assistant settings, and user settings.
+          required: false

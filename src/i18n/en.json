@@ -1,38 +1,42 @@
 {
   "nav": {
-    "beta": "Beta"
+    "beta": "Beta",
+    "info": "Information",
+    "roadmap": "Roadmap",
+    "qa": "Q&A",
+    "donate": "Donate"
   },
   "home": {
     "slogan": "Breathing life into every pixel of your displays",
     "title": "DarkForge UI",
-    "description": "DarkForge UI is a modern firmware for devices based on ESP32-S3 and ESP32-P4 microcontrollers. It connects the Home Assistant ecosystem with a smooth, intuitive touch interface. Personalize your screens with dozens of functional widgets and control your home with a single tap. Get started in minutes — the firmware installs directly from your browser.",
+    "description": "DarkForge UI is a modern firmware for devices based on ESP32-S3 and ESP32-P4 microcontrollers. It combines the Home Assistant ecosystem with a smooth, intuitive touch interface. Personalize screens with dozens of functional widgets and control your home with a single touch. Start in a couple of minutes — the firmware is installed directly from the browser.",
     "primaryAction": "Beta",
     "secondaryAction": "Learn more",
     "previewSubtitle": "Live dashboard for your home",
     "previewOnline": "Online",
     "widgets": {
       "light": {
-        "title": "Living room light",
+        "title": "Living Room Light",
         "subtitle": "On"
       },
       "media": {
-        "title": "Kitchen speaker",
+        "title": "Kitchen Speaker",
         "subtitle": "Lo-fi radio"
       },
       "climate": {
-        "title": "Bedroom climate",
-        "subtitle": "Heat · 22°"
+        "title": "Bedroom Climate",
+        "subtitle": "Heating · 22°"
       },
       "alarm": {
-        "title": "Home alarm",
+        "title": "Home Security",
         "subtitle": "Disarmed"
       },
       "cover": {
-        "title": "Panoramic blinds",
+        "title": "Panoramic Curtains",
         "subtitle": "Open · 75%"
       },
       "vacuum": {
-        "title": "Robot vacuum",
+        "title": "Robot Vacuum",
         "subtitle": "cleaning · standard"
       },
       "temperature": {
@@ -46,39 +50,138 @@
     }
   },
   "info": {
-    "title": "Info",
-    "placeholder": "This page is being prepared. Soon it will contain more details about DarkForge UI, supported devices and installation scenarios."
+    "hero": {
+      "title": "DarkForge UI",
+      "subtitle": "Universal OS for ESP32 Smart Home Panels",
+      "lead": "DarkForge UI is a high-performance firmware written in pure C using the LVGL graphics engine. It turns touch displays based on ESP32-S3 and ESP32-P4 into full-featured, stylish, and autonomous Smart Home control panels. The firmware communicates directly with Home Assistant via API, ensuring fast bidirectional data exchange and real-time device control."
+    },
+    "benefits": {
+      "title": "Key Advantages",
+      "items": [
+        {
+          "title": "One-Click Installation",
+          "text": "The user receives a ready-to-use compiled binary file. No complex development environments — the firmware is installed directly via the website."
+        },
+        {
+          "title": "Zero-Code Configuration",
+          "text": "All configuration is done on the screen itself or via the built-in local web interface."
+        },
+        {
+          "title": "Dynamic Entities",
+          "text": "Devices, cards, and parameters are added, removed, and changed on the fly without recompilation or reflashing."
+        },
+        {
+          "title": "Interface Customization",
+          "text": "Users can customize personal dashboards and the home page according to their own scenarios."
+        },
+        {
+          "title": "File Management over Wi‑Fi",
+          "text": "The built-in web manager allows working with the device's SD card via a browser."
+        },
+        {
+          "title": "Ready for the Global Market",
+          "text": "The interface supports multilingualism out of the box."
+        }
+      ]
+    },
+    "domains": {
+      "title": "Supported Home Assistant Domains",
+      "description": "DarkForge UI recognizes, displays, and allows control of a large number of Home Assistant entities out of the box.",
+      "groups": [
+        {
+          "title": "Lighting, Climate, and Ventilation",
+          "items": ["light", "climate", "fan", "humidifier", "water_heater"]
+        },
+        {
+          "title": "Motorized Drives",
+          "items": ["cover"]
+        },
+        {
+          "title": "Security",
+          "items": ["alarm_control_panel"]
+        },
+        {
+          "title": "Multimedia",
+          "items": ["media_player"]
+        },
+        {
+          "title": "Helper Robots",
+          "items": ["vacuum", "lawn_mower"]
+        },
+        {
+          "title": "Information Elements",
+          "items": ["sensor", "binary_sensor", "weather"]
+        },
+        {
+          "title": "Interactive Components",
+          "items": ["switch", "input_boolean", "button"]
+        },
+        {
+          "title": "Video Surveillance",
+          "items": ["camera"]
+        }
+      ]
+    },
+    "design": {
+      "title": "Design and Functionality",
+      "text": "DarkForge UI combines the speed of low-level C code with the premium visual style of LVGL. The user gets a responsive touch interface, informative screens, and convenient control over each device type without unnecessary complexity."
+    },
+    "spec": {
+      "title": "Specification",
+      "items": [
+        {
+          "label": "Microcontrollers",
+          "value": "ESP32-S3 / ESP32-P4"
+        },
+        {
+          "label": "Graphics Engine",
+          "value": "LVGL"
+        },
+        {
+          "label": "Programming Language",
+          "value": "C"
+        },
+        {
+          "label": "Communication",
+          "value": "Home Assistant REST API / WebSocket API"
+        },
+        {
+          "label": "Configuration",
+          "value": "On-device UI / local Web server"
+        }
+      ]
+    }
   },
   "flasher": {
     "device": {
-      "title": "Target device",
+      "title": "Target Device",
       "select": "Select device",
       "comingSoon": "Coming soon"
     },
     "mode": {
-      "title": "Flashing mode",
-      "updateTitle": "Update firmware",
-      "fullTitle": "Full installation"
+      "title": "Firmware Mode",
+      "updateTitle": "Firmware Update",
+      "fullTitle": "Full Installation"
     },
     "warning": {
-      "update": "Update mode is intended for regular firmware upgrades. It does not erase NVS, so device configuration should remain available after reboot.",
-      "full": "Full installation performs a complete flash erase before writing firmware. Wi‑Fi, Home Assistant connection data and all stored user settings will be removed."
+      "update": "Update mode is intended for regular firmware updates. It does not erase NVS, so the device configuration should be preserved after reboot.",
+      "full": "Full installation performs a complete flash erase before writing the firmware. Wi‑Fi, Home Assistant connection data, and all user settings will be deleted."
     },
     "actions": {
-      "update": "Start update",
-      "full": "Start full installation",
+      "update": "Start Update",
+      "full": "Start Full Installation",
       "erase": "Erase flash only"
     },
     "status": {
       "label": "Status",
-      "idle": "Device is not connected",
+      "idle": "Device not connected",
       "connecting": "Connecting to the selected device...",
       "loadingManifest": "Loading firmware manifest...",
       "downloadingFiles": "Downloading firmware binary files...",
       "flashingUpdate": "Updating firmware without erasing NVS...",
-      "flashingFull": "Performing full installation with flash erase...",
+      "flashingFull": "Full installation with flash erase...",
       "erasing": "Erasing flash memory...",
-      "resetting": "Resetting the device...",
+      "resetting": "Rebooting device...",
       "success": "Operation completed successfully",
       "error": "An error occurred",
       "ready": "Ready"
@@ -89,32 +192,195 @@
       "erased": "Flash erased"
     },
     "log": {
-      "title": "Operation log",
-      "emptyTitle": "No operation log yet",
-      "emptyText": "Select your device and start flashing. Detailed progress and diagnostic messages will appear here.",
-      "requestPort": "Requesting access to a serial port...",
+      "title": "Operation Log",
+      "emptyTitle": "Operation log is empty",
+      "emptyText": "Select a device and start flashing. Detailed progress and diagnostic messages will appear here.",
+      "requestPort": "Requesting serial port access...",
       "connected": "Connected to chip:",
       "disconnecting": "Disconnecting from serial port...",
-      "resetting": "Performing hardware reset...",
+      "resetting": "Hardware reset...",
       "eraseStart": "Starting full flash erase...",
-      "eraseDone": "Flash memory has been erased successfully.",
-      "eraseSuccess": "The device has been erased and is ready for a new installation.",
+      "eraseDone": "Flash memory successfully erased.",
+      "eraseSuccess": "Device erased and ready for a fresh installation.",
       "readManifest": "Reading firmware manifest:",
       "downloadFiles": "Downloading binary files...",
-      "download": "Downloading:",
+      "download": "Download:",
       "modeFull": "Mode: full installation with complete flash erase.",
       "modeUpdate": "Mode: firmware update without full flash erase.",
       "writeFlash": "Starting writeFlash...",
       "fullDone": "Full installation completed successfully.",
       "updateDone": "Firmware update completed successfully.",
-      "booted": "The device has been reset and should boot now.",
+      "booted": "Device rebooted and should start up.",
       "error": "Error:"
     },
     "errors": {
       "json": "Failed to load JSON:",
       "binary": "Failed to load binary file:",
       "webSerial": "Web Serial API is not supported by this browser. Use Chrome or Microsoft Edge.",
-      "eraseUnsupported": "The current version of esptool-js does not support eraseFlash()."
+      "eraseUnsupported": "Current version of esptool-js does not support eraseFlash()."
     }
+  },
+  "donate": {
+    "title": "Get a License Key",
+    "description": "You can obtain a license key for DarkForge UI by supporting the project in one of the available ways.",
+    "notice": "After making a donation, send me the device ID in a message. I will send the license key in a reply as soon as I can.",
+    "telegramAlt": "QR code for contacting via Telegram",
+    "boostyAlt": "QR code for support via Boosty"
+  },
+  "qa": {
+    "title": "Q&A",
+    "sectionsTitle": "Sections",
+    "description": "Here you will find frequently asked questions about DarkForge UI, installation, security, licensing, supported devices, and interface management.",
+    "groups": [
+      {
+        "title": "License and Keys",
+        "description": "Questions about the distribution model, license keys, trial period, and access recovery.",
+        "icon": "mdi-key-variant",
+        "items": [
+          {
+            "question": "Why isn't the firmware Open Source?",
+            "answer": "The development of DarkForge UI required a significant amount of time, effort, and financial investment. Therefore, at this stage, the firmware is distributed as a closed product."
+          },
+          {
+            "question": "Why is the trial period so short?",
+            "answer": "This period is sufficient to set up the device and evaluate the core functionality of the firmware. If necessary, the device can be completely reflashed, after which the trial period will start over."
+          },
+          {
+            "question": "Why not extend the trial period for testing?",
+            "answer": "Even in beta status, this is already a full-fledged firmware that will continue to evolve and be updated. Releasing a heavily limited test version makes no sense, because the entire functionality needs to be tested. Extending the trial period would require implementing subscriptions or online checks, and therefore dependence on the internet. This contradicts the philosophy of local smart home control, complicates usage, and increases the code size."
+          },
+          {
+            "question": "How to get a license key and can it be obtained before the release?",
+            "answer": "Yes, a license key can be obtained before the release. To do so, simply support the project in one of the available ways and send me the device ID via Telegram or Boosty. A license key for that device will be sent in response."
+          },
+          {
+            "question": "Why can't a license key be obtained automatically?",
+            "answer": "At the current stage, automatic key issuance is impractical for financial, technical, and security reasons. Therefore, keys are issued manually."
+          },
+          {
+            "question": "For how long is the license key issued?",
+            "answer": "The license key is issued perpetually."
+          },
+          {
+            "question": "What happens if I lose the license key?",
+            "answer": "It's better to keep the key in a safe place. However, issued keys will be stored locally along with the device ID, so the key can be resent if needed. In the future, a key verification service by device ID may appear on the website, since the key is tied to a specific device."
+          }
+        ]
+      },
+      {
+        "title": "Security",
+        "description": "How data is stored, whether the internet is used, and what is important to consider when configuring the system.",
+        "icon": "mdi-shield-check",
+        "items": [
+          {
+            "question": "Is it safe to enter the Home Assistant token on the device's web server? Won't it be compromised?",
+            "answer": "The token is stored only in the device's non-volatile memory — NVS. It is stored there so that you don't have to enter it again after each reboot. This is similar in concept to saving a Wi‑Fi password."
+          },
+          {
+            "question": "How is security handled overall?",
+            "answer": "It is important to understand that absolute security does not exist. Security must be ensured at the entire system level: local network, router, Home Assistant, and access rules. The firmware itself does not send data to third-party servers and operates locally, without requiring internet access. In the future, internet access may only be used for certain optional additional services, if they appear, but their use will not be mandatory."
+          },
+          {
+            "question": "If I install DarkForge UI, can I later install another firmware?",
+            "answer": "Yes. The license key does not use E-FUSE and does not lock the device. It is stored in NVS. If you completely wipe the NVS or flash memory, you will need to re-enter the key. After a full flash erase, you can install any other compatible firmware."
+          }
+        ]
+      },
+      {
+        "title": "Firmware and Installation",
+        "description": "General questions about installation, updates, and how the firmware works.",
+        "icon": "mdi-flash",
+        "items": [
+          {
+            "question": "Do I need to build the firmware manually?",
+            "answer": "No. The idea of the project is to provide ready-made binary files that can be installed directly from the browser."
+          },
+          {
+            "question": "Are settings preserved during an update?",
+            "answer": "In update mode, NVS is not erased, so the device configuration should be preserved after reboot."
+          },
+          {
+            "question": "Which devices are supported?",
+            "answer": "The list of supported devices will expand. Current options are available on the Beta page."
+          }
+        ]
+      },
+      {
+        "title": "Interface Management",
+        "description": "Gestures, swipes, page navigation, and control specifics on different displays.",
+        "icon": "mdi-gesture-swipe",
+        "items": [
+          {
+            "question": "I opened an extended page and can't exit. What's the issue?",
+            "answer": "Exiting extended pages is done with a vertical swipe up or down. On square and landscape displays, the swipe is performed on the left side of the screen. On portrait displays — on the top part of the screen."
+          },
+          {
+            "question": "How to navigate between dashboard pages?",
+            "answer": "To move between dashboard pages, use a vertical swipe up or down across the screen."
+          },
+          {
+            "question": "Why is swipe control designed this way?",
+            "answer": "Pages may contain sliders and other interactive elements. The touch system does not understand user intent like a human; it determines gestures based on coordinates and movement direction. Therefore, some gestures are divided into screen zones. After a short learning curve, this control method becomes fast and predictable."
+          },
+          {
+            "question": "How to open additional fields in the Media card on a square display?",
+            "answer": "To control volume, swipe from right to left. To open additional options, swipe from left to right."
+          }
+        ]
+      },
+      {
+        "title": "Cards and Dashboard",
+        "description": "Configuring cards, moving elements, and opening extended modes.",
+        "icon": "mdi-view-dashboard-edit",
+        "items": [
+          {
+            "question": "Can I change the position of cards on the screen without the web server?",
+            "answer": "Yes, if the cards have already been added via the web server. Move mode is activated by pressing the button with a pencil icon in the navigation menu."
+          },
+          {
+            "question": "How to open an extended card?",
+            "answer": "If an extended card is available for the selected domain, it opens with a long press on the regular card. Hold the card for about 2 seconds."
+          }
+        ]
+      }
+    ]
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "description": "Public development plan for DarkForge UI. Timelines and content may be adjusted as testing, community feedback, and new device readiness evolve.",
+    "items": [
+      {
+        "period": "November 2025 — July 2026",
+        "title": "Open Beta Launch",
+        "text": "Launch of the open beta version of the firmware and the firmware installer.",
+        "status": "Done",
+        "icon": "mdi-rocket-launch",
+        "color": "success"
+      },
+      {
+        "period": "July 2026 — September 2026",
+        "title": "Testing and Release Preparation",
+        "text": "Testing of the core firmware and firmware installer. Bug identification, preparation for release. Adding Guition ESP32-4848S040 device.",
+        "status": "In Progress",
+        "icon": "mdi-test-tube",
+        "color": "primary"
+      },
+      {
+        "period": "October 2026 — December 2026",
+        "title": "New Cards and Voice Assistant",
+        "text": "Adding new cards, including valve, siren, and others. Adding Voice Assistant.",
+        "status": "In Progress",
+        "icon": "mdi-view-dashboard",
+        "color": "primary"
+      },
+      {
+        "period": "2027",
+        "title": "New Devices and Community Improvements",
+        "text": "Adding new devices and community-suggested improvements.",
+        "status": "Planned",
+        "icon": "mdi-account-group",
+        "color": "info"
+      }
+    ]
   }
 }

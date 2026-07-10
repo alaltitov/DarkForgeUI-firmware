@@ -1,0 +1,57 @@
+name: Feature idea
+description: Suggest an idea or improvement for DarkForge UI
+title: "[Idea]: "
+labels:
+  - enhancement
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Select the area this idea belongs to.
+      options:
+        - UI or dashboard
+        - Home Assistant integration
+        - Web flasher
+        - Supported device
+        - Translation
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: Describe your idea in a clear and simple way.
+      placeholder: "I would like DarkForge UI to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this useful?
+      description: Explain what problem this solves or what scenario it improves.
+      placeholder: "This would help because..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional details
+      description: Add sketches, examples, links, or extra context if needed.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have checked existing issues and did not find a similar idea.
+          required: true
+        - label: This idea is related to DarkForge UI.
+          required: true

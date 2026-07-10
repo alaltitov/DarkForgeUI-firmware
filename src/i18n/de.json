@@ -1,14 +1,18 @@
 {
   "nav": {
-    "beta": "Beta"
+    "beta": "Beta",
+    "info": "Informationen",
+    "roadmap": "Roadmap",
+    "qa": "Q&A",
+    "donate": "Spenden"
   },
   "home": {
-    "slogan": "Wir hauchen jedem Pixel deiner Displays Leben ein",
+    "slogan": "Jedem Pixel Ihrer Displays Leben einhauchen",
     "title": "DarkForge UI",
-    "description": "DarkForge UI ist eine moderne Firmware für Geräte auf Basis der Mikrocontroller ESP32-S3 und ESP32-P4. Sie verbindet das Home-Assistant-Ökosystem mit einer flüssigen, intuitiven Touch-Oberfläche. Personalisiere deine Bildschirme mit Dutzenden funktionaler Widgets und steuere dein Zuhause mit nur einem Fingertipp. Der Einstieg dauert nur wenige Minuten — die Firmware wird direkt aus dem Browser installiert.",
+    "description": "DarkForge UI ist eine moderne Firmware für Geräte auf Basis der Mikrocontroller ESP32-S3 und ESP32-P4. Sie vereint das Home Assistant-Ökosystem mit einer flüssigen, intuitiven Touch-Oberfläche. Personalisieren Sie Bildschirme mit Dutzenden funktionaler Widgets und steuern Sie Ihr Zuhause mit einer einzigen Berührung. In wenigen Minuten startklar — die Firmware wird direkt aus dem Browser installiert.",
     "primaryAction": "Beta",
     "secondaryAction": "Mehr erfahren",
-    "previewSubtitle": "Live-Dashboard für dein Zuhause",
+    "previewSubtitle": "Live-Dashboard für Ihr Zuhause",
     "previewOnline": "Online",
     "widgets": {
       "light": {
@@ -17,23 +21,23 @@
       },
       "media": {
         "title": "Küchenlautsprecher",
-        "subtitle": "Lo-fi Radio"
+        "subtitle": "Lo-fi-Radio"
       },
       "climate": {
         "title": "Schlafzimmerklima",
         "subtitle": "Heizen · 22°"
       },
       "alarm": {
-        "title": "Hausalarm",
-        "subtitle": "Deaktiviert"
+        "title": "Haussicherung",
+        "subtitle": "Unscharf"
       },
       "cover": {
-        "title": "Panorama-Jalousien",
-        "subtitle": "Offen · 75%"
+        "title": "Panoramavorhänge",
+        "subtitle": "Geöffnet · 75 %"
       },
       "vacuum": {
         "title": "Saugroboter",
-        "subtitle": "reinigt · standard"
+        "subtitle": "Reinigung · Standard"
       },
       "temperature": {
         "title": "Temperatur",
@@ -46,8 +50,107 @@
     }
   },
   "info": {
-    "title": "Info",
-    "placeholder": "Diese Seite wird gerade vorbereitet. Bald findest du hier weitere Details zu DarkForge UI, unterstützten Geräten und Installationsszenarien."
+    "hero": {
+      "title": "DarkForge UI",
+      "subtitle": "Universelles Betriebssystem für ESP32-Smart-Home-Panels",
+      "lead": "DarkForge UI ist eine leistungsstarke Firmware, die in reinem C unter Verwendung der LVGL-Grafikengine geschrieben wurde. Sie verwandelt Touch-Displays auf Basis von ESP32-S3 und ESP32-P4 in vollwertige, stilvolle und autonome Smart-Home-Bedienpanels. Die Firmware kommuniziert direkt mit Home Assistant über die API und ermöglicht einen schnellen bidirektionalen Datenaustausch und die Gerätesteuerung in Echtzeit."
+    },
+    "benefits": {
+      "title": "Hauptvorteile",
+      "items": [
+        {
+          "title": "One-Click-Installation",
+          "text": "Der Benutzer erhält eine fertig kompilierte Binärdatei. Keine komplizierten Entwicklungsumgebungen – die Firmware wird direkt über die Website installiert."
+        },
+        {
+          "title": "Zero-Code-Konfiguration",
+          "text": "Die gesamte Konfiguration erfolgt direkt auf dem Bildschirm oder über die integrierte lokale Weboberfläche."
+        },
+        {
+          "title": "Dynamische Entitäten",
+          "text": "Geräte, Karten und Parameter werden im laufenden Betrieb hinzugefügt, entfernt und geändert – ohne Neukompilierung oder Neuflashen."
+        },
+        {
+          "title": "Oberflächenanpassung",
+          "text": "Benutzer können persönliche Dashboards und die Startseite an ihre eigenen Szenarien anpassen."
+        },
+        {
+          "title": "Dateiverwaltung über WLAN",
+          "text": "Der integrierte Web-Manager ermöglicht den Zugriff auf die SD-Karte des Geräts über den Browser."
+        },
+        {
+          "title": "Bereit für den globalen Markt",
+          "text": "Die Oberfläche unterstützt von Haus aus Mehrsprachigkeit."
+        }
+      ]
+    },
+    "domains": {
+      "title": "Unterstützte Home Assistant-Domänen",
+      "description": "DarkForge UI erkennt, zeigt und steuert eine große Anzahl von Home Assistant-Entitäten sofort nach der Installation.",
+      "groups": [
+        {
+          "title": "Beleuchtung, Klima und Lüftung",
+          "items": ["light", "climate", "fan", "humidifier", "water_heater"]
+        },
+        {
+          "title": "Motorantriebe",
+          "items": ["cover"]
+        },
+        {
+          "title": "Sicherheit",
+          "items": ["alarm_control_panel"]
+        },
+        {
+          "title": "Multimedia",
+          "items": ["media_player"]
+        },
+        {
+          "title": "Helferroboter",
+          "items": ["vacuum", "lawn_mower"]
+        },
+        {
+          "title": "Informationselemente",
+          "items": ["sensor", "binary_sensor", "weather"]
+        },
+        {
+          "title": "Interaktive Komponenten",
+          "items": ["switch", "input_boolean", "button"]
+        },
+        {
+          "title": "Videoüberwachung",
+          "items": ["camera"]
+        }
+      ]
+    },
+    "design": {
+      "title": "Design und Funktionalität",
+      "text": "DarkForge UI kombiniert die Geschwindigkeit von hardwarenahem C-Code mit dem hochwertigen visuellen Stil von LVGL. Der Benutzer erhält eine reaktionsschnelle Touch-Oberfläche, informative Bildschirme und eine komfortable Steuerung jedes Gerätetyps – ohne unnötige Komplexität."
+    },
+    "spec": {
+      "title": "Spezifikation",
+      "items": [
+        {
+          "label": "Mikrocontroller",
+          "value": "ESP32-S3 / ESP32-P4"
+        },
+        {
+          "label": "Grafik-Engine",
+          "value": "LVGL"
+        },
+        {
+          "label": "Programmiersprache",
+          "value": "C"
+        },
+        {
+          "label": "Kommunikation",
+          "value": "Home Assistant REST API / WebSocket API"
+        },
+        {
+          "label": "Konfiguration",
+          "value": "Geräte-UI / lokaler Webserver"
+        }
+      ]
+    }
   },
   "flasher": {
     "device": {
@@ -56,65 +159,228 @@
       "comingSoon": "Demnächst"
     },
     "mode": {
-      "title": "Flash-Modus",
-      "updateTitle": "Firmware aktualisieren",
+      "title": "Firmware-Modus",
+      "updateTitle": "Firmware-Update",
       "fullTitle": "Vollständige Installation"
     },
     "warning": {
-      "update": "Der Update-Modus ist für reguläre Firmware-Aktualisierungen vorgesehen. NVS wird nicht gelöscht, daher sollte die Gerätekonfiguration nach dem Neustart erhalten bleiben.",
-      "full": "Die vollständige Installation löscht den Flash-Speicher komplett, bevor die Firmware geschrieben wird. WLAN, Home-Assistant-Verbindungsdaten und alle gespeicherten Benutzereinstellungen werden entfernt."
+      "update": "Der Update-Modus ist für reguläre Firmware-Aktualisierungen vorgesehen. Der NVS-Speicher wird dabei nicht gelöscht, sodass die Gerätekonfiguration nach dem Neustart erhalten bleiben sollte.",
+      "full": "Die vollständige Installation löscht den gesamten Flash-Speicher, bevor die Firmware geschrieben wird. WLAN-Daten, Verbindungsinformationen zu Home Assistant und alle Benutzereinstellungen gehen dabei verloren."
     },
     "actions": {
       "update": "Update starten",
-      "full": "Vollständige Installation starten",
+      "full": "Vollinstallation starten",
       "erase": "Nur Flash löschen"
     },
     "status": {
       "label": "Status",
-      "idle": "Gerät ist nicht verbunden",
-      "connecting": "Verbindung zum ausgewählten Gerät wird hergestellt...",
-      "loadingManifest": "Firmware-Manifest wird geladen...",
-      "downloadingFiles": "Firmware-Binärdateien werden heruntergeladen...",
-      "flashingUpdate": "Firmware wird ohne Löschen von NVS aktualisiert...",
-      "flashingFull": "Vollständige Installation mit Flash-Löschung wird ausgeführt...",
-      "erasing": "Flash-Speicher wird gelöscht...",
-      "resetting": "Gerät wird zurückgesetzt...",
+      "idle": "Kein Gerät verbunden",
+      "connecting": "Verbinde mit ausgewähltem Gerät ...",
+      "loadingManifest": "Lade Firmware-Manifest ...",
+      "downloadingFiles": "Lade Firmware-Binärdateien herunter ...",
+      "flashingUpdate": "Aktualisiere Firmware ohne NVS-Löschung ...",
+      "flashingFull": "Vollinstallation mit Flash-Löschung ...",
+      "erasing": "Lösche Flash-Speicher ...",
+      "resetting": "Starte Gerät neu ...",
       "success": "Vorgang erfolgreich abgeschlossen",
       "error": "Ein Fehler ist aufgetreten",
       "ready": "Bereit"
     },
     "progress": {
-      "preparing": "Vorbereitung...",
+      "preparing": "Vorbereitung ...",
       "done": "Fertig",
       "erased": "Flash gelöscht"
     },
     "log": {
       "title": "Vorgangsprotokoll",
-      "emptyTitle": "Noch kein Vorgangsprotokoll",
-      "emptyText": "Wähle dein Gerät aus und starte den Flash-Vorgang. Detaillierter Fortschritt und Diagnosemeldungen erscheinen hier.",
-      "requestPort": "Zugriff auf einen seriellen Port wird angefordert...",
+      "emptyTitle": "Vorgangsprotokoll ist leer",
+      "emptyText": "Wählen Sie ein Gerät und starten Sie den Flash-Vorgang. Detaillierte Fortschritts- und Diagnosemeldungen erscheinen hier.",
+      "requestPort": "Fordere Zugriff auf serielle Schnittstelle an ...",
       "connected": "Verbunden mit Chip:",
-      "disconnecting": "Verbindung zum seriellen Port wird getrennt...",
-      "resetting": "Hardware-Reset wird ausgeführt...",
-      "eraseStart": "Vollständiges Löschen des Flash-Speichers wird gestartet...",
-      "eraseDone": "Flash-Speicher wurde erfolgreich gelöscht.",
-      "eraseSuccess": "Das Gerät wurde gelöscht und ist bereit für eine neue Installation.",
-      "readManifest": "Firmware-Manifest wird gelesen:",
-      "downloadFiles": "Binärdateien werden heruntergeladen...",
+      "disconnecting": "Trenne von serieller Schnittstelle ...",
+      "resetting": "Hardware-Reset ...",
+      "eraseStart": "Beginne vollständige Flash-Löschung ...",
+      "eraseDone": "Flash-Speicher erfolgreich gelöscht.",
+      "eraseSuccess": "Gerät gelöscht und bereit für eine neue Installation.",
+      "readManifest": "Lese Firmware-Manifest:",
+      "downloadFiles": "Lade Binärdateien herunter ...",
       "download": "Download:",
-      "modeFull": "Modus: vollständige Installation mit komplettem Flash-Löschen.",
-      "modeUpdate": "Modus: Firmware-Update ohne vollständiges Flash-Löschen.",
-      "writeFlash": "writeFlash wird gestartet...",
+      "modeFull": "Modus: Vollständige Installation mit kompletter Flash-Löschung.",
+      "modeUpdate": "Modus: Firmware-Update ohne vollständige Flash-Löschung.",
+      "writeFlash": "Starte writeFlash ...",
       "fullDone": "Vollständige Installation erfolgreich abgeschlossen.",
       "updateDone": "Firmware-Update erfolgreich abgeschlossen.",
-      "booted": "Das Gerät wurde zurückgesetzt und sollte jetzt starten.",
+      "booted": "Gerät neu gestartet und sollte hochfahren.",
       "error": "Fehler:"
     },
     "errors": {
-      "json": "JSON konnte nicht geladen werden:",
-      "binary": "Binärdatei konnte nicht geladen werden:",
-      "webSerial": "Die Web Serial API wird von diesem Browser nicht unterstützt. Verwende Chrome oder Microsoft Edge.",
+      "json": "Fehler beim Laden der JSON-Datei:",
+      "binary": "Fehler beim Laden der Binärdatei:",
+      "webSerial": "Web Serial API wird von diesem Browser nicht unterstützt. Bitte Chrome oder Microsoft Edge verwenden.",
       "eraseUnsupported": "Die aktuelle Version von esptool-js unterstützt eraseFlash() nicht."
     }
+  },
+  "donate": {
+    "title": "Lizenzschlüssel erhalten",
+    "description": "Sie können einen Lizenzschlüssel für DarkForge UI erhalten, indem Sie das Projekt auf einem der verfügbaren Wege unterstützen.",
+    "notice": "Senden Sie mir nach einer Spende die Geräte-ID per Nachricht. Ich werde Ihnen den Lizenzschlüssel schnellstmöglich zusenden.",
+    "telegramAlt": "QR-Code zur Kontaktaufnahme über Telegram",
+    "boostyAlt": "QR-Code zur Unterstützung über Boosty"
+  },
+  "qa": {
+    "title": "Q&A",
+    "sectionsTitle": "Abschnitte",
+    "description": "Hier finden Sie häufig gestellte Fragen zu DarkForge UI, Installation, Sicherheit, Lizenzierung, unterstützten Geräten und der Bedienoberfläche.",
+    "groups": [
+      {
+        "title": "Lizenz und Schlüssel",
+        "description": "Fragen zum Vertriebsmodell, zu Lizenzschlüsseln, zum Testzeitraum und zur Wiederherstellung des Zugriffs.",
+        "icon": "mdi-key-variant",
+        "items": [
+          {
+            "question": "Warum ist die Firmware nicht Open Source?",
+            "answer": "Die Entwicklung von DarkForge UI hat viel Zeit, Mühe und finanzielle Mittel erfordert. Daher wird die Firmware zum jetzigen Zeitpunkt als geschlossenes Produkt vertrieben."
+          },
+          {
+            "question": "Warum ist der Testzeitraum so kurz?",
+            "answer": "Dieser Zeitraum reicht aus, um das Gerät einzurichten und die Kernfunktionen der Firmware zu bewerten. Bei Bedarf kann das Gerät komplett neu geflasht werden, wodurch der Testzeitraum von vorne beginnt."
+          },
+          {
+            "question": "Warum den Testzeitraum während der Beta-Phase nicht verlängern?",
+            "answer": "Auch im Beta-Status handelt es sich bereits um eine vollwertige Firmware, die weiterentwickelt und aktualisiert wird. Eine stark eingeschränkte Testversion herauszugeben wäre nicht sinnvoll, da die gesamte Funktionalität getestet werden muss. Eine Verlängerung des Testzeitraums würde die Einführung von Abonnements oder Online-Prüfungen erfordern – und damit eine Abhängigkeit vom Internet. Das widerspricht der Philosophie der lokalen Smart-Home-Steuerung, verkompliziert die Nutzung und vergrößert den Code."
+          },
+          {
+            "question": "Wie erhalte ich einen Lizenzschlüssel und ist das schon vor dem Release möglich?",
+            "answer": "Ja, ein Lizenzschlüssel kann bereits vor dem Release bezogen werden. Unterstützen Sie das Projekt einfach auf einem der verfügbaren Wege und senden Sie mir die Geräte-ID über Telegram oder Boosty. Der Lizenzschlüssel für dieses Gerät wird Ihnen dann zugesandt."
+          },
+          {
+            "question": "Warum kann ein Lizenzschlüssel nicht automatisch ausgestellt werden?",
+            "answer": "Zum jetzigen Zeitpunkt ist eine automatische Schlüsselausgabe aus finanziellen, technischen und sicherheitstechnischen Gründen nicht praktikabel. Daher werden die Schlüssel manuell vergeben."
+          },
+          {
+            "question": "Für welchen Zeitraum wird der Lizenzschlüssel ausgestellt?",
+            "answer": "Der Lizenzschlüssel wird zeitlich unbegrenzt (unbefristet) ausgestellt."
+          },
+          {
+            "question": "Was passiert, wenn ich den Lizenzschlüssel verliere?",
+            "answer": "Bewahren Sie den Schlüssel am besten an einem sicheren Ort auf. Die ausgegebenen Schlüssel werden jedoch zusammen mit der Geräte-ID lokal gespeichert, sodass der Schlüssel bei Bedarf erneut zugesandt werden kann. Zukünftig könnte eine Schlüsselprüfung per Geräte-ID auf der Website angeboten werden, da der Schlüssel an ein bestimmtes Gerät gebunden ist."
+          }
+        ]
+      },
+      {
+        "title": "Sicherheit",
+        "description": "Wie Daten gespeichert werden, ob das Internet verwendet wird und was bei der Systemkonfiguration zu beachten ist.",
+        "icon": "mdi-shield-check",
+        "items": [
+          {
+            "question": "Ist es sicher, den Home Assistant-Token auf dem Webserver des Geräts einzugeben? Besteht die Gefahr einer Kompromittierung?",
+            "answer": "Der Token wird ausschließlich im nichtflüchtigen Speicher (NVS) des Geräts gespeichert. Dies dient dazu, dass er nach jedem Neustart nicht erneut eingegeben werden muss. Das Prinzip ähnelt dem Speichern eines WLAN-Passworts."
+          },
+          {
+            "question": "Wie steht es generell um die Sicherheit?",
+            "answer": "Es ist wichtig zu verstehen, dass es keine absolute Sicherheit gibt. Sicherheit muss auf Ebene des gesamten Systems gewährleistet werden: lokales Netzwerk, Router, Home Assistant und Zugriffsregeln. Die Firmware selbst sendet keine Daten an Drittserver und arbeitet lokal, ohne dass ein Internetzugang erforderlich ist. Zukünftig könnte ein Internetzugang ausschließlich für einzelne optionale Zusatzdienste genutzt werden, deren Verwendung jedoch nicht verpflichtend sein wird."
+          },
+          {
+            "question": "Kann ich nach der Installation von DarkForge UI eine andere Firmware aufspielen?",
+            "answer": "Ja. Der Lizenzschlüssel verwendet weder E-FUSE noch blockiert er das Gerät. Er wird im NVS gespeichert. Wenn Sie den NVS oder den gesamten Flash-Speicher löschen, muss der Schlüssel erneut eingegeben werden. Nach einem vollständigen Flash-Löschvorgang können Sie jede andere kompatible Firmware installieren."
+          }
+        ]
+      },
+      {
+        "title": "Firmware und Installation",
+        "description": "Allgemeine Fragen zu Installation, Updates und Funktionsweise der Firmware.",
+        "icon": "mdi-flash",
+        "items": [
+          {
+            "question": "Muss ich die Firmware manuell kompilieren?",
+            "answer": "Nein. Die Idee des Projekts ist es, fertige Binärdateien bereitzustellen, die direkt aus dem Browser installiert werden können."
+          },
+          {
+            "question": "Bleiben die Einstellungen bei einem Update erhalten?",
+            "answer": "Im Update-Modus wird der NVS nicht gelöscht, daher sollte die Gerätekonfiguration nach dem Neustart erhalten bleiben."
+          },
+          {
+            "question": "Welche Geräte werden unterstützt?",
+            "answer": "Die Liste der unterstützten Geräte wird erweitert. Aktuelle Optionen finden Sie auf der Beta-Seite."
+          }
+        ]
+      },
+      {
+        "title": "Bedienoberfläche",
+        "description": "Gesten, Wischbewegungen, Navigation zwischen Seiten und Besonderheiten auf unterschiedlichen Displays.",
+        "icon": "mdi-gesture-swipe",
+        "items": [
+          {
+            "question": "Ich habe eine erweiterte Seite geöffnet und komme nicht mehr heraus. Was ist das Problem?",
+            "answer": "Erweiterte Seiten werden durch eine vertikale Wischbewegung nach oben oder unten verlassen. Bei quadratischen und Querformat-Displays erfolgt die Wischgeste auf der linken Bildschirmseite. Bei Hochformat-Displays im oberen Bereich des Bildschirms."
+          },
+          {
+            "question": "Wie navigiere ich zwischen den Dashboard-Seiten?",
+            "answer": "Um zwischen den Dashboard-Seiten zu wechseln, wischen Sie vertikal nach oben oder unten über den Bildschirm."
+          },
+          {
+            "question": "Warum ist die Wischsteuerung so umgesetzt?",
+            "answer": "Auf den Seiten können sich Schieberegler und andere interaktive Elemente befinden. Das Touch-System kann Benutzerabsichten nicht wie ein Mensch erkennen, sondern bestimmt Gesten anhand von Koordinaten und Bewegungsrichtung. Daher sind einige Gesten auf bestimmte Bildschirmbereiche aufgeteilt. Nach kurzer Eingewöhnung wird diese Steuerung schnell und vorhersehbar."
+          },
+          {
+            "question": "Wie öffne ich auf einem quadratischen Display in der Medien-Karte zusätzliche Felder?",
+            "answer": "Zur Lautstärkeregelung wischen Sie von rechts nach links. Für weitere Optionen wischen Sie von links nach rechts."
+          }
+        ]
+      },
+      {
+        "title": "Karten und Dashboard",
+        "description": "Karten konfigurieren, Elemente verschieben und erweiterte Modi öffnen.",
+        "icon": "mdi-view-dashboard-edit",
+        "items": [
+          {
+            "question": "Kann ich die Position der Karten auf dem Bildschirm ohne den Webserver ändern?",
+            "answer": "Ja, sofern die Karten bereits über den Webserver hinzugefügt wurden. Der Verschiebemodus wird durch Drücken der Schaltfläche mit dem Stift-Symbol im Navigationsmenü aktiviert."
+          },
+          {
+            "question": "Wie öffne ich eine erweiterte Karte?",
+            "answer": "Falls für die entsprechende Domäne eine erweiterte Karte verfügbar ist, öffnet sich diese durch langes Drücken (ca. 2 Sekunden) auf die normale Karte."
+          }
+        ]
+      }
+    ]
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "description": "Öffentlicher Entwicklungsplan für DarkForge UI. Zeitpläne und Inhalte können basierend auf Tests, Community-Feedback und der Verfügbarkeit neuer Geräte angepasst werden.",
+    "items": [
+      {
+        "period": "November 2025 – Juli 2026",
+        "title": "Start der offenen Beta",
+        "text": "Freigabe der offenen Beta-Version der Firmware und des Firmware-Installers.",
+        "status": "Erledigt",
+        "icon": "mdi-rocket-launch",
+        "color": "success"
+      },
+      {
+        "period": "Juli 2026 – September 2026",
+        "title": "Testphase und Release-Vorbereitung",
+        "text": "Test der Kern-Firmware und des Installers. Fehlersuche, Vorbereitung des Release. Hinzufügen des Guition ESP32-4848S040.",
+        "status": "In Arbeit",
+        "icon": "mdi-test-tube",
+        "color": "primary"
+      },
+      {
+        "period": "Oktober 2026 – Dezember 2026",
+        "title": "Neue Karten und Voice Assistant",
+        "text": "Hinzufügen neuer Karten, u. a. valve, siren und weitere. Integration eines Voice Assistant.",
+        "status": "In Arbeit",
+        "icon": "mdi-view-dashboard",
+        "color": "primary"
+      },
+      {
+        "period": "2027",
+        "title": "Neue Geräte und Community-Verbesserungen",
+        "text": "Hinzufügen neuer Geräte und von der Community vorgeschlagener Verbesserungen.",
+        "status": "Geplant",
+        "icon": "mdi-account-group",
+        "color": "info"
+      }
+    ]
   }
 }

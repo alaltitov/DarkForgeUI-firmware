@@ -1,14 +1,18 @@
 {
   "nav": {
-    "beta": "Beta"
+    "beta": "Beta",
+    "info": "Informações",
+    "roadmap": "Roadmap",
+    "qa": "Q&A",
+    "donate": "Doar"
   },
   "home": {
     "slogan": "Dando vida a cada pixel dos seus ecrãs",
     "title": "DarkForge UI",
-    "description": "DarkForge UI é um firmware moderno para dispositivos baseados nos microcontroladores ESP32-S3 e ESP32-P4. Ele une o ecossistema Home Assistant a uma interface tátil fluida e intuitiva. Personalize os seus ecrãs com dezenas de widgets funcionais e controle a sua casa com um único toque. Comece em poucos minutos — o firmware é instalado diretamente a partir do navegador.",
+    "description": "DarkForge UI é um firmware moderno para dispositivos baseados nos microcontroladores ESP32-S3 e ESP32-P4. Combina o ecossistema Home Assistant com uma interface tátil fluida e intuitiva. Personalize os ecrãs com dezenas de widgets funcionais e controle a sua casa com um toque. Arranque em minutos — o firmware é instalado diretamente do navegador.",
     "primaryAction": "Beta",
     "secondaryAction": "Saber mais",
-    "previewSubtitle": "Dashboard ao vivo para a sua casa",
+    "previewSubtitle": "Painel ao vivo para a sua casa",
     "previewOnline": "Online",
     "widgets": {
       "light": {
@@ -17,23 +21,23 @@
       },
       "media": {
         "title": "Coluna da cozinha",
-        "subtitle": "Rádio lo-fi"
+        "subtitle": "Rádio Lo-fi"
       },
       "climate": {
-        "title": "Clima do quarto",
+        "title": "Climatização do quarto",
         "subtitle": "Aquecimento · 22°"
       },
       "alarm": {
-        "title": "Alarme da casa",
-        "subtitle": "Desarmado"
+        "title": "Segurança da casa",
+        "subtitle": "Desarmada"
       },
       "cover": {
-        "title": "Estores panorâmicos",
-        "subtitle": "Abertos · 75%"
+        "title": "Cortinas panorâmicas",
+        "subtitle": "Abertas · 75%"
       },
       "vacuum": {
-        "title": "Robô aspirador",
-        "subtitle": "a limpar · padrão"
+        "title": "Aspirador robot",
+        "subtitle": "limpeza · padrão"
       },
       "temperature": {
         "title": "Temperatura",
@@ -46,39 +50,138 @@
     }
   },
   "info": {
-    "title": "Info",
-    "placeholder": "Esta página está a ser preparada. Em breve terá mais detalhes sobre o DarkForge UI, dispositivos suportados e cenários de instalação."
+    "hero": {
+      "title": "DarkForge UI",
+      "subtitle": "SO universal para painéis de Casa Inteligente com ESP32",
+      "lead": "DarkForge UI é um firmware de alto desempenho escrito em C puro com o motor gráfico LVGL. Transforma ecrãs tácteis baseados em ESP32-S3 e ESP32-P4 em painéis de controlo completos, elegantes e autónomos para a Casa Inteligente. O firmware comunica diretamente com o Home Assistant através da API, garantindo uma troca de dados bidirecional rápida e o controlo dos dispositivos em tempo real."
+    },
+    "benefits": {
+      "title": "Vantagens principais",
+      "items": [
+        {
+          "title": "Instalação num clique",
+          "text": "O utilizador recebe um ficheiro binário compilado pronto a usar. Sem ambientes de desenvolvimento complexos — o firmware é instalado diretamente pelo site."
+        },
+        {
+          "title": "Configuração Zero-Code",
+          "text": "Toda a configuração é feita no próprio ecrã ou através da interface web local integrada."
+        },
+        {
+          "title": "Entidades dinâmicas",
+          "text": "Dispositivos, cartões e parâmetros são adicionados, removidos e alterados em tempo real, sem recompilação nem reflash."
+        },
+        {
+          "title": "Personalização da interface",
+          "text": "O utilizador pode personalizar painéis próprios e a página inicial de acordo com os seus cenários."
+        },
+        {
+          "title": "Gestão de ficheiros por Wi‑Fi",
+          "text": "O gestor web integrado permite trabalhar com o cartão SD do dispositivo através do navegador."
+        },
+        {
+          "title": "Pronto para o mercado global",
+          "text": "A interface suporta multilinguismo de raiz."
+        }
+      ]
+    },
+    "domains": {
+      "title": "Domínios do Home Assistant suportados",
+      "description": "O DarkForge UI reconhece, apresenta e permite controlar um grande número de entidades do Home Assistant de imediato.",
+      "groups": [
+        {
+          "title": "Iluminação, climatização e ventilação",
+          "items": ["light", "climate", "fan", "humidifier", "water_heater"]
+        },
+        {
+          "title": "Motorizações",
+          "items": ["cover"]
+        },
+        {
+          "title": "Segurança",
+          "items": ["alarm_control_panel"]
+        },
+        {
+          "title": "Multimédia",
+          "items": ["media_player"]
+        },
+        {
+          "title": "Robôs assistentes",
+          "items": ["vacuum", "lawn_mower"]
+        },
+        {
+          "title": "Elementos informativos",
+          "items": ["sensor", "binary_sensor", "weather"]
+        },
+        {
+          "title": "Componentes interativos",
+          "items": ["switch", "input_boolean", "button"]
+        },
+        {
+          "title": "Videovigilância",
+          "items": ["camera"]
+        }
+      ]
+    },
+    "design": {
+      "title": "Design e funcionalidades",
+      "text": "O DarkForge UI combina a velocidade do código C de baixo nível com o estilo visual premium do LVGL. O utilizador obtém uma interface tátil responsiva, ecrãs informativos e um controlo prático de cada tipo de dispositivo, sem complexidade desnecessária."
+    },
+    "spec": {
+      "title": "Especificações",
+      "items": [
+        {
+          "label": "Microcontroladores",
+          "value": "ESP32-S3 / ESP32-P4"
+        },
+        {
+          "label": "Motor gráfico",
+          "value": "LVGL"
+        },
+        {
+          "label": "Linguagem de programação",
+          "value": "C"
+        },
+        {
+          "label": "Comunicação",
+          "value": "API REST / WebSocket do Home Assistant"
+        },
+        {
+          "label": "Configuração",
+          "value": "IU no dispositivo / servidor web local"
+        }
+      ]
+    }
   },
   "flasher": {
     "device": {
-      "title": "Dispositivo de destino",
+      "title": "Dispositivo alvo",
       "select": "Selecionar dispositivo",
       "comingSoon": "Em breve"
     },
     "mode": {
-      "title": "Modo de gravação",
-      "updateTitle": "Atualizar firmware",
+      "title": "Modo de firmware",
+      "updateTitle": "Atualização de firmware",
       "fullTitle": "Instalação completa"
     },
     "warning": {
-      "update": "O modo de atualização destina-se a atualizações regulares do firmware. Ele não apaga a NVS, portanto a configuração do dispositivo deve permanecer disponível após o reinício.",
-      "full": "A instalação completa apaga totalmente a memória flash antes de gravar o firmware. Wi‑Fi, dados de ligação ao Home Assistant e todas as definições de utilizador guardadas serão removidos."
+      "update": "O modo de atualização destina-se a atualizações normais. Não apaga a NVS, pelo que a configuração do dispositivo deverá ser preservada após reiniciar.",
+      "full": "A instalação completa apaga totalmente a memória flash antes de gravar o firmware. Os dados de Wi‑Fi, a ligação ao Home Assistant e todas as definições do utilizador serão eliminados."
     },
     "actions": {
       "update": "Iniciar atualização",
       "full": "Iniciar instalação completa",
-      "erase": "Apagar apenas a flash"
+      "erase": "Apenas apagar flash"
     },
     "status": {
       "label": "Estado",
-      "idle": "O dispositivo não está ligado",
+      "idle": "Nenhum dispositivo ligado",
       "connecting": "A ligar ao dispositivo selecionado...",
       "loadingManifest": "A carregar manifesto do firmware...",
       "downloadingFiles": "A descarregar ficheiros binários do firmware...",
-      "flashingUpdate": "A atualizar firmware sem apagar a NVS...",
-      "flashingFull": "A executar instalação completa com apagamento da flash...",
+      "flashingUpdate": "A atualizar firmware sem apagar NVS...",
+      "flashingFull": "Instalação completa com limpeza da flash...",
       "erasing": "A apagar memória flash...",
-      "resetting": "A reiniciar o dispositivo...",
+      "resetting": "A reiniciar dispositivo...",
       "success": "Operação concluída com sucesso",
       "error": "Ocorreu um erro",
       "ready": "Pronto"
@@ -90,31 +193,194 @@
     },
     "log": {
       "title": "Registo da operação",
-      "emptyTitle": "Ainda não há registo",
-      "emptyText": "Selecione o seu dispositivo e inicie a gravação. O progresso detalhado e as mensagens de diagnóstico aparecerão aqui.",
-      "requestPort": "A solicitar acesso a uma porta série...",
+      "emptyTitle": "Registo de operações vazio",
+      "emptyText": "Selecione um dispositivo e inicie o flashing. O progresso detalhado e as mensagens de diagnóstico aparecerão aqui.",
+      "requestPort": "A solicitar acesso à porta série...",
       "connected": "Ligado ao chip:",
       "disconnecting": "A desligar da porta série...",
-      "resetting": "A executar reinício por hardware...",
-      "eraseStart": "A iniciar apagamento completo da flash...",
-      "eraseDone": "A memória flash foi apagada com sucesso.",
-      "eraseSuccess": "O dispositivo foi apagado e está pronto para uma nova instalação.",
+      "resetting": "Reset de hardware...",
+      "eraseStart": "A iniciar limpeza total da flash...",
+      "eraseDone": "Memória flash apagada com sucesso.",
+      "eraseSuccess": "Dispositivo apagado e pronto para uma nova instalação.",
       "readManifest": "A ler manifesto do firmware:",
       "downloadFiles": "A descarregar ficheiros binários...",
-      "download": "A descarregar:",
-      "modeFull": "Modo: instalação completa com apagamento total da flash.",
-      "modeUpdate": "Modo: atualização de firmware sem apagamento completo da flash.",
+      "download": "Download:",
+      "modeFull": "Modo: instalação completa com limpeza total da flash.",
+      "modeUpdate": "Modo: atualização de firmware sem limpeza total da flash.",
       "writeFlash": "A iniciar writeFlash...",
       "fullDone": "Instalação completa concluída com sucesso.",
       "updateDone": "Atualização do firmware concluída com sucesso.",
-      "booted": "O dispositivo foi reiniciado e deverá arrancar agora.",
+      "booted": "Dispositivo reiniciado e deverá arrancar.",
       "error": "Erro:"
     },
     "errors": {
       "json": "Falha ao carregar JSON:",
       "binary": "Falha ao carregar ficheiro binário:",
-      "webSerial": "A API Web Serial não é suportada por este navegador. Use Chrome ou Microsoft Edge.",
+      "webSerial": "A Web Serial API não é suportada por este navegador. Utilize o Chrome ou o Microsoft Edge.",
       "eraseUnsupported": "A versão atual do esptool-js não suporta eraseFlash()."
     }
+  },
+  "donate": {
+    "title": "Obter uma chave de licença",
+    "description": "Pode obter uma chave de licença para o DarkForge UI apoiando o projeto de uma das formas disponíveis.",
+    "notice": "Após fazer um donativo, envie-me o ID do dispositivo por mensagem. Enviarei a chave de licença em resposta assim que possível.",
+    "telegramAlt": "Código QR para contacto via Telegram",
+    "boostyAlt": "Código QR para apoio via Boosty"
+  },
+  "qa": {
+    "title": "Perguntas e Respostas",
+    "sectionsTitle": "Secções",
+    "description": "Aqui encontram-se as perguntas frequentes sobre o DarkForge UI, instalação, segurança, licenciamento, dispositivos suportados e gestão da interface.",
+    "groups": [
+      {
+        "title": "Licença e chaves",
+        "description": "Perguntas sobre o modelo de distribuição, chaves de licença, período experimental e recuperação de acesso.",
+        "icon": "mdi-key-variant",
+        "items": [
+          {
+            "question": "Porque é que o firmware não é Open Source?",
+            "answer": "O desenvolvimento do DarkForge UI exigiu muito tempo, esforço e investimento financeiro. Por isso, nesta fase, o firmware é distribuído como um produto fechado."
+          },
+          {
+            "question": "Porque é que o período de avaliação é tão curto?",
+            "answer": "Este período é suficiente para configurar o dispositivo e avaliar as funcionalidades principais do firmware. Se necessário, o dispositivo pode ser totalmente reflashado, reiniciando o período de avaliação."
+          },
+          {
+            "question": "Porque não prolongar o período de avaliação durante os testes?",
+            "answer": "Mesmo em estado beta, já é um firmware completo que continuará a evoluir. Lançar uma versão de teste muito limitada não faz sentido, pois é necessário testar toda a funcionalidade. Prolongar o período de avaliação exigiria implementar subscrições ou verificações online, ou seja, dependência da Internet. Isso contraria a filosofia de controlo local da casa inteligente, complica a utilização e aumenta o tamanho do código."
+          },
+          {
+            "question": "Como obter uma chave de licença e é possível obtê-la antes do lançamento?",
+            "answer": "Sim, a chave de licença pode ser obtida antes do lançamento. Basta apoiar o projeto de uma das formas disponíveis e enviar-me o ID do dispositivo via Telegram ou Boosty. A chave de licença para esse dispositivo será enviada em resposta."
+          },
+          {
+            "question": "Porque não é possível obter uma chave de licença automaticamente?",
+            "answer": "Na fase atual, a emissão automática de chaves não é viável por razões financeiras, técnicas e de segurança. Por isso, as chaves são emitidas manualmente."
+          },
+          {
+            "question": "Por quanto tempo é emitida a chave de licença?",
+            "answer": "A chave de licença é emitida a título perpétuo (sem limite de tempo)."
+          },
+          {
+            "question": "O que acontece se eu perder a chave de licença?",
+            "answer": "É melhor guardar a chave num local seguro. No entanto, as chaves emitidas serão guardadas localmente juntamente com o ID do dispositivo, pelo que a chave poderá ser reenviada se necessário. No futuro, poderá surgir um serviço de verificação de chave por ID do dispositivo no site, uma vez que a chave está associada a um dispositivo específico."
+          }
+        ]
+      },
+      {
+        "title": "Segurança",
+        "description": "Como os dados são armazenados, se a Internet é utilizada e o que ter em conta na configuração do sistema.",
+        "icon": "mdi-shield-check",
+        "items": [
+          {
+            "question": "É seguro introduzir o token do Home Assistant no servidor web do dispositivo? Não poderá ser comprometido?",
+            "answer": "O token é guardado exclusivamente na memória não volátil do dispositivo — NVS. É aí guardado para que não seja necessário reintroduzi-lo após cada reinicialização. O conceito é semelhante a guardar a palavra-passe do Wi‑Fi."
+          },
+          {
+            "question": "Como está a segurança no geral?",
+            "answer": "É importante compreender que não existe segurança absoluta. A segurança deve ser garantida ao nível de todo o sistema: rede local, router, Home Assistant e regras de acesso. O firmware em si não envia dados para servidores externos e funciona localmente, sem necessidade de acesso à Internet. No futuro, o acesso à Internet poderá ser usado apenas para serviços adicionais opcionais, sem carácter obrigatório."
+          },
+          {
+            "question": "Se instalar o DarkForge UI, posso depois instalar outro firmware?",
+            "answer": "Sim. A chave de licença não utiliza E-FUSE nem bloqueia o dispositivo. Fica armazenada na NVS. Se apagar completamente a NVS ou a memória flash, terá de introduzir novamente a chave. Após uma limpeza total da flash, poderá instalar qualquer outro firmware compatível."
+          }
+        ]
+      },
+      {
+        "title": "Firmware e instalação",
+        "description": "Perguntas gerais sobre instalação, atualizações e funcionamento do firmware.",
+        "icon": "mdi-flash",
+        "items": [
+          {
+            "question": "Preciso de compilar o firmware manualmente?",
+            "answer": "Não. A ideia do projeto é fornecer ficheiros binários prontos a instalar diretamente do navegador."
+          },
+          {
+            "question": "As definições são preservadas durante uma atualização?",
+            "answer": "No modo de atualização, a NVS não é apagada, pelo que a configuração do dispositivo deverá ser preservada após reiniciar."
+          },
+          {
+            "question": "Que dispositivos são suportados?",
+            "answer": "A lista de dispositivos suportados será expandida. As opções atuais estão disponíveis na página Beta."
+          }
+        ]
+      },
+      {
+        "title": "Gestão da interface",
+        "description": "Gestos, deslizamentos, navegação entre páginas e particularidades em diferentes ecrãs.",
+        "icon": "mdi-gesture-swipe",
+        "items": [
+          {
+            "question": "Abri uma página expandida e não consigo sair. Qual é o problema?",
+            "answer": "As páginas expandidas são fechadas com um deslize vertical para cima ou para baixo. Em ecrãs quadrados e horizontais, o deslize é feito no lado esquerdo do ecrã. Em ecrãs verticais, na parte superior do ecrã."
+          },
+          {
+            "question": "Como navegar entre as páginas do painel?",
+            "answer": "Para se deslocar entre as páginas do painel, deslize verticalmente para cima ou para baixo sobre o ecrã."
+          },
+          {
+            "question": "Porque é que o controlo por gestos foi concebido desta forma?",
+            "answer": "As páginas podem conter sliders e outros elementos interativos. O sistema tátil não entende a intenção do utilizador como uma pessoa; ele determina os gestos pelas coordenadas e direção do movimento. Por isso, alguns gestos estão divididos por zonas do ecrã. Após uma curta adaptação, este controlo torna-se rápido e previsível."
+          },
+          {
+            "question": "Num ecrã quadrado, como abrir campos adicionais no cartão Multimédia?",
+            "answer": "Para o volume, deslize da direita para a esquerda. Para opções adicionais, deslize da esquerda para a direita."
+          }
+        ]
+      },
+      {
+        "title": "Cartões e painel",
+        "description": "Configuração dos cartões, movimentação de elementos e abertura dos modos expandidos.",
+        "icon": "mdi-view-dashboard-edit",
+        "items": [
+          {
+            "question": "Posso alterar a posição dos cartões no ecrã sem o servidor web?",
+            "answer": "Sim, se os cartões já tiverem sido adicionados através do servidor web. O modo de movimentação é ativado premindo o botão com o ícone de lápis no menu de navegação."
+          },
+          {
+            "question": "Como abrir um cartão expandido?",
+            "answer": "Se existir um cartão expandido para o domínio selecionado, este abre-se com uma pressão longa (cerca de 2 segundos) no cartão normal."
+          }
+        ]
+      }
+    ]
+  },
+  "roadmap": {
+    "title": "Roadmap",
+    "description": "Plano de desenvolvimento público do DarkForge UI. Os prazos e conteúdos poderão ser ajustados de acordo com os testes, feedback da comunidade e disponibilidade de novos dispositivos.",
+    "items": [
+      {
+        "period": "Novembro 2025 — Julho 2026",
+        "title": "Lançamento da beta aberta",
+        "text": "Lançamento da versão beta pública do firmware e do instalador de firmware.",
+        "status": "Concluído",
+        "icon": "mdi-rocket-launch",
+        "color": "success"
+      },
+      {
+        "period": "Julho 2026 — Setembro 2026",
+        "title": "Testes e preparação para o lançamento",
+        "text": "Testes do firmware base e do instalador. Identificação de bugs, preparação para o lançamento. Adição do dispositivo Guition ESP32-4848S040.",
+        "status": "Em curso",
+        "icon": "mdi-test-tube",
+        "color": "primary"
+      },
+      {
+        "period": "Outubro 2026 — Dezembro 2026",
+        "title": "Novos cartões e Assistente de Voz",
+        "text": "Adição de novos cartões, incluindo válvula, sirene e outros. Adição do Assistente de Voz.",
+        "status": "Em curso",
+        "icon": "mdi-view-dashboard",
+        "color": "primary"
+      },
+      {
+        "period": "2027",
+        "title": "Novos dispositivos e melhorias da comunidade",
+        "text": "Adição de novos dispositivos e de melhorias sugeridas pela comunidade.",
+        "status": "Planeado",
+        "icon": "mdi-account-group",
+        "color": "info"
+      }
+    ]
   }
 }

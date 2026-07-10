@@ -21,6 +21,45 @@
 
           <v-spacer />
 
+          <div class="desktop-nav">
+            <v-btn
+              v-for="item in navItems"
+              :key="item.to"
+              class="nav-button"
+              variant="text"
+              :to="item.to"
+            >
+              {{ t(item.labelKey) }}
+            </v-btn>
+          </div>
+
+          <v-menu location="bottom end">
+            <template #activator="{ props }">
+              <v-btn
+                v-bind="props"
+                class="mobile-nav-button"
+                variant="tonal"
+                icon="mdi-menu"
+              />
+            </template>
+
+            <v-list class="language-list" density="comfortable">
+              <v-list-item
+                v-for="item in navItems"
+                :key="item.to"
+                :to="item.to"
+              >
+                <template #prepend>
+                  <v-icon :icon="item.icon" />
+                </template>
+
+                <v-list-item-title>
+                  {{ t(item.labelKey) }}
+                </v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+
           <v-btn
             class="beta-button"
             color="primary"
@@ -84,6 +123,12 @@ type LocaleOption = {
   flag: string
 }
 
+type NavItem = {
+  to: string
+  labelKey: string
+  icon: string
+}
+
 const { t, locale } = useI18n()
 
 const fallbackLocale: LocaleOption = {
@@ -102,6 +147,29 @@ const locales: LocaleOption[] = [
   { code: 'it', name: 'Italiano', flag: '🇮🇹' },
 ]
 
+const navItems: NavItem[] = [
+  {
+    to: '/info',
+    labelKey: 'nav.info',
+    icon: 'mdi-information-outline',
+  },
+  {
+    to: '/roadmap',
+    labelKey: 'nav.roadmap',
+    icon: 'mdi-map-clock',
+  },
+  {
+    to: '/qa',
+    labelKey: 'nav.qa',
+    icon: 'mdi-help-circle-outline',
+  },
+  {
+    to: '/donate',
+    labelKey: 'nav.donate',
+    icon: 'mdi-heart',
+  },
+]
+
 const currentLocale = computed<LocaleOption>(() => {
   return locales.find((item) => item.code === locale.value) ?? fallbackLocale
 })
@@ -115,9 +183,15 @@ function setLocale(code: LocaleCode): void {
 <style scoped>
 :global(html, body, #app) {
   width: 100%;
-  height: 100%;
   min-height: 100%;
   margin: 0;
+}
+
+:global(html) {
+  overflow: hidden;
+}
+
+:global(body) {
   overflow: hidden;
 }
 
@@ -139,8 +213,9 @@ function setLocale(code: LocaleCode): void {
 }
 
 .app-main {
-  height: calc(100vh);
-  overflow: hidden;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .app-bar {
@@ -209,10 +284,54 @@ function setLocale(code: LocaleCode): void {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-right: 12px;
+}
+
+.nav-button {
+  color: #cbd5e1 !important;
+  font-weight: 850;
+  text-transform: none;
+}
+
+.nav-button:hover {
+  color: #ffffff !important;
+}
+
+.mobile-nav-button {
+  display: none;
+  margin-right: 10px;
+}
+
+@media (max-width: 960px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav-button {
+    display: inline-flex;
+  }
+}
+
 @media (max-width: 640px) {
+  .brand-title {
+    display: none;
+  }
+
   .beta-button {
     min-width: 44px;
     padding-inline: 12px;
+  }
+
+  .beta-button :deep(.v-btn__prepend) {
+    margin-inline-end: 0;
+  }
+
+  .beta-button :deep(.v-btn__content) {
+    display: none;
   }
 
   .language-code {
