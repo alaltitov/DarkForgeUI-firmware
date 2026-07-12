@@ -6,7 +6,7 @@ import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify'
 import i18n from './plugins/i18n'
-import yandexMetrika from 'yandex-metrika-vue3'
+import { yandexMetrika } from 'yandex-metrika-vue3'
 
 import '@mdi/font/css/materialdesignicons.css'
 import 'vuetify/styles'
