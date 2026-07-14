@@ -3,12 +3,12 @@
 **DarkForge UI** is a modern firmware for devices based on **ESP32-S3** and **ESP32-P4** microcontrollers.
 
 <p align="center">
- <img width="200px" src="/doc/images/1.jpg">
- <img width="200px" src="/doc/images/2.jpg">
- <img width="200px" src="/doc/images/3.jpg">
- <img width="200px" src="/doc/images/4.jpg">
- <img width="200px" src="/doc/images/5.jpg">
- <img width="200px" src="/doc/images/6.jpg">
+ <img width="200px" src="public/docs/images/1.jpg">
+ <img width="200px" src="public/docs/images/2.jpg">
+ <img width="200px" src="public/docs/images/3.jpg">
+ <img width="200px" src="public/docs/images/4.jpg">
+ <img width="200px" src="public/docs/images/5.jpg">
+ <img width="200px" src="public/docs/images/6.jpg">
 </p>
 
 
