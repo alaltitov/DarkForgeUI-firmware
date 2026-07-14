@@ -17,7 +17,7 @@
             item-value="value"
             :item-props="getDeviceItemProps"
             :label="t('flasher.device.select')"
-            :disabled="isBusy"
+            :disabled="isBusy || isMonitoring"
             hide-details
           />
 
@@ -28,14 +28,14 @@
 
           <v-radio-group
             v-model="selectedFlashMode"
-            :disabled="isBusy || !selectedDevice || selectedDevice.disabled"
+            :disabled="isBusy || isMonitoring || !selectedDevice || selectedDevice.disabled"
             hide-details
             class="mode-radio-group"
           >
             <v-card
               class="mode-card"
               :class="{ active: selectedFlashMode === 'update' }"
-              @click="!isBusy && selectedDevice && !selectedDevice.disabled && (selectedFlashMode = 'update')"
+              @click="!isBusy && !isMonitoring && selectedDevice && !selectedDevice.disabled && (selectedFlashMode = 'update')"
             >
               <div class="mode-content">
                 <v-radio value="update" color="primary" />
@@ -49,7 +49,7 @@
             <v-card
               class="mode-card mode-card-full"
               :class="{ active: selectedFlashMode === 'full' }"
-              @click="!isBusy && selectedDevice && !selectedDevice.disabled && (selectedFlashMode = 'full')"
+              @click="!isBusy && !isMonitoring && selectedDevice && !selectedDevice.disabled && (selectedFlashMode = 'full')"
             >
               <div class="mode-content">
                 <v-radio value="full" color="primary" />
@@ -80,7 +80,7 @@
               color="primary"
               size="large"
               block
-              :disabled="isBusy || !selectedDevice || selectedDevice.disabled"
+              :disabled="isBusy || isMonitoring || !selectedDevice || selectedDevice.disabled"
               :loading="isBusy && ['connecting', 'loadingManifest', 'downloadingFiles', 'flashing'].includes(uiState)"
               prepend-icon="mdi-flash"
               @click="connectAndFlash(selectedFlashMode)"
@@ -97,12 +97,25 @@
               size="large"
               block
               variant="tonal"
-              :disabled="isBusy || !selectedDevice || selectedDevice.disabled"
+              :disabled="isBusy || isMonitoring || !selectedDevice || selectedDevice.disabled"
               :loading="isBusy && uiState === 'erasing'"
               prepend-icon="mdi-delete-alert"
               @click="eraseDeviceFlash"
             >
               {{ t('flasher.actions.erase') }}
+            </v-btn>
+
+            <v-btn
+              :color="isMonitoring ? 'warning' : 'secondary'"
+              size="large"
+              block
+              :variant="isMonitoring ? 'flat' : 'tonal'"
+              :disabled="isBusy && !isMonitoring"
+              :loading="uiState === 'connecting' && isMonitoring"
+              :prepend-icon="isMonitoring ? 'mdi-stop' : 'mdi-console'"
+              @click="monitorLogs"
+            >
+              {{ isMonitoring ? 'Stop monitor' : 'Monitor logs' }}
             </v-btn>
           </div>
         </v-card>
@@ -144,8 +157,9 @@
                 v-for="(line, index) in logLines"
                 :key="index"
                 class="log-entry"
+                :class="`log-${line.level}`"
               >
-                {{ line }}
+                {{ line.text }}
               </div>
             </div>
           </div>
@@ -224,6 +238,7 @@ type UiState =
   | 'flashing'
   | 'erasing'
   | 'resetting'
+  | 'monitoring'
   | 'success'
   | 'error'
 
@@ -235,15 +250,46 @@ type DeviceSelectItem = {
   disabled: boolean
 }
 
+type LogLevel = 'info' | 'warn' | 'error' | 'system' | 'default'
+
+type LogLine = {
+  text: string
+  level: LogLevel
+}
+
+type WebSerialPort = {
+  open: (options: { baudRate: number }) => Promise<void>
+  close: () => Promise<void>
+  readable: ReadableStream<Uint8Array> | null
+  writable?: WritableStream<Uint8Array> | null
+  setSignals?: (signals: {
+    dataTerminalReady?: boolean
+    requestToSend?: boolean
+    break?: boolean
+  }) => Promise<void>
+}
+
+type WebSerialNavigator = Navigator & {
+  serial?: {
+    requestPort: () => Promise<WebSerialPort>
+  }
+}
+
 const { t } = useI18n()
 
 const isBusy = ref(false)
 const progress = ref(0)
 const currentFileName = ref('')
-const logLines = ref<string[]>([])
+const logLines = ref<LogLine[]>([])
 const uiState = ref<UiState>('idle')
 const logBoxRef = ref<HTMLElement | null>(null)
 const selectedFlashMode = ref<FlashMode>('update')
+
+const isMonitoring = ref(false)
+const monitorPort = ref<WebSerialPort | null>(null)
+const monitorReader = ref<ReadableStreamDefaultReader<Uint8Array> | null>(null)
+const monitorAbort = ref(false)
+const monitorBaudrate = 115200
 
 const selectedDeviceId = ref(
   devices.find((device) => !device.disabled)?.id ?? devices[0]?.id ?? '',
@@ -282,6 +328,8 @@ const statusText = computed(() => {
       return t('flasher.status.erasing')
     case 'resetting':
       return t('flasher.status.resetting')
+    case 'monitoring':
+      return 'Serial monitor active'
     case 'success':
       return t('flasher.status.success')
     case 'error':
@@ -300,7 +348,16 @@ function getDeviceItemProps(item: DeviceSelectItem) {
 function stateClass(state: UiState): string {
   if (state === 'success') return 'is-success'
   if (state === 'error') return 'is-error'
-  if (state === 'flashing' || state === 'erasing' || state === 'connecting') return 'is-active'
+
+  if (
+    state === 'flashing' ||
+    state === 'erasing' ||
+    state === 'connecting' ||
+    state === 'monitoring'
+  ) {
+    return 'is-active'
+  }
+
   return ''
 }
 
@@ -333,8 +390,74 @@ async function scrollLogToBottom(): Promise<void> {
   }
 }
 
+function detectLogLevel(message: string): LogLevel {
+  const trimmed = message.trim()
+
+  /*
+   * ESP-IDF common formats:
+   *
+   * I (1234) tag: message
+   * W (1234) tag: message
+   * E (1234) tag: message
+   */
+  if (/^(I|\[I\])\s/.test(trimmed)) {
+    return 'info'
+  }
+
+  if (/^(W|\[W\])\s/.test(trimmed)) {
+    return 'warn'
+  }
+
+  if (/^(E|\[E\])\s/.test(trimmed)) {
+    return 'error'
+  }
+
+  /*
+   * Browser / flasher / monitor system messages.
+   */
+  if (
+    trimmed.startsWith('Monitor:') ||
+    trimmed.startsWith('Tip:') ||
+    trimmed.startsWith('Serial monitor') ||
+    trimmed.startsWith('Requesting') ||
+    trimmed.startsWith('Connected') ||
+    trimmed.startsWith('Disconnecting') ||
+    trimmed.startsWith('Download:') ||
+    trimmed.startsWith('Mode:') ||
+    trimmed.startsWith('Starting') ||
+    trimmed.startsWith('Starting writeFlash') ||
+    trimmed.startsWith('eraseAll=') ||
+    trimmed.startsWith('mode=') ||
+    trimmed.includes('writeFlash') ||
+    trimmed.includes('Flash memory') ||
+    trimmed.includes('Firmware') ||
+    trimmed.includes('Device') ||
+    trimmed.includes('port') ||
+    trimmed.includes('baud')
+  ) {
+    return 'system'
+  }
+
+  /*
+   * Extra safety for textual errors from browser / esptool.
+   */
+  if (
+    trimmed.toLowerCase().includes('error') ||
+    trimmed.toLowerCase().includes('failed') ||
+    trimmed.toLowerCase().includes('exception')
+  ) {
+    return 'error'
+  }
+
+  return 'default'
+}
+
 function appendLog(message: string): void {
-  logLines.value.push(message)
+  logLines.value.push({
+    text: message,
+    level: detectLogLevel(message),
+  })
+
   console.log(message)
   void scrollLogToBottom()
 }
@@ -422,6 +545,189 @@ async function hardResetDevice(): Promise<void> {
 
   const resetStrategy = new CustomReset(transport, 'D0|R1|W200|R0|W1000')
   await resetStrategy.reset()
+}
+
+async function sleep(ms: number): Promise<void> {
+  await new Promise((resolve) => setTimeout(resolve, ms))
+}
+
+function appendMonitorText(text: string): void {
+  const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n')
+  const lines = normalized.split('\n')
+
+  for (const line of lines) {
+    if (line.length > 0) {
+      appendLog(line)
+    }
+  }
+}
+
+async function resetMonitorTarget(port: WebSerialPort): Promise<void> {
+  if (!port.setSignals) {
+    appendLog('Monitor: setSignals() is not supported for this serial port.')
+    return
+  }
+
+  appendLog('Monitor: resetting device...')
+
+  /*
+   * Typical ESP32 auto-reset wiring:
+   *
+   * RTS controls EN/RESET.
+   * DTR controls GPIO0/BOOT.
+   *
+   * For normal boot:
+   * - keep GPIO0 released
+   * - pulse EN reset
+   */
+  await port.setSignals({
+    dataTerminalReady: false,
+    requestToSend: true,
+  })
+
+  await sleep(100)
+
+  await port.setSignals({
+    dataTerminalReady: false,
+    requestToSend: false,
+  })
+
+  await sleep(300)
+}
+
+async function stopMonitorLogs(): Promise<void> {
+  monitorAbort.value = true
+
+  if (monitorReader.value) {
+    try {
+      await monitorReader.value.cancel()
+    } catch {
+      // Ignore reader cancel errors.
+    }
+
+    monitorReader.value = null
+  }
+
+  if (monitorPort.value) {
+    try {
+      await monitorPort.value.close()
+      appendLog('Monitor: serial port closed.')
+    } catch {
+      // Ignore port close errors.
+    }
+
+    monitorPort.value = null
+  }
+
+  isMonitoring.value = false
+
+  if (uiState.value === 'monitoring') {
+    uiState.value = 'idle'
+  }
+}
+
+async function readMonitorLogs(port: WebSerialPort): Promise<void> {
+  if (!port.readable) {
+    throw new Error('Serial port is not readable.')
+  }
+
+  const decoder = new TextDecoder()
+  const reader = port.readable.getReader()
+
+  monitorReader.value = reader
+
+  try {
+    while (!monitorAbort.value) {
+      const { value, done } = await reader.read()
+
+      if (done) {
+        break
+      }
+
+      if (value && value.length > 0) {
+        appendMonitorText(decoder.decode(value, { stream: true }))
+      }
+    }
+  } finally {
+    try {
+      reader.releaseLock()
+    } catch {
+      // Ignore release errors.
+    }
+
+    if (monitorReader.value === reader) {
+      monitorReader.value = null
+    }
+  }
+}
+
+async function monitorLogs(): Promise<void> {
+  if (isMonitoring.value) {
+    appendLog('Monitor: stopping...')
+    await stopMonitorLogs()
+    return
+  }
+
+  const nav = navigator as WebSerialNavigator
+
+  if (!nav.serial) {
+    uiState.value = 'error'
+    appendLog(`${t('flasher.log.error')} ${t('flasher.errors.webSerial')}`)
+    return
+  }
+
+  try {
+    isBusy.value = true
+    isMonitoring.value = true
+    monitorAbort.value = false
+    progress.value = 0
+    currentFileName.value = ''
+    logLines.value = []
+    uiState.value = 'connecting'
+
+    appendLog('Monitor: requesting serial port access...')
+
+    const port = await nav.serial.requestPort()
+
+    monitorPort.value = port
+
+    appendLog(`Monitor: opening serial port at ${monitorBaudrate} baud...`)
+
+    await port.open({
+      baudRate: monitorBaudrate,
+    })
+
+    appendLog('Monitor: serial port opened.')
+
+    uiState.value = 'monitoring'
+    isBusy.value = false
+
+    const readPromise = readMonitorLogs(port).catch((error: unknown) => {
+      const message = error instanceof Error ? error.message : String(error)
+      appendLog(`Monitor read error: ${message}`)
+    })
+
+    /*
+     * Important:
+     * Start reading first, then reset the target.
+     * This gives the best chance to catch boot logs from the beginning.
+     */
+    await resetMonitorTarget(port)
+
+    await readPromise
+  } catch (error: unknown) {
+    const message = error instanceof Error ? error.message : String(error)
+
+    uiState.value = 'error'
+    appendLog(`${t('flasher.log.error')} ${message}`)
+    console.error(error)
+  } finally {
+    isBusy.value = false
+
+    if (isMonitoring.value) {
+      await stopMonitorLogs()
+    }
+  }
 }
 
 async function eraseDeviceFlash(): Promise<void> {
@@ -561,6 +867,7 @@ async function connectAndFlash(mode: FlashMode): Promise<void> {
 
     uiState.value = 'success'
     appendLog(t('flasher.log.booted'))
+    appendLog('Tip: click "Monitor logs" to reboot the device and capture serial logs.')
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : String(error)
 
@@ -796,6 +1103,8 @@ async function connectAndFlash(mode: FlashMode): Promise<void> {
 }
 
 .log-entry {
+  position: relative;
+  padding-left: 12px;
   margin-bottom: 8px;
   color: #d6dee7;
   font-family: "JetBrains Mono", "Fira Code", monospace;
@@ -803,6 +1112,61 @@ async function connectAndFlash(mode: FlashMode): Promise<void> {
   line-height: 1.65;
   white-space: pre-wrap;
   word-break: break-word;
+}
+
+.log-entry::before {
+  position: absolute;
+  top: 0.62em;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  content: '';
+  border-radius: 999px;
+  background: rgba(214, 222, 231, 0.45);
+}
+
+.log-entry.log-info {
+  color: #86efac;
+}
+
+.log-entry.log-warn {
+  color: #fde68a;
+}
+
+.log-entry.log-error {
+  color: #fca5a5;
+}
+
+.log-entry.log-system {
+  color: #7dd3fc;
+}
+
+.log-entry.log-default {
+  color: #d6dee7;
+}
+
+.log-entry.log-info::before {
+  background: #22c55e;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.45);
+}
+
+.log-entry.log-warn::before {
+  background: #f59e0b;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.45);
+}
+
+.log-entry.log-error::before {
+  background: #ef4444;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.45);
+}
+
+.log-entry.log-system::before {
+  background: #38bdf8;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.45);
+}
+
+.log-entry.log-default::before {
+  background: rgba(214, 222, 231, 0.45);
 }
 
 .log-entry:last-child {
