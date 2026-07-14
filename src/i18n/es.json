@@ -218,6 +218,22 @@
       "binary": "Error al cargar archivo binario:",
       "webSerial": "Web Serial API no es compatible con este navegador. Utilice Chrome o Microsoft Edge.",
       "eraseUnsupported": "La versión actual de esptool-js no admite eraseFlash()."
+    },
+    "monitor": {
+      "start": "Monitorizar logs",
+      "stop": "Detener monitor",
+      "active": "Monitor serie activo",
+      "requestPort": "Monitor: solicitando acceso al puerto serie...",
+      "opening": "Monitor: abriendo puerto serie a {baud} baudios...",
+      "opened": "Monitor: puerto serie abierto.",
+      "stopping": "Monitor: deteniendo...",
+      "closed": "Monitor: puerto serie cerrado.",
+      "resetting": "Monitor: reiniciando dispositivo...",
+      "setSignalsUnsupported": "Monitor: setSignals() no es compatible con este puerto serie.",
+      "readError": "Error de lectura del monitor:",
+      "portLost": "Monitor: el puerto serie fue desconectado o tomado por otra aplicación.",
+      "notReadable": "El puerto serie no es legible.",
+      "tipAfterFlash": "Consejo: haga clic en «Monitorizar logs» para reiniciar el dispositivo y capturar logs serie."
     }
   },
   "donate": {

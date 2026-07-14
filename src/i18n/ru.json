@@ -218,6 +218,22 @@
       "binary": "Не удалось загрузить бинарный файл:",
       "webSerial": "Web Serial API не поддерживается этим браузером. Используйте Chrome или Microsoft Edge.",
       "eraseUnsupported": "Текущая версия esptool-js не поддерживает eraseFlash()."
+    },
+    "monitor": {
+      "start": "Монитор логов",
+      "stop": "Остановить монитор",
+      "active": "Serial monitor активен",
+      "requestPort": "Monitor: запрос доступа к serial-порту...",
+      "opening": "Monitor: открытие serial-порта на скорости {baud} бод...",
+      "opened": "Monitor: serial-порт открыт.",
+      "stopping": "Monitor: остановка...",
+      "closed": "Monitor: serial-порт закрыт.",
+      "resetting": "Monitor: перезагрузка устройства...",
+      "setSignalsUnsupported": "Monitor: setSignals() не поддерживается для этого serial-порта.",
+      "readError": "Ошибка чтения monitor:",
+      "portLost": "Monitor: serial-порт был отключён или перехвачен другим приложением.",
+      "notReadable": "Serial-порт недоступен для чтения.",
+      "tipAfterFlash": "Подсказка: нажмите «Монитор логов», чтобы перезагрузить устройство и поймать serial-логи."
     }
   },
   "donate": {

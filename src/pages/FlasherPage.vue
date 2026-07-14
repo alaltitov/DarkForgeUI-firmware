@@ -115,7 +115,7 @@
               :prepend-icon="isMonitoring ? 'mdi-stop' : 'mdi-console'"
               @click="monitorLogs"
             >
-              {{ isMonitoring ? 'Stop monitor' : 'Monitor logs' }}
+              {{ isMonitoring ? t('flasher.monitor.stop') : t('flasher.monitor.start') }}
             </v-btn>
           </div>
         </v-card>
@@ -290,6 +290,7 @@ const monitorPort = ref<WebSerialPort | null>(null)
 const monitorReader = ref<ReadableStreamDefaultReader<Uint8Array> | null>(null)
 const monitorAbort = ref(false)
 const monitorBaudrate = 115200
+const monitorLineBuffer = ref('')
 
 const selectedDeviceId = ref(
   devices.find((device) => !device.disabled)?.id ?? devices[0]?.id ?? '',
@@ -329,7 +330,7 @@ const statusText = computed(() => {
     case 'resetting':
       return t('flasher.status.resetting')
     case 'monitoring':
-      return 'Serial monitor active'
+      return t('flasher.monitor.active')
     case 'success':
       return t('flasher.status.success')
     case 'error':
@@ -399,22 +400,25 @@ function detectLogLevel(message: string): LogLevel {
    * I (1234) tag: message
    * W (1234) tag: message
    * E (1234) tag: message
+   * D (1234) tag: message
+   * V (1234) tag: message
    */
-  if (/^(I|\[I\])\s/.test(trimmed)) {
+  if (/^(I|\[I\])\s*(\(\d+\))?\s/.test(trimmed)) {
     return 'info'
   }
 
-  if (/^(W|\[W\])\s/.test(trimmed)) {
+  if (/^(W|\[W\])\s*(\(\d+\))?\s/.test(trimmed)) {
     return 'warn'
   }
 
-  if (/^(E|\[E\])\s/.test(trimmed)) {
+  if (/^(E|\[E\])\s*(\(\d+\))?\s/.test(trimmed)) {
     return 'error'
   }
 
-  /*
-   * Browser / flasher / monitor system messages.
-   */
+  if (/^(D|V|\[D\]|\[V\])\s*(\(\d+\))?\s/.test(trimmed)) {
+    return 'default'
+  }
+
   if (
     trimmed.startsWith('Monitor:') ||
     trimmed.startsWith('Tip:') ||
@@ -425,7 +429,6 @@ function detectLogLevel(message: string): LogLevel {
     trimmed.startsWith('Download:') ||
     trimmed.startsWith('Mode:') ||
     trimmed.startsWith('Starting') ||
-    trimmed.startsWith('Starting writeFlash') ||
     trimmed.startsWith('eraseAll=') ||
     trimmed.startsWith('mode=') ||
     trimmed.includes('writeFlash') ||
@@ -438,13 +441,15 @@ function detectLogLevel(message: string): LogLevel {
     return 'system'
   }
 
-  /*
-   * Extra safety for textual errors from browser / esptool.
-   */
+  const lower = trimmed.toLowerCase()
+
   if (
-    trimmed.toLowerCase().includes('error') ||
-    trimmed.toLowerCase().includes('failed') ||
-    trimmed.toLowerCase().includes('exception')
+    lower.includes('error') ||
+    lower.includes('failed') ||
+    lower.includes('exception') ||
+    lower.includes('disconnected') ||
+    lower.includes('networkerror') ||
+    lower.includes('break')
   ) {
     return 'error'
   }
@@ -553,7 +558,16 @@ async function sleep(ms: number): Promise<void> {
 
 function appendMonitorText(text: string): void {
   const normalized = text.replace(/\r\n/g, '\n').replace(/\r/g, '\n')
-  const lines = normalized.split('\n')
+
+  monitorLineBuffer.value += normalized
+
+  const lines = monitorLineBuffer.value.split('\n')
+
+  /*
+   * Last item may be an incomplete line.
+   * Keep it in buffer until the next chunk arrives.
+   */
+  monitorLineBuffer.value = lines.pop() ?? ''
 
   for (const line of lines) {
     if (line.length > 0) {
@@ -562,24 +576,24 @@ function appendMonitorText(text: string): void {
   }
 }
 
+function flushMonitorLineBuffer(): void {
+  const line = monitorLineBuffer.value
+
+  monitorLineBuffer.value = ''
+
+  if (line.trim().length > 0) {
+    appendLog(line)
+  }
+}
+
 async function resetMonitorTarget(port: WebSerialPort): Promise<void> {
   if (!port.setSignals) {
-    appendLog('Monitor: setSignals() is not supported for this serial port.')
+    appendLog(t('flasher.monitor.setSignalsUnsupported'))
     return
   }
 
-  appendLog('Monitor: resetting device...')
+  appendLog(t('flasher.monitor.resetting'))
 
-  /*
-   * Typical ESP32 auto-reset wiring:
-   *
-   * RTS controls EN/RESET.
-   * DTR controls GPIO0/BOOT.
-   *
-   * For normal boot:
-   * - keep GPIO0 released
-   * - pulse EN reset
-   */
   await port.setSignals({
     dataTerminalReady: false,
     requestToSend: true,
@@ -602,18 +616,20 @@ async function stopMonitorLogs(): Promise<void> {
     try {
       await monitorReader.value.cancel()
     } catch {
-      // Ignore reader cancel errors.
+      // Reader may already be closed if the port was disconnected or taken.
     }
 
     monitorReader.value = null
   }
 
+  flushMonitorLineBuffer()
+
   if (monitorPort.value) {
     try {
       await monitorPort.value.close()
-      appendLog('Monitor: serial port closed.')
+      appendLog(t('flasher.monitor.closed'))
     } catch {
-      // Ignore port close errors.
+      appendLog(t('flasher.monitor.portLost'))
     }
 
     monitorPort.value = null
@@ -628,7 +644,7 @@ async function stopMonitorLogs(): Promise<void> {
 
 async function readMonitorLogs(port: WebSerialPort): Promise<void> {
   if (!port.readable) {
-    throw new Error('Serial port is not readable.')
+    throw new Error(t('flasher.monitor.notReadable'))
   }
 
   const decoder = new TextDecoder()
@@ -638,7 +654,21 @@ async function readMonitorLogs(port: WebSerialPort): Promise<void> {
 
   try {
     while (!monitorAbort.value) {
-      const { value, done } = await reader.read()
+      let result: ReadableStreamReadResult<Uint8Array>
+
+      try {
+        result = await reader.read()
+      } catch (error: unknown) {
+        if (!monitorAbort.value) {
+          const message = error instanceof Error ? error.message : String(error)
+          appendLog(`${t('flasher.monitor.readError')} ${message}`)
+          appendLog(t('flasher.monitor.portLost'))
+        }
+
+        break
+      }
+
+      const { value, done } = result
 
       if (done) {
         break
@@ -649,6 +679,8 @@ async function readMonitorLogs(port: WebSerialPort): Promise<void> {
       }
     }
   } finally {
+    flushMonitorLineBuffer()
+
     try {
       reader.releaseLock()
     } catch {
@@ -663,7 +695,7 @@ async function readMonitorLogs(port: WebSerialPort): Promise<void> {
 
 async function monitorLogs(): Promise<void> {
   if (isMonitoring.value) {
-    appendLog('Monitor: stopping...')
+    appendLog(t('flasher.monitor.stopping'))
     await stopMonitorLogs()
     return
   }
@@ -680,32 +712,30 @@ async function monitorLogs(): Promise<void> {
     isBusy.value = true
     isMonitoring.value = true
     monitorAbort.value = false
+    monitorLineBuffer.value = ''
     progress.value = 0
     currentFileName.value = ''
     logLines.value = []
     uiState.value = 'connecting'
 
-    appendLog('Monitor: requesting serial port access...')
+    appendLog(t('flasher.monitor.requestPort'))
 
     const port = await nav.serial.requestPort()
 
     monitorPort.value = port
 
-    appendLog(`Monitor: opening serial port at ${monitorBaudrate} baud...`)
+    appendLog(t('flasher.monitor.opening', { baud: monitorBaudrate }))
 
     await port.open({
       baudRate: monitorBaudrate,
     })
 
-    appendLog('Monitor: serial port opened.')
+    appendLog(t('flasher.monitor.opened'))
 
     uiState.value = 'monitoring'
     isBusy.value = false
 
-    const readPromise = readMonitorLogs(port).catch((error: unknown) => {
-      const message = error instanceof Error ? error.message : String(error)
-      appendLog(`Monitor read error: ${message}`)
-    })
+    const readPromise = readMonitorLogs(port)
 
     /*
      * Important:
@@ -718,9 +748,11 @@ async function monitorLogs(): Promise<void> {
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : String(error)
 
-    uiState.value = 'error'
-    appendLog(`${t('flasher.log.error')} ${message}`)
-    console.error(error)
+    if (!monitorAbort.value) {
+      uiState.value = 'error'
+      appendLog(`${t('flasher.log.error')} ${message}`)
+      console.error(error)
+    }
   } finally {
     isBusy.value = false
 
@@ -867,7 +899,7 @@ async function connectAndFlash(mode: FlashMode): Promise<void> {
 
     uiState.value = 'success'
     appendLog(t('flasher.log.booted'))
-    appendLog('Tip: click "Monitor logs" to reboot the device and capture serial logs.')
+    appendLog(t('flasher.monitor.tipAfterFlash'))
   } catch (error: unknown) {
     const message = error instanceof Error ? error.message : String(error)
 
