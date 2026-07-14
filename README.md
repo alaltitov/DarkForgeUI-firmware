@@ -2,6 +2,16 @@
 
 **DarkForge UI** is a modern firmware for devices based on **ESP32-S3** and **ESP32-P4** microcontrollers.
 
+<p align="center">
+ <img width="200px" src="/doc/images/1.jpg">
+ <img width="200px" src="/doc/images/2.jpg">
+ <img width="200px" src="/doc/images/3.jpg">
+ <img width="200px" src="/doc/images/4.jpg">
+ <img width="200px" src="/doc/images/5.jpg">
+ <img width="200px" src="/doc/images/6.jpg">
+</p>
+
+
 It brings the **Home Assistant** ecosystem together with a smooth, intuitive touch interface. Customize your screens with dozens of functional widgets and manage your home with a single touch.
 
 Get started in minutes — the firmware can be installed directly from your browser.
