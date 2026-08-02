@@ -3,7 +3,7 @@
     "synchronization": "Sinhronizacija ...",
     "connection_api": "Povezovanje z API ...",
     "title": "DarkForge UI",
-    "subtitle": "Vsakemu pikslu vdihujemo življenje",
+    "subtitle": "Vdihujemo življenje vsem pikslom",
     "starting": "Zaganjanje uporabniškega vmesnika ..."
   },
   "hass": {
@@ -129,7 +129,7 @@
     "color_of_elements": "Barva elementov",
     "times_format": "Format AM/PM",
     "timezone": "Časovni pas",
-    "backlight": "Svetlost osvetlitve ozadja",
+    "backlight": "Jakost osvetlitve ozadja",
     "sleep_timeout": "Časovna omejitev spanja"
   },
   "sleep_time": {
@@ -250,8 +250,8 @@
   "light": {
     "name": "Luč",
     "state": {
-      "on": "Vklopljeno",
-      "off": "Izklopljeno"
+      "on": "Vklopljena",
+      "off": "Izklopljena"
     }
   },
   "media_player": {
@@ -259,10 +259,10 @@
     "no_track": "Ni skladbe",
     "unknown_artist": "Neznan izvajalec",
     "state": {
-      "off": "Izklopljeno",
-      "on": "Vklopljeno",
+      "off": "Izklopljen",
+      "on": "Vklopljen",
       "idle": "Nedejaven",
-      "playing": "Predvaja",
+      "playing": "Predvajanje",
       "paused": "Premor",
       "standby": "Pripravljenost",
       "buffering": "Medpomnjenje"
@@ -283,8 +283,8 @@
       "docked": "Na postaji",
       "error": "Napaka",
       "idle": "Nedejaven",
-      "off": "Izklopljeno",
-      "on": "Vklopljeno",
+      "off": "Izklopljen",
+      "on": "Vklopljen",
       "paused": "Premor",
       "returning": "Vračanje na postajo"
     }
@@ -299,17 +299,17 @@
       "unlocked": "Odklenjena",
       "locking": "Zaklepanje",
       "unlocking": "Odklepanje",
-      "open": "Odprto",
+      "open": "Odprta",
       "opening": "Odpiranje"
     }
   },
   "binary_sensor": {
     "name": "Binarni senzor",
     "state": {
-      "on": "Vklopljeno",
-      "off": "Izklopljeno",
+      "on": "Vklopljen",
+      "off": "Izklopljen",
       "low": "Nizka",
-      "normal": "Normalno",
+      "normal": "Normalna",
       "charging": "Polnjenje",
       "not_charging": "Ne polni",
       "co_detected": "Zaznan ogljikov monoksid",
@@ -345,17 +345,17 @@
       "smoke_detected": "Zaznan dim",
       "sound_detected": "Zaznan zvok",
       "tampering": "Poseganje",
-      "update_available": "Na voljo posodobitev",
+      "update_available": "Na voljo je posodobitev",
       "up_to_date": "Posodobljeno",
       "vibration_detected": "Zaznano tresenje"
     }
   },
   "cover": {
-    "name": "Pokrov",
+    "name": "Panoramska zavesa",
     "state": {
-      "closed": "Zaprto",
+      "closed": "Zaprta",
       "closing": "Zapiranje",
-      "open": "Odprto",
+      "open": "Odprta",
       "opening": "Odpiranje",
       "stopped": "Ustavljeno"
     }
@@ -381,8 +381,8 @@
   "fan": {
     "name": "Ventilator",
     "state": {
-      "on": "Vklopljeno",
-      "off": "Izklopljeno"
+      "on": "Vklopljen",
+      "off": "Izklopljen"
     }
   },
   "input_boolean": {
@@ -427,8 +427,8 @@
   "humidifier": {
     "name": "Vlažilec",
     "state": {
-      "off": "Izklopljeno",
-      "on": "Vklopljeno"
+      "off": "Izklopljen",
+      "on": "Vklopljen"
     },
     "action": {
       "drying": "Sušenje",
@@ -475,9 +475,9 @@
         "auto": "Samodejno",
         "diffuse": "Razpršeno",
         "focus": "Osredotočeno",
-        "high": "Visoka",
-        "low": "Nizka",
-        "medium": "Srednja",
+        "high": "Visoko",
+        "low": "Nizko",
+        "medium": "Srednje",
         "middle": "Sredina",
         "off": "Izklopljeno",
         "on": "Vklopljeno",
@@ -997,7 +997,7 @@
           "rssi": "RSSI",
           "channel": "Kanal",
           "security": "Varnost",
-          "total": "skupaj"
+          "total": "Skupaj"
         },
         "network": {
           "wifi": "Wi-Fi",
