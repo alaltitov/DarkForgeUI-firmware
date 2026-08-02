@@ -1,0 +1,1104 @@
+{
+  "loading": {
+    "synchronization": "Sincronizzazione...",
+    "connection_api": "Connessione all'API...",
+    "title": "DarkForge UI",
+    "subtitle": "Dare vita a ogni pixel",
+    "starting": "Avvio dell'interfaccia..."
+  },
+  "hass": {
+    "title": "Home Assistant",
+    "connecting": "Connessione a Home Assistant...",
+    "connecting_network": "Attesa connessione di rete",
+    "connecting_wifi": "Connessione al Wi-Fi salvato...",
+    "waiting_config": "Attesa configurazione Home Assistant",
+    "syncing": "Sincronizzazione entità Home Assistant...",
+    "loading_entities": "Caricamento entità",
+    "ready": "Home Assistant pronto",
+    "progress": "%d%%",
+    "entities_progress": "%d%%  ·  %d / %d",
+    "checking": "Controllo connessione...",
+    "cannot_reach": "Impossibile raggiungere Home Assistant. Verificare server e rete",
+    "cannot_reach_with_url": "Impossibile raggiungere Home Assistant.\nVerificare server e rete.\n%s",
+    "initial_sync_complete": "Sincronizzazione iniziale completata"
+  },
+  "ota": {
+    "start": {
+      "primary": "Avvio OTA!",
+      "secondary": "Attendere..."
+    },
+    "end": {
+      "primary": "Aggiornamento completato!",
+      "secondary": "Riavvio..."
+    },
+    "error": {
+      "primary": "ERRORE di aggiornamento!",
+      "secondary": "Riavvio..."
+    },
+    "progress": "Avanzamento firmware %0.1f%%"
+  },
+  "config": {
+    "title": "Configurazione richiesta",
+    "instructions": "Per configurare il pannello:\n\n1. Connettersi alla stessa rete\n2. Aprire un browser web\n3. Navigare all'indirizzo sottostante\n4. Inserire l'URL e il token di Home Assistant",
+    "hint": "Assicurarsi che il dispositivo sia sulla stessa rete",
+    "ip_placeholder": "http://..."
+  },
+  "network": {
+    "status": {
+      "connecting": "Connessione...",
+      "connected": "Connesso",
+      "disconnecting": "Disconnessione...",
+      "disconnected": "Disconnesso",
+      "scanning": "Scansione..."
+    },
+    "wifi": {
+      "title": "Impostazioni WiFi",
+      "scan": "Scansiona",
+      "status": {
+        "no_networks": "Nessuna rete trovata",
+        "found": "Reti trovate",
+        "password_required": "Errore: password richiesta!",
+        "ready": "Pronto",
+        "connecting_saved": "Connessione tramite credenziali Wi-Fi salvate...",
+        "not_connected": "La rete non è connessa",
+        "wrong_password": "Password Wi-Fi errata. Selezionare la rete e riprovare",
+        "auth_failed": "Autenticazione Wi-Fi fallita",
+        "no_ap_found": "Rete Wi-Fi salvata non trovata",
+        "connect_failed": "Connessione Wi-Fi fallita",
+        "open_selected": "Rete aperta selezionata",
+        "enter_password": "Inserire la password e premere Connetti",
+        "connection_timeout": "Timeout di connessione",
+        "connection_failed": "Connessione fallita",
+        "connected": "Connesso",
+        "scanning": "Scansione..."
+      },
+      "popup": {
+        "title": "Connetti a WiFi",
+        "network": "Rete:",
+        "password": "Password:",
+        "password_placeholder": "Inserisci password",
+        "open_network": "Rete aperta — nessuna password richiesta",
+        "connect": "Connetti",
+        "cancel": "Annulla"
+      }
+    }
+  },
+  "license_lock": {
+    "expired": {
+      "title": "Licenza richiesta",
+      "message": "Il periodo di prova è scaduto.\nAttivare una licenza completa per continuare.",
+      "hint": "Aprire l'interfaccia web e andare alla pagina Licenza.\nIl server web rimane disponibile per l'attivazione."
+    },
+    "warning": {
+      "title": "Versione di prova",
+      "message": "Questo dispositivo funziona in modalità di prova.\nÈ richiesta una licenza completa per l'uso regolare.",
+      "hint": "Per ora puoi continuare.\nAprire l'interfaccia web per attivare una licenza."
+    },
+    "button": {
+      "ok": "OK"
+    }
+  },
+  "settings": {
+    "title": "Impostazioni",
+    "language": "Lingua",
+    "theme": {
+      "title": "Tema",
+      "themes": {
+        "light_black": "Nero chiaro",
+        "dark_blue": "Blu scuro",
+        "swamp_green": "Verde palude"
+      },
+      "colors": {
+        "default": "Predefinito",
+        "blue": "Blu",
+        "red": "Rosso",
+        "yellow": "Giallo",
+        "green": "Verde",
+        "orange": "Arancione",
+        "cyan": "Ciano",
+        "purple": "Viola",
+        "dark_blue": "Blu scuro",
+        "mint": "Menta",
+        "gray": "Grigio",
+        "crimson": "Cremisi",
+        "sienna": "Terra di Siena",
+        "magenta": "Magenta",
+        "pink": "Rosa"
+      }
+    },
+    "color_of_elements": "Colore degli elementi",
+    "times_format": "Formato AM/PM",
+    "timezone": "Fuso orario",
+    "backlight": "Luminosità della retroilluminazione",
+    "sleep_timeout": "Timeout di sospensione"
+  },
+  "sleep_time": {
+    "never": "Mai",
+    "minute1": "1 minuto",
+    "minute5": "5 minuti",
+    "minute10": "10 minuti",
+    "minute30": "30 minuti",
+    "hour1": "1 ora",
+    "hour6": "6 ore",
+    "hour12": "12 ore"
+  },
+  "weather": {
+    "title": "Meteo",
+    "forecasts": {
+      "daily": "Giornaliero",
+      "hourly": "Orario"
+    },
+    "attributes": {
+      "humidity": "Umidità",
+      "pressure": "Pressione",
+      "wind": "Velocità del vento",
+      "uv": "Indice UV"
+    },
+    "states": {
+      "clear-night": "Sereno, notte",
+      "cloudy": "Nuvoloso",
+      "exceptional": "Eccezionale",
+      "fog": "Nebbia",
+      "hail": "Grandine",
+      "lightning": "Fulmini",
+      "lightning-rainy": "Fulmini, pioggia",
+      "partlycloudy": "Parzialmente nuvoloso",
+      "pouring": "Diluvio",
+      "rainy": "Pioggia",
+      "snowy": "Neve",
+      "snowy-rainy": "Neve, pioggia",
+      "sunny": "Soleggiato",
+      "windy": "Ventoso",
+      "windy-variant": "Ventoso, nuvoloso"
+    }
+  },
+  "datetime": {
+    "day_of_week": {
+      "monday": "Lunedì",
+      "tuesday": "Martedì",
+      "wednesday": "Mercoledì",
+      "thursday": "Giovedì",
+      "friday": "Venerdì",
+      "saturday": "Sabato",
+      "sunday": "Domenica"
+    },
+    "day_of_week_short": {
+      "monday": "LUN",
+      "tuesday": "MAR",
+      "wednesday": "MER",
+      "thursday": "GIO",
+      "friday": "VEN",
+      "saturday": "SAB",
+      "sunday": "DOM"
+    },
+    "month": {
+      "january": "Gennaio",
+      "february": "Febbraio",
+      "march": "Marzo",
+      "april": "Aprile",
+      "may": "Maggio",
+      "june": "Giugno",
+      "july": "Luglio",
+      "august": "Agosto",
+      "september": "Settembre",
+      "october": "Ottobre",
+      "november": "Novembre",
+      "december": "Dicembre"
+    }
+  },
+  "common": {
+    "buttons": {
+      "ok": "OK",
+      "cancel": "Annulla",
+      "yes": "Sì",
+      "no": "No",
+      "close": "Chiudi",
+      "delete": "Elimina",
+      "save": "Salva",
+      "edit": "Modifica",
+      "add": "Aggiungi",
+      "remove": "Rimuovi",
+      "update": "Aggiorna",
+      "confirm": "Conferma",
+      "back": "Indietro",
+      "next": "Avanti",
+      "submit": "Invia",
+      "retry": "Riprova",
+      "continue": "Continua",
+      "enable": "Attiva",
+      "disable": "Disattiva",
+      "on": "Acceso",
+      "off": "Spento"
+    },
+    "state": {
+      "off": "Spento",
+      "on": "Acceso",
+      "unavailable": "Non disponibile",
+      "unknown": "Sconosciuto",
+      "not_found": "Dispositivo non trovato"
+    }
+  },
+  "battery": {
+    "name": "Batteria",
+    "state": {
+      "charging": "In carica"
+    }
+  },
+  "sensor": {
+    "name": "Sensore"
+  },
+  "light": {
+    "name": "Luce",
+    "state": {
+      "on": "Acceso",
+      "off": "Spento"
+    }
+  },
+  "media_player": {
+    "name": "Riproduttore multimediale",
+    "no_track": "Nessuna traccia",
+    "unknown_artist": "Artista sconosciuto",
+    "state": {
+      "off": "Spento",
+      "on": "Acceso",
+      "idle": "Inattivo",
+      "playing": "In riproduzione",
+      "paused": "In pausa",
+      "standby": "Standby",
+      "buffering": "Bufferizzazione"
+    }
+  },
+  "camera": {
+    "name": "Telecamera",
+    "state": {
+      "idle": "Inattiva",
+      "streaming": "In streaming",
+      "recording": "Registrazione"
+    }
+  },
+  "vacuum": {
+    "name": "Aspirapolvere",
+    "state": {
+      "cleaning": "Pulizia",
+      "docked": "Alla base",
+      "error": "Errore",
+      "idle": "Inattivo",
+      "off": "Spento",
+      "on": "Acceso",
+      "paused": "In pausa",
+      "returning": "Ritorno alla base"
+    }
+  },
+  "lock": {
+    "name": "Serratura",
+    "enter_pass": "Inserisci password",
+    "wrong_pass": "Password errata",
+    "state": {
+      "jammed": "Inceppata",
+      "locked": "Bloccata",
+      "unlocked": "Sbloccata",
+      "locking": "Bloccaggio",
+      "unlocking": "Sbloccaggio",
+      "open": "Aperta",
+      "opening": "Apertura"
+    }
+  },
+  "binary_sensor": {
+    "name": "Sensore binario",
+    "state": {
+      "on": "Acceso",
+      "off": "Spento",
+      "low": "Basso",
+      "normal": "Normale",
+      "charging": "In carica",
+      "not_charging": "Non in carica",
+      "co_detected": "Rilevato monossido di carbonio",
+      "clear": "Chiaro",
+      "cold": "Freddo",
+      "connected": "Connesso",
+      "disconnected": "Disconnesso",
+      "open": "Aperto",
+      "closed": "Chiuso",
+      "gas_detected": "Rilevato gas",
+      "hot": "Caldo",
+      "light_detected": "Rilevata luce",
+      "no_light": "Nessuna luce",
+      "locked": "Bloccato",
+      "unlocked": "Sbloccato",
+      "wet": "Bagnato",
+      "dry": "Asciutto",
+      "detected": "Rilevato",
+      "moving": "In movimento",
+      "stopped": "Fermato",
+      "plugged_in": "Inserito",
+      "unplugged": "Disinserito",
+      "power_detected": "Rilevata alimentazione",
+      "no_power": "Nessuna alimentazione",
+      "home": "Casa",
+      "away": "Via",
+      "problem": "Problema",
+      "ok": "OK",
+      "running": "In esecuzione",
+      "not_running": "Non in esecuzione",
+      "unsafe": "Non sicuro",
+      "safe": "Sicuro",
+      "smoke_detected": "Rilevato fumo",
+      "sound_detected": "Rilevato suono",
+      "tampering": "Manomissione",
+      "update_available": "Aggiornamento disponibile",
+      "up_to_date": "Aggiornato",
+      "vibration_detected": "Rilevata vibrazione"
+    }
+  },
+  "cover": {
+    "name": "Tenda/Tapparella",
+    "state": {
+      "closed": "Chiusa",
+      "closing": "Chiusura",
+      "open": "Aperta",
+      "opening": "Apertura",
+      "stopped": "Fermata"
+    }
+  },
+  "alarm_panel": {
+    "name": "Pannello di allarme",
+    "enter_pass": "Inserisci password",
+    "wrong_pass": "Password errata",
+    "state": {
+      "armed": "Inserito",
+      "armed_away": "Inserito (assente)",
+      "armed_custom_bypass": "Inserito (bypass personalizzato)",
+      "armed_home": "Inserito (casa)",
+      "armed_night": "Inserito (notte)",
+      "armed_vacation": "Inserito (vacanza)",
+      "arming": "Inserimento",
+      "disarmed": "Disinserito",
+      "disarming": "Disinserimento",
+      "pending": "In attesa",
+      "triggered": "Scattato"
+    }
+  },
+  "fan": {
+    "name": "Ventilatore",
+    "state": {
+      "on": "Acceso",
+      "off": "Spento"
+    }
+  },
+  "input_boolean": {
+    "name": "Booleano di ingresso",
+    "state": {
+      "on": "Acceso",
+      "off": "Spento"
+    }
+  },
+  "switch": {
+    "name": "Interruttore",
+    "state": {
+      "on": "Acceso",
+      "off": "Spento"
+    }
+  },
+  "button": {
+    "name": "Pulsante"
+  },
+  "lawn_mower": {
+    "name": "Rasaerba",
+    "state": {
+      "docked": "Agganciato",
+      "error": "Errore",
+      "mowing": "Taglio",
+      "paused": "Pausa",
+      "returning": "Ritorno"
+    }
+  },
+  "water_heater": {
+    "name": "Scaldacqua",
+    "state": {
+      "eco": "Eco",
+      "electric": "Elettrico",
+      "gas": "Gas",
+      "heat_pump": "Pompa di calore",
+      "high_demand": "Alta domanda",
+      "off": "Spento",
+      "performance": "Prestazioni"
+    }
+  },
+  "humidifier": {
+    "name": "Umidificatore",
+    "state": {
+      "off": "Spento",
+      "on": "Acceso"
+    },
+    "action": {
+      "drying": "Asciugatura",
+      "humidifying": "Umidificazione",
+      "idle": "Inattivo",
+      "off": "Spento"
+    },
+    "mode": {
+      "auto": "Automatico",
+      "away": "Assente",
+      "baby": "Baby",
+      "boost": "Boost",
+      "comfort": "Comfort",
+      "eco": "Eco",
+      "home": "Casa",
+      "normal": "Normale",
+      "sleep": "Sonno"
+    }
+  },
+  "climate": {
+    "name": "Climatizzatore",
+    "modes": {
+      "auto": "Auto",
+      "cool": "Raffreddamento",
+      "dry": "Deumidificazione",
+      "fan": "Ventilatore",
+      "heat": "Riscaldamento",
+      "heat_cool": "Riscaldamento/Raffreddamento",
+      "off": "Spento"
+    },
+    "actions": {
+      "cooling": "Raffreddamento",
+      "defrosting": "Sbrinamento",
+      "drying": "Asciugatura",
+      "fan": "Ventilatore",
+      "heating": "Riscaldamento",
+      "idle": "Inattivo",
+      "off": "Spento",
+      "preheating": "Pre-riscaldamento"
+    },
+    "fan_modes": {
+      "name": "Modalità ventilatore",
+      "states": {
+        "auto": "Auto",
+        "diffuse": "Diffuso",
+        "focus": "Concentrato",
+        "high": "Alta",
+        "low": "Bassa",
+        "medium": "Media",
+        "middle": "Media",
+        "off": "Spento",
+        "on": "Acceso",
+        "top": "Massima"
+      }
+    },
+    "swing_modes": {
+      "name": "Modalità oscillazione",
+      "states": {
+        "both": "Entrambe",
+        "horizontal": "Orizzontale",
+        "off": "Spento",
+        "on": "Acceso",
+        "vertical": "Verticale"
+      }
+    },
+    "swing_horizontal_modes": {
+      "name": "Modalità oscillazione orizzontale",
+      "states": {
+        "off": "Spento",
+        "on": "Acceso"
+      }
+    },
+    "presets": {
+      "name": "Preset",
+      "states": {
+        "activity": "Attività",
+        "away": "Assente",
+        "boost": "Boost",
+        "comfort": "Comfort",
+        "eco": "Eco",
+        "home": "Casa",
+        "none": "Nessuno",
+        "sleep": "Sonno"
+      }
+    }
+  },
+  "frontend": {
+    "common": {
+      "buttons": {
+        "ok": "OK",
+        "cancel": "Annulla",
+        "yes": "Sì",
+        "no": "No",
+        "close": "Chiudi",
+        "delete": "Elimina",
+        "save": "Salva",
+        "edit": "Modifica",
+        "add": "Aggiungi",
+        "remove": "Rimuovi",
+        "update": "Aggiorna",
+        "confirm": "Conferma",
+        "back": "Indietro",
+        "next": "Avanti",
+        "done": "Fatto",
+        "submit": "Invia",
+        "retry": "Riprova",
+        "continue": "Continua",
+        "enable": "Attiva",
+        "disable": "Disattiva",
+        "on": "Acceso",
+        "off": "Spento",
+        "reset": "Resetta",
+        "refresh": "Aggiorna",
+        "clear": "Cancella",
+        "copy": "Copia",
+        "activate": "Attiva",
+        "upload": "Carica",
+        "reload": "Ricarica",
+        "save_settings": "Salva impostazioni"
+      },
+      "states": {
+        "loading": "Caricamento",
+        "ready": "Pronto",
+        "unsupported": "Non supportato",
+        "connected": "Connesso",
+        "disconnected": "Disconnesso",
+        "offline": "Non in linea",
+        "failed": "Fallito",
+        "success": "Successo",
+        "updating": "Aggiornamento",
+        "rebooting": "Riavvio",
+        "installed": "Installato",
+        "activated": "Attivato",
+        "trial": "Prova",
+        "trial_expired": "Prova scaduta",
+        "available": "Disponibile",
+        "not_available": "Non disponibile",
+        "mounted": "Montato",
+        "not_mounted": "Non montato",
+        "down": "Non raggiungibile",
+        "unknown": "Sconosciuto"
+      },
+      "labels": {
+        "name": "Nome",
+        "type": "Tipo",
+        "size": "Dimensione",
+        "date": "Data",
+        "actions": "Azioni",
+        "status": "Stato",
+        "progress": "Avanzamento",
+        "selected_file": "File selezionato",
+        "no_file_selected": "Nessun file selezionato",
+        "format": "Formato"
+      },
+      "messages": {
+        "saved": "Salvato",
+        "copied": "Copiato",
+        "failed": "Operazione fallita",
+        "no_data": "Nessun dato disponibile"
+      }
+    },
+    "layout": {
+      "title": "DarkForgeUI",
+      "subtitle": "Pannello di amministrazione",
+      "nav": {
+        "dashboard": "Cruscotto",
+        "storage": "Archivio",
+        "setup": "Configurazione",
+        "firmware": "Firmware",
+        "license": "Licenza",
+        "info": "Informazioni",
+        "logs": "Registri",
+        "setup_wizard": "Procedura guidata"
+      },
+      "dashboard_tabs": {
+        "home": "Home",
+        "dashboards": "Cruscotti"
+      },
+      "page_titles": {
+        "dashboard": "Cruscotto",
+        "storage": "Archivio",
+        "setup": "Configurazione",
+        "firmware": "Firmware",
+        "license": "Licenza",
+        "info": "Informazioni",
+        "logs": "Registri",
+        "hass_panel": "Pannello HASS"
+      }
+    },
+    "setup_wizard": {
+      "title": "Procedura guidata di configurazione iniziale",
+      "step_counter": "Passo {current} / {total}",
+      "steps": {
+        "language": "Lingua",
+        "agreement": "Accordo",
+        "ha": "Home Assistant",
+        "done": "Fatto"
+      },
+      "language": {
+        "title": "Lingua e fuso orario",
+        "description": "Scegli la lingua dell'interfaccia e il fuso orario del dispositivo.",
+        "language_label": "Lingua",
+        "language_placeholder": "Seleziona lingua",
+        "search_language": "Cerca lingua",
+        "no_languages": "Nessuna lingua trovata",
+        "timezone_label": "Fuso orario"
+      },
+      "agreement": {
+        "title": "Accordo di licenza",
+        "description": "Leggi e accetta l'accordo di licenza per continuare.",
+        "accept_label": "Ho letto e accetto l'accordo di licenza"
+      },
+      "ha": {
+        "title": "Connetti Home Assistant",
+        "description": "Inserisci l'indirizzo di Home Assistant e il token di accesso a lunga durata.",
+        "url_label": "URL di Home Assistant",
+        "url_placeholder": "http://homeassistant.local:8123",
+        "token_label": "Token di accesso a lunga durata"
+      },
+      "done": {
+        "title": "Configurazione completata",
+        "description": "Le impostazioni di connessione a Home Assistant sono state salvate con successo.",
+        "hint": "Ora puoi aprire la pagina del Cruscotto e continuare la configurazione."
+      }
+    },
+    "pages": {
+      "dashboard": {
+        "name": "Cruscotto",
+        "tabs": {
+          "home": "Home",
+          "dashboards": "Cruscotti"
+        },
+        "common": {
+          "portrait": "Verticale",
+          "landscape": "Orizzontale",
+          "entities": "Entità",
+          "save": "Salva",
+          "reload": "Ricarica",
+          "drag_cards": "Trascina le schede qui"
+        },
+        "dashboards": {
+          "dashboard_name": "Nome del cruscotto",
+          "default_dashboard_name": "Cruscotto {number}",
+          "card_properties": "Proprietà della scheda",
+          "select_card": "Seleziona una scheda sulla tela.",
+          "dashboard_saved": "Cruscotto salvato",
+          "dashboard_save_failed": "Salvataggio del cruscotto fallito",
+          "fix_dashboard_name": "Correggi il nome del cruscotto prima di salvare",
+          "entities_load_failed": "Caricamento delle entità fallito",
+          "drag_to_canvas": "Trascina sulla tela",
+          "tabs": {
+            "short": "Corte",
+            "wide": "Larghe",
+            "dividers": "Divisori"
+          },
+          "palette": {
+            "mini_light_small": "Mini luce piccola",
+            "mini_camera_short": "Mini telecamera corta",
+            "mini_sensor_short": "Mini sensore corto",
+            "mini_binary_sensor_short": "Mini sensore binario corto",
+            "mini_lock_short": "Mini serratura corta",
+            "mini_media_player": "Mini lettore multimediale",
+            "mini_light_wide": "Mini luce larga",
+            "mini_climate_wide": "Mini clima largo",
+            "mini_vacuum": "Mini aspirapolvere",
+            "mini_camera_wide": "Mini telecamera larga",
+            "mini_sensor_wide": "Mini sensore largo",
+            "mini_binary_sensor_wide": "Mini sensore binario largo",
+            "mini_cover_wide": "Mini tenda larga",
+            "mini_lock_wide": "Mini serratura larga",
+            "mini_alarm_panel": "Mini pannello allarme",
+            "divider": "Divisore"
+          },
+          "icons": {
+            "light": "Luce",
+            "home": "Casa",
+            "sofa": "Divano",
+            "music": "Musica",
+            "shield_home": "Protezione casa",
+            "thermostat": "Termostato"
+          },
+          "props": {
+            "divider_label": "Etichetta divisore",
+            "divider_icon": "Icona divisore",
+            "title": "Titolo",
+            "title_placeholder": "Opzionale",
+            "entity": "Entità",
+            "select_entity": "Seleziona entità",
+            "battery_entity": "Entità batteria",
+            "select_battery_sensor": "Seleziona sensore batteria",
+            "charging_entity": "Entità di ricarica",
+            "select_charging_binary_sensor": "Seleziona sensore binario di ricarica",
+            "alarm_actions": "Azioni allarme",
+            "show_arm_home": "Mostra Inserimento (casa)",
+            "show_arm_away": "Mostra Inserimento (assente)",
+            "show_arm_night": "Mostra Inserimento (notte)",
+            "show_arm_vacation": "Mostra Inserimento (vacanza)",
+            "show_custom_bypass": "Mostra Bypass personalizzato"
+          }
+        },
+        "home": {
+          "home_cards": "Schede Home",
+          "home_time": "Ora",
+          "home_weather": "Meteo",
+          "home_saved": "Configurazione Home salvata",
+          "home_reloaded": "Configurazione Home ricaricata",
+          "home_save_failed": "Salvataggio configurazione Home fallito",
+          "home_reload_failed": "Ricaricamento configurazione Home fallito",
+          "loading": "Caricamento configurazione Home…"
+        }
+      },
+      "setup": {
+        "name": "Configurazione",
+        "tabs": {
+          "settings": "Impostazioni",
+          "auth": "Autenticazione"
+        },
+        "timezone": {
+          "title": "Fuso orario",
+          "label": "Fuso orario"
+        },
+        "rotation": {
+          "title": "Rotazione schermo",
+          "label": "Rotazione schermo",
+          "hint": "La modifica della rotazione dello schermo richiede il riavvio del dispositivo. Il riavvio viene avviato automaticamente dopo il salvataggio."
+        },
+        "language": {
+          "title": "Lingua",
+          "label": "Lingua dell'interfaccia",
+          "placeholder": "Seleziona lingua",
+          "search": "Cerca lingua",
+          "no_items": "Nessuna lingua trovata"
+        },
+        "auth": {
+          "url_label": "URL di Home Assistant",
+          "url_placeholder": "http://homeassistant.local:8123",
+          "token_label": "Token di accesso a lunga durata di Home Assistant"
+        },
+        "actions": {
+          "save_settings": "Salva impostazioni"
+        },
+        "messages": {
+          "saved": "Impostazioni salvate.",
+          "auth_saved": "Impostazioni Home Assistant salvate.",
+          "rebooting": "Rotazione schermo salvata. Il dispositivo si riavvia per applicare il nuovo orientamento.",
+          "save_failed": "Salvataggio impostazioni fallito"
+        }
+      },
+      "firmware": {
+        "name": "Firmware",
+        "tabs": {
+          "main": "Principale",
+          "radio": "Radio"
+        },
+        "version": {
+          "main": "Versione principale",
+          "radio": "Versione radio",
+          "built_time": "Data compilazione"
+        },
+        "ota": {
+          "main_title": "OTA firmware principale",
+          "radio_title": "OTA firmware radio",
+          "radio_unsupported": "OTA radio non è supportato su questa scheda.",
+          "select_main_image": "Seleziona immagine firmware principale",
+          "select_radio_image": "Seleziona immagine firmware radio",
+          "upload_firmware": "Carica firmware",
+          "ready_main": "Pronto per caricare il firmware principale",
+          "ready_radio": "Pronto per caricare il firmware radio",
+          "receiving_image": "Ricezione immagine…",
+          "writing_image": "Scrittura immagine…",
+          "erasing_partition": "Cancellazione partizione…",
+          "uploading": "Caricamento…",
+          "installed_successfully": "Installato con successo.",
+          "installed_rebooting": "Installato con successo. Riavvio…",
+          "update_failed": "Aggiornamento fallito",
+          "firmware_uploaded_rebooting": "Firmware caricato. Riavvio.",
+          "radio_uploaded_activated": "Firmware radio caricato e attivato."
+        }
+      },
+      "storage": {
+        "name": "Archivio",
+        "alerts": {
+          "sd_not_supported": "La scheda SD non è supportata da questo profilo di scheda.",
+          "sd_not_mounted": "La scheda SD non è montata. Inserire una scheda e riavviare il dispositivo."
+        },
+        "usage": {
+          "title": "Utilizzo scheda SD",
+          "images": "Immagini",
+          "sounds": "Suoni",
+          "video": "Video",
+          "others": "Altri"
+        },
+        "actions": {
+          "new_folder": "Nuova cartella",
+          "upload": "Carica",
+          "go_parent": "Vai alla cartella superiore",
+          "refresh": "Aggiorna",
+          "rename": "Rinomina",
+          "delete": "Elimina",
+          "create": "Crea"
+        },
+        "table": {
+          "name": "Nome",
+          "type": "Tipo",
+          "size": "Dimensione",
+          "date": "Data",
+          "actions": "Azioni"
+        },
+        "dialogs": {
+          "delete_title": "Eliminare il file?",
+          "delete_confirm": "Sei sicuro di voler eliminare {name}?",
+          "folder_must_be_empty": "La cartella deve essere vuota per essere eliminata.",
+          "rename_title": "Rinomina",
+          "new_name": "Nuovo nome",
+          "new_folder_title": "Nuova cartella",
+          "folder_name": "Nome cartella"
+        },
+        "empty": "La cartella è vuota",
+        "uploading": "Caricamento...",
+        "types": {
+          "folder": "Cartella",
+          "file": "File",
+          "pdf": "Documento PDF",
+          "png": "Immagine PNG",
+          "jpg": "Immagine JPEG",
+          "jpeg": "Immagine JPEG",
+          "webp": "Immagine WebP",
+          "gif": "Immagine GIF",
+          "bmp": "Immagine BMP",
+          "svg": "Immagine SVG",
+          "ico": "Icona",
+          "zip": "Archivio ZIP",
+          "rar": "Archivio RAR",
+          "seven_zip": "Archivio 7Z",
+          "tar": "Archivio TAR",
+          "gz": "Archivio GZip",
+          "txt": "File di testo",
+          "log": "File di registro",
+          "md": "Documento Markdown",
+          "json": "File JSON",
+          "yaml": "File YAML",
+          "xml": "File XML",
+          "csv": "Tabella CSV",
+          "html": "Documento HTML",
+          "css": "File CSS",
+          "js": "File JavaScript",
+          "ts": "File TypeScript",
+          "vue": "Componente Vue",
+          "c": "Codice sorgente C",
+          "h": "Header C",
+          "cpp": "Codice sorgente C++",
+          "hpp": "Header C++",
+          "py": "Script Python",
+          "mp3": "Audio MP3",
+          "wav": "Audio WAV",
+          "aac": "Audio AAC",
+          "ogg": "Audio OGG",
+          "flac": "Audio FLAC",
+          "m4a": "Audio M4A",
+          "mp4": "Video MP4",
+          "avi": "Video AVI",
+          "mkv": "Video MKV",
+          "mov": "Video MOV",
+          "webm": "Video WebM",
+          "mpeg": "Video MPEG",
+          "bin": "File binario",
+          "elf": "Binario ELF",
+          "img": "Immagine disco"
+        },
+        "messages": {
+          "upload_success": "Caricamento riuscito",
+          "deleted": "Eliminato",
+          "renamed": "Rinominato",
+          "folder_created": "Cartella creata",
+          "load_failed": "Caricamento dell'elenco fallito",
+          "upload_failed": "Caricamento fallito",
+          "delete_failed": "Eliminazione fallita",
+          "rename_failed": "Rinominazione fallita",
+          "create_folder_failed": "Creazione cartella fallita",
+          "folder_not_empty": "La cartella non è vuota"
+        }
+      },
+      "license": {
+        "name": "Licenza",
+        "tabs": {
+          "license": "Licenza",
+          "agreement": "Accordo"
+        },
+        "status": {
+          "title": "Stato licenza",
+          "activated": "Licenza attivata.",
+          "trial_mode": "Modalità di prova",
+          "trial_remaining": "Tempo rimanente: {time}",
+          "trial_expired": "Il periodo di prova è scaduto. Attivare una licenza.",
+          "device_id": "ID dispositivo",
+          "device_id_hint": "Utilizzare questo ID per la chiave di licenza.",
+          "license_key": "Chiave di licenza",
+          "activated_label": "Attivata",
+          "trial_label": "Prova",
+          "expired_label": "Prova scaduta",
+          "loading_label": "Caricamento"
+        },
+        "agreement": {
+          "title": "Contratto di licenza",
+          "description": "Leggere e accettare il contratto di licenza per continuare.",
+          "accept_label": "Ho letto e accetto il contratto di licenza",
+          "text": "Contratto di licenza con l’utente finale del firmware\n\nData di revisione: 10.07.2026\n\nIl presente Contratto di licenza con l’utente finale, di seguito “Contratto”, regola le condizioni di installazione, utilizzo e distribuzione del software firmware DarkForgeUI, di seguito “Firmware”.\n\nInstallando, scaricando, scrivendo su un dispositivo, aggiornando o utilizzando il Firmware, l’utente conferma di aver letto, compreso e accettato i termini del presente Contratto.\n\n1. Disposizioni generali\n\nIl Firmware è un software destinato all’installazione su dispositivi compatibili allo scopo di modificare, estendere o sostituire il loro software originale.\n\nIl Firmware può modificare il comportamento del dispositivo, le sue funzioni di rete, la logica di controllo e l’interazione con servizi esterni, inclusa l’integrazione con Home Assistant tramite API.\n\nL’utente decide autonomamente se installare e utilizzare il Firmware e si assume tutti i rischi associati a tali azioni.\n\n2. Installazione e utilizzo a rischio dell’utente\n\nL’utente comprende e accetta che l’installazione del Firmware possa comportare:\n\n- malfunzionamento totale o parziale del dispositivo;\n- impossibilità di ripristinare il firmware di fabbrica;\n- perdita della garanzia del produttore;\n- perdita di impostazioni e dati dell’utente;\n- funzionamento non corretto del dispositivo;\n- danni al dispositivo o alle apparecchiature collegate;\n- funzionamento instabile della rete, delle automazioni o delle integrazioni esterne.\n\nIl Firmware viene installato e utilizzato esclusivamente a rischio dell’utente.\n\nL’autore, lo sviluppatore, il titolare dei diritti, i partecipanti al progetto e altre persone correlate non sono responsabili di alcuna conseguenza derivante dall’installazione o dall’utilizzo del Firmware.\n\n3. Avvertenza su alta tensione e condizioni operative pericolose\n\nAlcuni dispositivi su cui può essere installato il Firmware possono funzionare con circuiti elettrici sottoposti a tensione pericolosa o alta tensione.\n\nL’utente conferma di comprendere i rischi potenziali, inclusi, a titolo esemplificativo:\n\n- scossa elettrica;\n- incendio;\n- cortocircuito;\n- danni all’impianto elettrico;\n- danni alle apparecchiature collegate;\n- danni alla salute o alla proprietà.\n\nQualsiasi intervento su dispositivi collegati alla rete elettrica deve essere eseguito solo nel rispetto dei requisiti di sicurezza elettrica. Se l’utente non possiede conoscenze e qualifiche sufficienti, deve rivolgersi a uno specialista qualificato.\n\nÈ vietato installare o utilizzare il Firmware in condizioni in cui il funzionamento errato del dispositivo possa rappresentare una minaccia per la vita, la salute, la sicurezza antincendio, causare incidenti o provocare danni materiali significativi.\n\n4. Dispositivi non certificati e conformità\n\nL’utente comprende che un dispositivo con il Firmware installato può differire, per funzionalità e comportamento, dal dispositivo nello stato di fabbrica.\n\nL’installazione del Firmware può far sì che il dispositivo:\n\n- non sia più conforme ai requisiti di certificazione del produttore;\n- non sia più conforme ai requisiti della legislazione locale;\n- non sia conforme ai requisiti di sicurezza elettrica, regolamentazione radio, uso industriale o altre norme applicabili;\n- non possa essere utilizzato in determinati paesi, locali, sistemi o scenari.\n\nL’utente è l’unico responsabile del rispetto di tutte le leggi applicabili, regolamenti tecnici, norme di sicurezza e requisiti operativi.\n\n5. Fornitura “così com’è”\n\nIl Firmware viene fornito “così com’è” e “secondo disponibilità”, senza garanzie espresse o implicite.\n\nL’autore non garantisce che il Firmware:\n\n- funzioni senza errori;\n- sia compatibile con tutti i dispositivi;\n- soddisfi le aspettative dell’utente;\n- sia sicuro per qualsiasi scenario di utilizzo;\n- riceva aggiornamenti o supporto;\n- resti compatibile con versioni future di Home Assistant, API, librerie o piattaforme hardware.\n\nL’utente si assume tutti i rischi relativi a qualità, prestazioni, sicurezza e idoneità del Firmware per scopi specifici.\n\n6. Esclusione di responsabilità\n\nNella misura massima consentita dalla legge applicabile, l’autore, lo sviluppatore, il titolare dei diritti, i partecipanti al progetto e le persone correlate non sono responsabili per danni diretti, indiretti, accidentali, speciali, punitivi o consequenziali, inclusi, a titolo esemplificativo:\n\n- danni al dispositivo;\n- danni alla proprietà;\n- perdita di dati;\n- perdita di profitto;\n- interruzione del funzionamento dei sistemi;\n- costi di riparazione o sostituzione delle apparecchiature;\n- interruzione delle automazioni;\n- danni alla salute;\n- conseguenze di installazione o utilizzo non corretti;\n- conseguenze dell’utilizzo del Firmware su dispositivi non destinati a tale uso.\n\nQuesta limitazione di responsabilità si applica indipendentemente dal fondamento giuridico, inclusi contratto, illecito, negligenza, responsabilità oggettiva o altri fondamenti giuridici.\n\n7. Integrazione con Home Assistant e API\n\nIl Firmware può utilizzare API, interfacce di rete o altri meccanismi di interazione con Home Assistant.\n\nL’utente comprende che:\n\n- il funzionamento dell’integrazione dipende dalla versione di Home Assistant;\n- modifiche alle API, alle impostazioni di rete, alla configurazione di Home Assistant o a componenti di terze parti possono influire sul funzionamento del Firmware;\n- l’autore del Firmware non controlla lo sviluppo di Home Assistant e non è responsabile delle modifiche alla sua funzionalità;\n- la compatibilità con Home Assistant non è garantita per tutte le versioni e configurazioni.\n\nIl Firmware non è un’integrazione ufficiale di Home Assistant, salvo diversa indicazione esplicita dell’autore.\n\n8. Marchi e riferimenti a terzi\n\nTutti i marchi, loghi, nomi di prodotti e servizi appartengono ai rispettivi titolari.\n\nHome Assistant è un marchio dei rispettivi titolari, inclusa Open Home Foundation e/o organizzazioni collegate al progetto. La menzione di Home Assistant viene utilizzata esclusivamente per descrivere la compatibilità o l’interazione con il relativo software.\n\nIl presente Firmware non è un prodotto ufficiale di Home Assistant, Open Home Foundation o Nabu Casa, non è approvato da essi e non è affiliato ad essi, salvo diversa indicazione esplicita.\n\n9. Limitazioni d’uso\n\nL’utente non deve utilizzare il Firmware in sistemi in cui un guasto, ritardo, errore o funzionamento errato del dispositivo possa causare:\n\n- morte o lesioni personali;\n- incendio;\n- incidente;\n- danni alla proprietà;\n- interruzione dei sistemi di sicurezza;\n- guasti a infrastrutture critiche;\n- interruzione di apparecchiature mediche, industriali, di trasporto o di emergenza.\n\nIl Firmware è destinato a utenti che comprendono i rischi tecnici dell’installazione di software alternativo e sono in grado di valutarne autonomamente le conseguenze.\n\n10. Aggiornamenti e modifiche\n\nL’autore può rilasciare aggiornamenti del Firmware, ma non è obbligato a farlo.\n\nGli aggiornamenti possono modificare funzionalità, compatibilità, impostazioni, protocolli di comunicazione o comportamento del dispositivo.\n\nL’utente decide autonomamente se installare gli aggiornamenti e si assume tutti i rischi associati all’aggiornamento o al mancato aggiornamento.\n\n11. Diritti di utilizzo\n\nNel rispetto del presente Contratto, all’utente viene concesso un diritto limitato, non esclusivo e non trasferibile di utilizzare il Firmware su dispositivi compatibili.\n\nSalvo diversa indicazione in una licenza separata, l’utente non può:\n\n- presentare il Firmware come proprio sviluppo;\n- rimuovere le indicazioni di paternità;\n- utilizzare il nome del progetto, i loghi o i materiali dell’autore senza autorizzazione;\n- vendere il Firmware come prodotto autonomo senza autorizzazione scritta dell’autore;\n- distribuire versioni modificate senza indicare che sono state modificate.\n\nSe il Firmware include componenti open source, tali componenti sono utilizzati secondo i termini delle rispettive licenze open source.\n\n12. Componenti di terze parti\n\nIl Firmware può contenere o utilizzare librerie, API, SDK, driver o altri componenti software di terze parti.\n\nTali componenti possono essere distribuiti con licenze separate. L’utente accetta di rispettare tali licenze quando applicabili.\n\nL’autore del Firmware non fornisce garanzie riguardo ai componenti di terze parti e non è responsabile del loro funzionamento, sicurezza o compatibilità.\n\n13. Cessazione della licenza\n\nIl diritto dell’utente di utilizzare il Firmware termina automaticamente in caso di violazione del presente Contratto.\n\nDopo la cessazione della licenza, l’utente deve interrompere l’utilizzo del Firmware e rimuoverlo dai propri dispositivi, se tecnicamente possibile.\n\n14. Legge applicabile\n\nIl presente Contratto è regolato dalla legge della Federazione Russa, salvo diversa disposizione imposta dalla legge applicabile.\n\nSe una disposizione del presente Contratto viene ritenuta invalida o inapplicabile, le restanti disposizioni rimangono valide.\n\n15. Accettazione dei termini\n\nInstallando, scaricando, aggiornando o utilizzando il Firmware, l’utente conferma di:\n\n- aver letto il presente Contratto;\n- comprendere i rischi dell’installazione di firmware alternativo;\n- essere consapevole delle possibili conseguenze del lavoro con dispositivi sotto tensione;\n- accettare il Firmware “così com’è”;\n- accettare di utilizzare il Firmware esclusivamente a proprio rischio.\n\nSe l’utente non accetta i termini del presente Contratto, non deve installare, scaricare, aggiornare o utilizzare il Firmware."
+        },
+        "messages": {
+          "device_id_copied": "ID dispositivo copiato",
+          "device_id_copy_failed": "Copia fallita. L'ID dispositivo è mostrato sulla pagina.",
+          "activation_success": "Licenza attivata con successo",
+          "license_key_empty": "La chiave di licenza è vuota",
+          "status_load_failed": "Caricamento stato licenza fallito"
+        },
+        "errors": {
+          "invalid_arg": "La chiave di licenza è vuota",
+          "invalid_format": "Formato chiave di licenza non valido",
+          "device_mismatch": "Questa chiave di licenza è per un altro dispositivo",
+          "signature_failed": "Verifica firma licenza fallita",
+          "store_failed": "Salvataggio licenza fallito",
+          "invalid_body": "Corpo della richiesta non valido",
+          "read_failed": "Lettura del corpo della richiesta fallita",
+          "invalid_json": "JSON non valido",
+          "missing_license_key": "Chiave di licenza mancante",
+          "activation_failed": "Attivazione fallita"
+        }
+      },
+      "info": {
+        "name": "Informazioni",
+        "tabs": {
+          "overview": "Panoramica",
+          "home_assistant": "Home Assistant",
+          "screenshot": "Screenshot"
+        },
+        "actions": {
+          "refresh": "Aggiorna"
+        },
+        "sections": {
+          "system": "Sistema",
+          "processor": "Processore",
+          "coprocessor": "Co-processore",
+          "display": "Display",
+          "io": "I/O",
+          "memory_storage": "Memoria e archivio",
+          "network": "Rete",
+          "home_assistant": "Home Assistant",
+          "entity": "Entità"
+        },
+        "labels": {
+          "model": "Modello",
+          "chip_revision": "Revisione chip",
+          "temperature": "Temperatura",
+          "firmware_version": "Versione firmware",
+          "driver": "Driver",
+          "interface": "Interfaccia",
+          "resolution": "Risoluzione",
+          "color": "Colore",
+          "rotation": "Rotazione",
+          "audio": "Audio",
+          "microphones": "Microfoni",
+          "sd_card": "Scheda SD",
+          "ssid": "SSID",
+          "ip": "IP",
+          "mac": "MAC",
+          "rssi": "RSSI",
+          "channel": "Canale",
+          "security": "Sicurezza",
+          "total": "totale"
+        },
+        "network": {
+          "wifi": "Wi-Fi",
+          "ethernet": "Ethernet",
+          "wifi_ethernet": "Wi-Fi + Ethernet",
+          "cable_disconnected": "Cavo disconnesso",
+          "ethernet_unavailable": "Ethernet non è disponibile su questa scheda"
+        },
+        "domains": {
+          "media_player": "Lettori multimediali",
+          "light": "Luci",
+          "camera": "Telecamere",
+          "climate": "Climatizzatori",
+          "cover": "Tende/Tapparelle",
+          "fan": "Ventilatori",
+          "alarm_control_panel": "Allarme",
+          "vacuum": "Aspirapolveri",
+          "weather": "Meteo",
+          "sensor": "Sensori",
+          "binary_sensor": "Sensori binari",
+          "input_boolean": "Booleano di ingresso",
+          "switch": "Interruttori",
+          "lock": "Serratura",
+          "humidifier": "Umidificatori",
+          "water_heater": "Scaldacqua",
+          "update": "Aggiornamento",
+          "automation": "Automazione",
+          "air_quality": "Qualità dell'aria",
+          "button": "Pulsanti",
+          "calendar": "Calendari",
+          "conversation": "Conversazione",
+          "date": "Data",
+          "datetime": "Data e ora",
+          "device_tracker": "Tracker dispositivi",
+          "event": "Eventi",
+          "input_number": "Numero di ingresso",
+          "input_select": "Selezione di ingresso",
+          "input_text": "Testo di ingresso",
+          "lawn_mower": "Rasaerba",
+          "notify": "Notifiche",
+          "number": "Numeri",
+          "person": "Persone",
+          "script": "Script",
+          "select": "Selettori",
+          "siren": "Sirene",
+          "stt": "Da voce a testo",
+          "sun": "Sole",
+          "text": "Testi",
+          "time": "Ora",
+          "todo": "Liste di cose da fare",
+          "tts": "Da testo a voce",
+          "valve": "Valvole",
+          "zone": "Zone",
+          "other": "Altro"
+        },
+        "messages": {
+          "metrics_load_failed": "Caricamento metriche fallito",
+          "no_domains": "Nessun dominio di entità Home Assistant è ancora disponibile."
+        },
+        "screenshot": {
+          "format": "Formato",
+          "save": "Salva",
+          "formats": {
+            "auto": "Auto",
+            "jpg": "JPEG",
+            "bmp": "BMP"
+          },
+          "messages": {
+            "saved": "Screenshot salvato",
+            "failed": "Screenshot fallito"
+          }
+        }
+      },
+      "logs": {
+        "name": "Registri",
+        "auto_scroll": "Scorrimento automatico",
+        "refresh": "Aggiorna",
+        "clear": "Cancella",
+        "empty": "Nessun registro disponibile",
+        "messages": {
+          "cleared": "Registri cancellati"
+        }
+      },
+      "not_found": {
+        "headline": "Ops, 404",
+        "title": "Pagina non trovata",
+        "text": "La pagina che stai cercando non esiste",
+        "back": "Indietro"
+      }
+    },
+    "entity_picker": {
+      "entity": "Entità",
+      "select_entity": "Seleziona entità",
+      "search_entity": "Cerca entità",
+      "no_entities": "Nessuna entità trovata"
+    },
+    "flag_picker": {
+      "language": "Lingua",
+      "select_language": "Seleziona lingua",
+      "search_language": "Cerca lingua",
+      "no_languages": "Nessuna lingua trovata"
+    }
+  }
+}

@@ -1,0 +1,1104 @@
+{
+  "loading": {
+    "synchronization": "Sinhronizacija ...",
+    "connection_api": "Povezovanje z API ...",
+    "title": "DarkForge UI",
+    "subtitle": "Vsakemu pikslu vdihujemo življenje",
+    "starting": "Zaganjanje uporabniškega vmesnika ..."
+  },
+  "hass": {
+    "title": "Home Assistant",
+    "connecting": "Povezovanje s Home Assistant ...",
+    "connecting_network": "Čakanje na omrežno povezavo",
+    "connecting_wifi": "Povezovanje s shranjenim Wi-Fi ...",
+    "waiting_config": "Čakanje na konfiguracijo Home Assistant",
+    "syncing": "Sinhronizacija entitet Home Assistant ...",
+    "loading_entities": "Nalaganje entitet",
+    "ready": "Home Assistant pripravljen",
+    "progress": "%d%%",
+    "entities_progress": "%d%%  ·  %d / %d",
+    "checking": "Preverjanje povezave ...",
+    "cannot_reach": "Ni mogoče vzpostaviti stika s Home Assistant. Preverite strežnik in omrežje.",
+    "cannot_reach_with_url": "Ni mogoče vzpostaviti stika s Home Assistant.\nPreverite strežnik in omrežje.\n%s",
+    "initial_sync_complete": "Začetna sinhronizacija končana"
+  },
+  "ota": {
+    "start": {
+      "primary": "Zagon OTA!",
+      "secondary": "Počakajte ..."
+    },
+    "end": {
+      "primary": "Posodobitev končana!",
+      "secondary": "Ponovni zagon ..."
+    },
+    "error": {
+      "primary": "Napaka posodobitve!",
+      "secondary": "Ponovni zagon ..."
+    },
+    "progress": "Napredek vdelane programske opreme %0.1f%%"
+  },
+  "config": {
+    "title": "Potrebna je konfiguracija",
+    "instructions": "Za konfiguracijo plošče:\n\n1. Povežite se v isto omrežje\n2. Odprite spletni brskalnik\n3. Pojdite na spodnji naslov\n4. Vnesite URL in žeton Home Assistant",
+    "hint": "Prepričajte se, da je vaša naprava v istem omrežju",
+    "ip_placeholder": "http://..."
+  },
+  "network": {
+    "status": {
+      "connecting": "Povezovanje ...",
+      "connected": "Povezano",
+      "disconnecting": "Prekinjanje povezave ...",
+      "disconnected": "Povezava prekinjena",
+      "scanning": "Iskanje ..."
+    },
+    "wifi": {
+      "title": "Nastavitve Wi-Fi",
+      "scan": "Išči",
+      "status": {
+        "no_networks": "Ni najdenih omrežij",
+        "found": "Najdena omrežja",
+        "password_required": "Napaka: Zahtevano geslo!",
+        "ready": "Pripravljeno",
+        "connecting_saved": "Povezovanje s shranjenimi poverilnicami Wi-Fi ...",
+        "not_connected": "Omrežje ni povezano",
+        "wrong_password": "Napačno geslo za Wi-Fi. Izberite omrežje in poskusite znova.",
+        "auth_failed": "Preverjanje pristnosti Wi-Fi ni uspelo",
+        "no_ap_found": "Shranjenega omrežja Wi-Fi ni bilo mogoče najti",
+        "connect_failed": "Povezava Wi-Fi ni uspela",
+        "open_selected": "Izbrano odprto omrežje",
+        "enter_password": "Vnesite geslo in pritisnite Poveži",
+        "connection_timeout": "Časovna omejitev povezave",
+        "connection_failed": "Povezava ni uspela",
+        "connected": "Povezano",
+        "scanning": "Iskanje ..."
+      },
+      "popup": {
+        "title": "Poveži se z WiFi",
+        "network": "Omrežje:",
+        "password": "Geslo:",
+        "password_placeholder": "Vnesite geslo",
+        "open_network": "Odprto omrežje – brez gesla",
+        "connect": "Poveži",
+        "cancel": "Prekliči"
+      }
+    }
+  },
+  "license_lock": {
+    "expired": {
+      "title": "Potrebna licenca",
+      "message": "Preizkusno obdobje je poteklo.\nAktivirajte polno licenco za nadaljevanje.",
+      "hint": "Odprite spletni vmesnik in pojdite na stran Licence.\nSpletni strežnik ostane na voljo za aktivacijo."
+    },
+    "warning": {
+      "title": "Preizkusna različica",
+      "message": "Ta naprava deluje v preizkusnem načinu.\nZa redno uporabo potrebujete polno licenco.",
+      "hint": "Za zdaj lahko nadaljujete.\nOdprite spletni vmesnik za aktivacijo licence."
+    },
+    "button": {
+      "ok": "V redu"
+    }
+  },
+  "settings": {
+    "title": "Nastavitve",
+    "language": "Jezik",
+    "theme": {
+      "title": "Tema",
+      "themes": {
+        "light_black": "Svetlo črna",
+        "dark_blue": "Temno modra",
+        "swamp_green": "Močvirno zelena"
+      },
+      "colors": {
+        "default": "Privzeto",
+        "blue": "Modra",
+        "red": "Rdeča",
+        "yellow": "Rumena",
+        "green": "Zelena",
+        "orange": "Oranžna",
+        "cyan": "Cian",
+        "purple": "Vijolična",
+        "dark_blue": "Temno modra",
+        "mint": "Meta",
+        "gray": "Siva",
+        "crimson": "Karminasta",
+        "sienna": "Siena",
+        "magenta": "Magenta",
+        "pink": "Roza"
+      }
+    },
+    "color_of_elements": "Barva elementov",
+    "times_format": "Format AM/PM",
+    "timezone": "Časovni pas",
+    "backlight": "Svetlost osvetlitve ozadja",
+    "sleep_timeout": "Časovna omejitev spanja"
+  },
+  "sleep_time": {
+    "never": "Nikoli",
+    "minute1": "1 minuta",
+    "minute5": "5 minut",
+    "minute10": "10 minut",
+    "minute30": "30 minut",
+    "hour1": "1 ura",
+    "hour6": "6 ur",
+    "hour12": "12 ur"
+  },
+  "weather": {
+    "title": "Vreme",
+    "forecasts": {
+      "daily": "Dnevno",
+      "hourly": "Urno"
+    },
+    "attributes": {
+      "humidity": "Vlažnost",
+      "pressure": "Tlak",
+      "wind": "Hitrost vetra",
+      "uv": "UV indeks"
+    },
+    "states": {
+      "clear-night": "Jasno, ponoči",
+      "cloudy": "Oblačno",
+      "exceptional": "Izjemno",
+      "fog": "Megla",
+      "hail": "Toča",
+      "lightning": "Strela",
+      "lightning-rainy": "Nevihta z dežjem",
+      "partlycloudy": "Delno oblačno",
+      "pouring": "Naliv",
+      "rainy": "Deževno",
+      "snowy": "Sneženo",
+      "snowy-rainy": "Sneg z dežjem",
+      "sunny": "Sončno",
+      "windy": "Vetrovno",
+      "windy-variant": "Vetrovno, oblačno"
+    }
+  },
+  "datetime": {
+    "day_of_week": {
+      "monday": "Ponedeljek",
+      "tuesday": "Torek",
+      "wednesday": "Sreda",
+      "thursday": "Četrtek",
+      "friday": "Petek",
+      "saturday": "Sobota",
+      "sunday": "Nedelja"
+    },
+    "day_of_week_short": {
+      "monday": "PON",
+      "tuesday": "TOR",
+      "wednesday": "SRE",
+      "thursday": "ČET",
+      "friday": "PET",
+      "saturday": "SOB",
+      "sunday": "NED"
+    },
+    "month": {
+      "january": "Januar",
+      "february": "Februar",
+      "march": "Marec",
+      "april": "April",
+      "may": "Maj",
+      "june": "Junij",
+      "july": "Julij",
+      "august": "Avgust",
+      "september": "September",
+      "october": "Oktober",
+      "november": "November",
+      "december": "December"
+    }
+  },
+  "common": {
+    "buttons": {
+      "ok": "V redu",
+      "cancel": "Prekliči",
+      "yes": "Da",
+      "no": "Ne",
+      "close": "Zapri",
+      "delete": "Izbriši",
+      "save": "Shrani",
+      "edit": "Uredi",
+      "add": "Dodaj",
+      "remove": "Odstrani",
+      "update": "Posodobi",
+      "confirm": "Potrdi",
+      "back": "Nazaj",
+      "next": "Naprej",
+      "submit": "Pošlji",
+      "retry": "Poskusi znova",
+      "continue": "Nadaljuj",
+      "enable": "Omogoči",
+      "disable": "Onemogoči",
+      "on": "Vklop",
+      "off": "Izklop"
+    },
+    "state": {
+      "off": "Izklopljeno",
+      "on": "Vklopljeno",
+      "unavailable": "Ni na voljo",
+      "unknown": "Neznano",
+      "not_found": "Naprava ni najdena"
+    }
+  },
+  "battery": {
+    "name": "Baterija",
+    "state": {
+      "charging": "Polnjenje"
+    }
+  },
+  "sensor": {
+    "name": "Senzor"
+  },
+  "light": {
+    "name": "Luč",
+    "state": {
+      "on": "Vklopljeno",
+      "off": "Izklopljeno"
+    }
+  },
+  "media_player": {
+    "name": "Predvajalnik",
+    "no_track": "Ni skladbe",
+    "unknown_artist": "Neznan izvajalec",
+    "state": {
+      "off": "Izklopljeno",
+      "on": "Vklopljeno",
+      "idle": "Nedejaven",
+      "playing": "Predvaja",
+      "paused": "Premor",
+      "standby": "Pripravljenost",
+      "buffering": "Medpomnjenje"
+    }
+  },
+  "camera": {
+    "name": "Kamera",
+    "state": {
+      "idle": "Nedejavna",
+      "streaming": "Pretakanje",
+      "recording": "Snemanje"
+    }
+  },
+  "vacuum": {
+    "name": "Sesalnik",
+    "state": {
+      "cleaning": "Čiščenje",
+      "docked": "Na postaji",
+      "error": "Napaka",
+      "idle": "Nedejaven",
+      "off": "Izklopljeno",
+      "on": "Vklopljeno",
+      "paused": "Premor",
+      "returning": "Vračanje na postajo"
+    }
+  },
+  "lock": {
+    "name": "Ključavnica",
+    "enter_pass": "Vnesite geslo",
+    "wrong_pass": "Napačno geslo",
+    "state": {
+      "jammed": "Zataknjena",
+      "locked": "Zaklenjena",
+      "unlocked": "Odklenjena",
+      "locking": "Zaklepanje",
+      "unlocking": "Odklepanje",
+      "open": "Odprto",
+      "opening": "Odpiranje"
+    }
+  },
+  "binary_sensor": {
+    "name": "Binarni senzor",
+    "state": {
+      "on": "Vklopljeno",
+      "off": "Izklopljeno",
+      "low": "Nizka",
+      "normal": "Normalno",
+      "charging": "Polnjenje",
+      "not_charging": "Ne polni",
+      "co_detected": "Zaznan ogljikov monoksid",
+      "clear": "Jasno",
+      "cold": "Hladno",
+      "connected": "Povezan",
+      "disconnected": "Prekinjen",
+      "open": "Odprt",
+      "closed": "Zaprt",
+      "gas_detected": "Zaznan plin",
+      "hot": "Vroče",
+      "light_detected": "Zaznana svetloba",
+      "no_light": "Ni svetlobe",
+      "locked": "Zaklenjen",
+      "unlocked": "Odklenjen",
+      "wet": "Mokro",
+      "dry": "Suho",
+      "detected": "Zaznano",
+      "moving": "Premikanje",
+      "stopped": "Ustavljeno",
+      "plugged_in": "Vključen",
+      "unplugged": "Izvlečen",
+      "power_detected": "Zaznana napetost",
+      "no_power": "Ni napajanja",
+      "home": "Doma",
+      "away": "Odsoten",
+      "problem": "Težava",
+      "ok": "V redu",
+      "running": "Teče",
+      "not_running": "Ne teče",
+      "unsafe": "Nevarno",
+      "safe": "Varno",
+      "smoke_detected": "Zaznan dim",
+      "sound_detected": "Zaznan zvok",
+      "tampering": "Poseganje",
+      "update_available": "Na voljo posodobitev",
+      "up_to_date": "Posodobljeno",
+      "vibration_detected": "Zaznano tresenje"
+    }
+  },
+  "cover": {
+    "name": "Pokrov",
+    "state": {
+      "closed": "Zaprto",
+      "closing": "Zapiranje",
+      "open": "Odprto",
+      "opening": "Odpiranje",
+      "stopped": "Ustavljeno"
+    }
+  },
+  "alarm_panel": {
+    "name": "Alarmna plošča",
+    "enter_pass": "Vnesite geslo",
+    "wrong_pass": "Napačno geslo",
+    "state": {
+      "armed": "Vklopljen",
+      "armed_away": "Vklopljen – odsotnost",
+      "armed_custom_bypass": "Vklopljen – po meri",
+      "armed_home": "Vklopljen – doma",
+      "armed_night": "Vklopljen – nočni način",
+      "armed_vacation": "Vklopljen – dopust",
+      "arming": "Vklapljanje",
+      "disarmed": "Izklopljen",
+      "disarming": "Izklapljanje",
+      "pending": "Čakanje",
+      "triggered": "Sprožen"
+    }
+  },
+  "fan": {
+    "name": "Ventilator",
+    "state": {
+      "on": "Vklopljeno",
+      "off": "Izklopljeno"
+    }
+  },
+  "input_boolean": {
+    "name": "Vhodno stikalo",
+    "state": {
+      "on": "Vklopljeno",
+      "off": "Izklopljeno"
+    }
+  },
+  "switch": {
+    "name": "Stikalo",
+    "state": {
+      "on": "Vklopljeno",
+      "off": "Izklopljeno"
+    }
+  },
+  "button": {
+    "name": "Gumb"
+  },
+  "lawn_mower": {
+    "name": "Kosilnica",
+    "state": {
+      "docked": "Na postaji",
+      "error": "Napaka",
+      "mowing": "Košnja",
+      "paused": "Premor",
+      "returning": "Vračanje"
+    }
+  },
+  "water_heater": {
+    "name": "Grelnik vode",
+    "state": {
+      "eco": "Eko",
+      "electric": "Električno",
+      "gas": "Plinsko",
+      "heat_pump": "Toplotna črpalka",
+      "high_demand": "Visoka poraba",
+      "off": "Izklopljeno",
+      "performance": "Zmogljivost"
+    }
+  },
+  "humidifier": {
+    "name": "Vlažilec",
+    "state": {
+      "off": "Izklopljeno",
+      "on": "Vklopljeno"
+    },
+    "action": {
+      "drying": "Sušenje",
+      "humidifying": "Vlaženje",
+      "idle": "Nedejaven",
+      "off": "Izklopljeno"
+    },
+    "mode": {
+      "auto": "Samodejno",
+      "away": "Odsoten",
+      "baby": "Dojenček",
+      "boost": "Pospešeno",
+      "comfort": "Udobno",
+      "eco": "Eko",
+      "home": "Doma",
+      "normal": "Normalno",
+      "sleep": "Spanje"
+    }
+  },
+  "climate": {
+    "name": "Klima",
+    "modes": {
+      "auto": "Samodejno",
+      "cool": "Hlajenje",
+      "dry": "Sušenje",
+      "fan": "Ventilator",
+      "heat": "Ogrevanje",
+      "heat_cool": "Ogrevanje/Hlajenje",
+      "off": "Izklopljeno"
+    },
+    "actions": {
+      "cooling": "Hlajenje",
+      "defrosting": "Odmrzovanje",
+      "drying": "Sušenje",
+      "fan": "Ventilator",
+      "heating": "Ogrevanje",
+      "idle": "Nedejaven",
+      "off": "Izklopljeno",
+      "preheating": "Predogrevanje"
+    },
+    "fan_modes": {
+      "name": "Načini ventilatorja",
+      "states": {
+        "auto": "Samodejno",
+        "diffuse": "Razpršeno",
+        "focus": "Osredotočeno",
+        "high": "Visoka",
+        "low": "Nizka",
+        "medium": "Srednja",
+        "middle": "Sredina",
+        "off": "Izklopljeno",
+        "on": "Vklopljeno",
+        "top": "Zgoraj"
+      }
+    },
+    "swing_modes": {
+      "name": "Način nihanja",
+      "states": {
+        "both": "Oboje",
+        "horizontal": "Vodoravno",
+        "off": "Izklopljeno",
+        "on": "Vklopljeno",
+        "vertical": "Navpično"
+      }
+    },
+    "swing_horizontal_modes": {
+      "name": "Vodoravni načini nihanja",
+      "states": {
+        "off": "Izklopljeno",
+        "on": "Vklopljeno"
+      }
+    },
+    "presets": {
+      "name": "Prednastavitve",
+      "states": {
+        "activity": "Dejavnost",
+        "away": "Odsoten",
+        "boost": "Pospešeno",
+        "comfort": "Udobno",
+        "eco": "Eko",
+        "home": "Doma",
+        "none": "Brez",
+        "sleep": "Spanje"
+      }
+    }
+  },
+  "frontend": {
+    "common": {
+      "buttons": {
+        "ok": "V redu",
+        "cancel": "Prekliči",
+        "yes": "Da",
+        "no": "Ne",
+        "close": "Zapri",
+        "delete": "Izbriši",
+        "save": "Shrani",
+        "edit": "Uredi",
+        "add": "Dodaj",
+        "remove": "Odstrani",
+        "update": "Posodobi",
+        "confirm": "Potrdi",
+        "back": "Nazaj",
+        "next": "Naprej",
+        "done": "Končano",
+        "submit": "Pošlji",
+        "retry": "Poskusi znova",
+        "continue": "Nadaljuj",
+        "enable": "Omogoči",
+        "disable": "Onemogoči",
+        "on": "Vklop",
+        "off": "Izklop",
+        "reset": "Ponastavi",
+        "refresh": "Osveži",
+        "clear": "Počisti",
+        "copy": "Kopiraj",
+        "activate": "Aktiviraj",
+        "upload": "Naloži",
+        "reload": "Osveži",
+        "save_settings": "Shrani nastavitve"
+      },
+      "states": {
+        "loading": "Nalaganje",
+        "ready": "Pripravljeno",
+        "unsupported": "Nepodprto",
+        "connected": "Povezano",
+        "disconnected": "Prekinjeno",
+        "offline": "Ni povezave",
+        "failed": "Spodletelo",
+        "success": "Uspešno",
+        "updating": "Posodabljanje",
+        "rebooting": "Ponovni zagon",
+        "installed": "Nameščeno",
+        "activated": "Aktivirano",
+        "trial": "Preizkus",
+        "trial_expired": "Preizkus je potekel",
+        "available": "Na voljo",
+        "not_available": "Ni na voljo",
+        "mounted": "Priklopljeno",
+        "not_mounted": "Ni priklopljeno",
+        "down": "Ne deluje",
+        "unknown": "Neznano"
+      },
+      "labels": {
+        "name": "Ime",
+        "type": "Vrsta",
+        "size": "Velikost",
+        "date": "Datum",
+        "actions": "Dejanja",
+        "status": "Status",
+        "progress": "Napredek",
+        "selected_file": "Izbrana datoteka",
+        "no_file_selected": "Nobena datoteka ni izbrana",
+        "format": "Oblika"
+      },
+      "messages": {
+        "saved": "Shranjeno",
+        "copied": "Kopirano",
+        "failed": "Operacija ni uspela",
+        "no_data": "Ni podatkov"
+      }
+    },
+    "layout": {
+      "title": "DarkForgeUI",
+      "subtitle": "Skrbniška plošča",
+      "nav": {
+        "dashboard": "Nadzorna plošča",
+        "storage": "Shramba",
+        "setup": "Nastavitve",
+        "firmware": "Vdelana programska oprema",
+        "license": "Licenca",
+        "info": "Informacije",
+        "logs": "Dnevniki",
+        "setup_wizard": "Čarovnik za namestitev"
+      },
+      "dashboard_tabs": {
+        "home": "Domov",
+        "dashboards": "Nadzorne plošče"
+      },
+      "page_titles": {
+        "dashboard": "Nadzorna plošča",
+        "storage": "Shramba",
+        "setup": "Nastavitve",
+        "firmware": "Vdelana programska oprema",
+        "license": "Licenca",
+        "info": "Informacije",
+        "logs": "Dnevniki",
+        "hass_panel": "Plošča HASS"
+      }
+    },
+    "setup_wizard": {
+      "title": "Čarovnik za začetno namestitev",
+      "step_counter": "Korak {current} / {total}",
+      "steps": {
+        "language": "Jezik",
+        "agreement": "Pogodba",
+        "ha": "Home Assistant",
+        "done": "Končano"
+      },
+      "language": {
+        "title": "Jezik in časovni pas",
+        "description": "Izberite jezik vmesnika in časovni pas naprave.",
+        "language_label": "Jezik",
+        "language_placeholder": "Izberite jezik",
+        "search_language": "Iskanje jezikov",
+        "no_languages": "Ni najdenih jezikov",
+        "timezone_label": "Časovni pas"
+      },
+      "agreement": {
+        "title": "Licenčna pogodba",
+        "description": "Preberite in sprejmite licenčno pogodbo za nadaljevanje.",
+        "accept_label": "Prebral sem in sprejemam licenčno pogodbo"
+      },
+      "ha": {
+        "title": "Povežite Home Assistant",
+        "description": "Vnesite naslov Home Assistant in trajni dostopni žeton.",
+        "url_label": "URL Home Assistant",
+        "url_placeholder": "http://homeassistant.local:8123",
+        "token_label": "Trajni dostopni žeton"
+      },
+      "done": {
+        "title": "Namestitev končana",
+        "description": "Nastavitve povezave s Home Assistant so bile uspešno shranjene.",
+        "hint": "Zdaj lahko odprete stran Nadzorna plošča in nadaljujete s konfiguracijo."
+      }
+    },
+    "pages": {
+      "dashboard": {
+        "name": "Nadzorna plošča",
+        "tabs": {
+          "home": "Domov",
+          "dashboards": "Nadzorne plošče"
+        },
+        "common": {
+          "portrait": "Pokončno",
+          "landscape": "Ležeče",
+          "entities": "Entitete",
+          "save": "Shrani",
+          "reload": "Osveži",
+          "drag_cards": "Povlecite kartice sem"
+        },
+        "dashboards": {
+          "dashboard_name": "Ime nadzorne plošče",
+          "default_dashboard_name": "Nadzorna plošča {number}",
+          "card_properties": "Lastnosti kartice",
+          "select_card": "Izberite kartico na platnu.",
+          "dashboard_saved": "Nadzorna plošča shranjena",
+          "dashboard_save_failed": "Shranjevanje nadzorne plošče ni uspelo",
+          "fix_dashboard_name": "Popravite ime nadzorne plošče pred shranjevanjem",
+          "entities_load_failed": "Nalaganje entitet ni uspelo",
+          "drag_to_canvas": "Povlecite na platno",
+          "tabs": {
+            "short": "Kratko",
+            "wide": "Široko",
+            "dividers": "Ločilniki"
+          },
+          "palette": {
+            "mini_light_small": "Mini luč majhna",
+            "mini_camera_short": "Mini kamera kratka",
+            "mini_sensor_short": "Mini senzor kratek",
+            "mini_binary_sensor_short": "Mini binarni senzor kratek",
+            "mini_lock_short": "Mini ključavnica kratka",
+            "mini_media_player": "Mini predvajalnik",
+            "mini_light_wide": "Mini luč široka",
+            "mini_climate_wide": "Mini klima široka",
+            "mini_vacuum": "Mini sesalnik",
+            "mini_camera_wide": "Mini kamera široka",
+            "mini_sensor_wide": "Mini senzor širok",
+            "mini_binary_sensor_wide": "Mini binarni senzor širok",
+            "mini_cover_wide": "Mini pokrov širok",
+            "mini_lock_wide": "Mini ključavnica široka",
+            "mini_alarm_panel": "Mini alarmna plošča",
+            "divider": "Ločilnik"
+          },
+          "icons": {
+            "light": "Luč",
+            "home": "Dom",
+            "sofa": "Kavč",
+            "music": "Glasba",
+            "shield_home": "Ščit dom",
+            "thermostat": "Termostat"
+          },
+          "props": {
+            "divider_label": "Oznaka ločilnika",
+            "divider_icon": "Ikona ločilnika",
+            "title": "Naslov",
+            "title_placeholder": "Neobvezno",
+            "entity": "Entiteta",
+            "select_entity": "Izberite entiteto",
+            "battery_entity": "Entiteta baterije",
+            "select_battery_sensor": "Izberite senzor baterije",
+            "charging_entity": "Entiteta polnjenja",
+            "select_charging_binary_sensor": "Izberite binarni senzor polnjenja",
+            "alarm_actions": "Alarmna dejanja",
+            "show_arm_home": "Prikaži Vklopi – doma",
+            "show_arm_away": "Prikaži Vklopi – odsotnost",
+            "show_arm_night": "Prikaži Vklopi – noč",
+            "show_arm_vacation": "Prikaži Vklopi – dopust",
+            "show_custom_bypass": "Prikaži po meri"
+          }
+        },
+        "home": {
+          "home_cards": "Kartice doma",
+          "home_time": "Čas",
+          "home_weather": "Vreme",
+          "home_saved": "Konfiguracija doma shranjena",
+          "home_reloaded": "Konfiguracija doma osvežena",
+          "home_save_failed": "Shranjevanje konfiguracije doma ni uspelo",
+          "home_reload_failed": "Osvežitev konfiguracije doma ni uspela",
+          "loading": "Nalaganje konfiguracije doma …"
+        }
+      },
+      "setup": {
+        "name": "Nastavitve",
+        "tabs": {
+          "settings": "Nastavitve",
+          "auth": "Preverjanje pristnosti"
+        },
+        "timezone": {
+          "title": "Časovni pas",
+          "label": "Časovni pas"
+        },
+        "rotation": {
+          "title": "Vrtenje zaslona",
+          "label": "Vrtenje zaslona",
+          "hint": "Sprememba vrtenja zaslona zahteva ponovni zagon naprave. Ponovni zagon se samodejno začne po shranjevanju."
+        },
+        "language": {
+          "title": "Jezik",
+          "label": "Jezik vmesnika",
+          "placeholder": "Izberite jezik",
+          "search": "Iskanje jezikov",
+          "no_items": "Ni najdenih jezikov"
+        },
+        "auth": {
+          "url_label": "URL Home Assistant",
+          "url_placeholder": "http://homeassistant.local:8123",
+          "token_label": "Trajni dostopni žeton Home Assistant"
+        },
+        "actions": {
+          "save_settings": "Shrani nastavitve"
+        },
+        "messages": {
+          "saved": "Nastavitve shranjene.",
+          "auth_saved": "Nastavitve Home Assistant shranjene.",
+          "rebooting": "Vrtenje zaslona je shranjeno. Naprava se ponovno zaganja, da uveljavi novo usmeritev zaslona.",
+          "save_failed": "Shranjevanje nastavitev ni uspelo"
+        }
+      },
+      "firmware": {
+        "name": "Vdelana programska oprema",
+        "tabs": {
+          "main": "Glavna",
+          "radio": "Radio"
+        },
+        "version": {
+          "main": "Glavna različica",
+          "radio": "Različica radia",
+          "built_time": "Čas gradnje"
+        },
+        "ota": {
+          "main_title": "OTA glavne vdelane programske opreme",
+          "radio_title": "OTA radijske vdelane programske opreme",
+          "radio_unsupported": "OTA radia na tej plošči ni podprt.",
+          "select_main_image": "Izberite sliko glavne vdelane programske opreme",
+          "select_radio_image": "Izberite sliko radijske vdelane programske opreme",
+          "upload_firmware": "Naloži vdelano programsko opremo",
+          "ready_main": "Pripravljeno za nalaganje glavne vdelane programske opreme",
+          "ready_radio": "Pripravljeno za nalaganje radijske vdelane programske opreme",
+          "receiving_image": "Prejemanje slike …",
+          "writing_image": "Pisanje slike …",
+          "erasing_partition": "Brisanje particije …",
+          "uploading": "Nalaganje …",
+          "installed_successfully": "Uspešno nameščeno.",
+          "installed_rebooting": "Uspešno nameščeno. Ponovni zagon …",
+          "update_failed": "Posodobitev ni uspela",
+          "firmware_uploaded_rebooting": "Vdelana programska oprema naložena. Ponovni zagon.",
+          "radio_uploaded_activated": "Radijska vdelana programska oprema naložena in aktivirana."
+        }
+      },
+      "storage": {
+        "name": "Shramba",
+        "alerts": {
+          "sd_not_supported": "SD kartica ni podprta v tem profilu plošče.",
+          "sd_not_mounted": "SD kartica ni priklopljena. Vstavite kartico in ponovno zaženite napravo."
+        },
+        "usage": {
+          "title": "Uporaba SD kartice",
+          "images": "Slike",
+          "sounds": "Zvoki",
+          "video": "Video",
+          "others": "Drugo"
+        },
+        "actions": {
+          "new_folder": "Nova mapa",
+          "upload": "Naloži",
+          "go_parent": "Pojdi na nadrejeno mapo",
+          "refresh": "Osveži",
+          "rename": "Preimenuj",
+          "delete": "Izbriši",
+          "create": "Ustvari"
+        },
+        "table": {
+          "name": "Ime",
+          "type": "Vrsta",
+          "size": "Velikost",
+          "date": "Datum",
+          "actions": "Dejanja"
+        },
+        "dialogs": {
+          "delete_title": "Izbriši datoteko?",
+          "delete_confirm": "Ali ste prepričani, da želite izbrisati {name}?",
+          "folder_must_be_empty": "Mapa mora biti prazna za brisanje.",
+          "rename_title": "Preimenuj",
+          "new_name": "Novo ime",
+          "new_folder_title": "Nova mapa",
+          "folder_name": "Ime mape"
+        },
+        "empty": "Mapa je prazna",
+        "uploading": "Nalaganje ...",
+        "types": {
+          "folder": "Mapa",
+          "file": "Datoteka",
+          "pdf": "Dokument PDF",
+          "png": "Slika PNG",
+          "jpg": "Slika JPEG",
+          "jpeg": "Slika JPEG",
+          "webp": "Slika WebP",
+          "gif": "Slika GIF",
+          "bmp": "Slika BMP",
+          "svg": "Slika SVG",
+          "ico": "Ikona",
+          "zip": "Arhiv ZIP",
+          "rar": "Arhiv RAR",
+          "seven_zip": "Arhiv 7Z",
+          "tar": "Arhiv TAR",
+          "gz": "Arhiv GZip",
+          "txt": "Besedilna datoteka",
+          "log": "Dnevniška datoteka",
+          "md": "Dokument Markdown",
+          "json": "Datoteka JSON",
+          "yaml": "Datoteka YAML",
+          "xml": "Datoteka XML",
+          "csv": "Tabela CSV",
+          "html": "Dokument HTML",
+          "css": "Datoteka CSS",
+          "js": "Datoteka JavaScript",
+          "ts": "Datoteka TypeScript",
+          "vue": "Komponenta Vue",
+          "c": "Izvorna koda C",
+          "h": "Glava C",
+          "cpp": "Izvorna koda C++",
+          "hpp": "Glava C++",
+          "py": "Skript Python",
+          "mp3": "Zvok MP3",
+          "wav": "Zvok WAV",
+          "aac": "Zvok AAC",
+          "ogg": "Zvok OGG",
+          "flac": "Zvok FLAC",
+          "m4a": "Zvok M4A",
+          "mp4": "Video MP4",
+          "avi": "Video AVI",
+          "mkv": "Video MKV",
+          "mov": "Video MOV",
+          "webm": "Video WebM",
+          "mpeg": "Video MPEG",
+          "bin": "Binarna datoteka",
+          "elf": "Binarna datoteka ELF",
+          "img": "Slika diska"
+        },
+        "messages": {
+          "upload_success": "Nalaganje uspešno",
+          "deleted": "Izbrisano",
+          "renamed": "Preimenovano",
+          "folder_created": "Mapa ustvarjena",
+          "load_failed": "Nalaganje seznama ni uspelo",
+          "upload_failed": "Nalaganje ni uspelo",
+          "delete_failed": "Brisanje ni uspelo",
+          "rename_failed": "Preimenovanje ni uspelo",
+          "create_folder_failed": "Ustvarjanje mape ni uspelo",
+          "folder_not_empty": "Mapa ni prazna"
+        }
+      },
+      "license": {
+        "name": "Licenca",
+        "tabs": {
+          "license": "Licenca",
+          "agreement": "Pogodba"
+        },
+        "status": {
+          "title": "Stanje licence",
+          "activated": "Licenca aktivirana.",
+          "trial_mode": "Preizkusni način",
+          "trial_remaining": "Preostali čas: {time}",
+          "trial_expired": "Preizkusno obdobje je poteklo. Prosimo, aktivirajte licenco.",
+          "device_id": "ID naprave",
+          "device_id_hint": "Uporabite ta ID za licenčni ključ.",
+          "license_key": "Licenčni ključ",
+          "activated_label": "Aktivirano",
+          "trial_label": "Preizkus",
+          "expired_label": "Preizkus potekel",
+          "loading_label": "Nalaganje"
+        },
+        "agreement": {
+          "title": "Licenčna pogodba",
+          "description": "Preberite in sprejmite licenčno pogodbo za nadaljevanje.",
+          "accept_label": "Prebral sem in sprejemam licenčno pogodbo",
+          "text": "Licenčna pogodba za končnega uporabnika za vdelano programsko opremo\n\nDatum revizije: 10.07.2026\n\nTa licenčna pogodba za končnega uporabnika (v nadaljevanju »Pogodba«) ureja pogoje namestitve, uporabe in distribucije programske opreme vdelane programske opreme DarkForgeUI (v nadaljevanju »Vdelana programska oprema«).\n\nZ namestitvijo, prenosom, namestitvijo na napravo, posodobitvijo ali uporabo Vdelane programske opreme uporabnik potrjuje, da je prebral, razumel in sprejel pogoje te Pogodbe.\n\n1. Splošne določbe\n\nVdelana programska oprema je programska oprema, namenjena namestitvi na združljive naprave z namenom spreminjanja, razširitve ali zamenjave njihove izvirne programske opreme.\n\nVdelana programska oprema lahko spremeni vedenje naprave, njene omrežne funkcije, krmilno logiko in interakcijo z zunanjimi storitvami, vključno z integracijo s Home Assistant prek API-ja.\n\nUporabnik se samostojno odloči, ali bo namestil in uporabljal Vdelano programsko opremo, ter prevzema vsa tveganja, povezana s takimi dejanji.\n\n2. Namestitev in uporaba na lastno odgovornost\n\nUporabnik razume in se strinja, da lahko namestitev Vdelane programske opreme povzroči:\n\n- popolno ali delno nedelovanje naprave;\n- nezmožnost obnovitve tovarniške vdelane programske opreme;\n- izgubo garancije proizvajalca;\n- izgubo uporabniških nastavitev in podatkov;\n- nepravilno delovanje naprave;\n- poškodbo naprave ali povezane opreme;\n- nestabilno delovanje omrežja, avtomatizacij ali zunanjih integracij.\n\nVdelana programska oprema se namesti in uporablja izključno na lastno odgovornost uporabnika.\n\nAvtor, razvijalec, imetnik pravic, sodelavci projekta in druge povezane osebe ne odgovarjajo za kakršne koli posledice namestitve ali uporabe Vdelane programske opreme.\n\n3. Opozorilo o visoki napetosti in nevarnih pogojih delovanja\n\nNekatere naprave, na katere se lahko namesti Vdelana programska oprema, lahko delujejo z električnimi tokokrogi, ki so pod nevarno ali visoko napetostjo.\n\nUporabnik potrjuje, da razume morebitna tveganja, vključno z, a ne omejeno na:\n\n- električni udar;\n- požar;\n- kratek stik;\n- poškodbo električne napeljave;\n- poškodbo povezane opreme;\n- škodo za zdravje ali premoženje.\n\nVsako delo z napravami, priključenimi na električno omrežje, je treba izvajati le v skladu z zahtevami električne varnosti. Če uporabnik nima zadostnega znanja in kvalifikacij, se mora obrniti na usposobljenega strokovnjaka.\n\nPrepovedano je nameščati ali uporabljati Vdelano programsko opremo v pogojih, kjer lahko nepravilno delovanje naprave ogrozi življenje, zdravje, požarno varnost, povzroči nesrečo ali povzroči znatno materialno škodo.\n\n4. Necertificirane naprave in zahteve glede skladnosti\n\nUporabnik razume, da se lahko naprava z nameščeno Vdelano programsko opremo razlikuje po funkcionalnosti in obnašanju od naprave v tovarniškem stanju.\n\nNamestitev Vdelane programske opreme lahko povzroči, da naprava:\n\n- ne izpolnjuje več certifikacijskih zahtev proizvajalca;\n- ne izpolnjuje več lokalnih zakonskih zahtev;\n- ne izpolnjuje zahtev glede električne varnosti, radijske frekvence, industrijske uporabe ali drugih veljavnih standardov;\n- ni primerna za uporabo v določenih državah, prostorih, sistemih ali scenarijih.\n\nUporabnik je izključno odgovoren za spoštovanje vseh veljavnih zakonov, tehničnih predpisov, varnostnih pravil in operativnih zahtev.\n\n5. Zagotovljeno »takšno, kot je«\n\nVdelana programska oprema je na voljo »takšna, kot je« in »kot je na voljo«, brez kakršnih koli izrecnih ali implicitnih garancij.\n\nAvtor ne jamči, da bo Vdelana programska oprema:\n\n- delovala brez napak;\n- združljiva z vsemi napravami;\n- izpolnila pričakovanja uporabnika;\n- varna za vsak primer uporabe;\n- prejemala posodobitve ali podporo;\n- ostala združljiva s prihodnjimi različicami Home Assistant, API-jev, knjižnic ali platform strojne opreme.\n\nUporabnik prevzema vsa tveganja v zvezi s kakovostjo, zmogljivostjo, varnostjo in primernostjo Vdelane programske opreme za določene namene.\n\n6. Izključitev odgovornosti\n\nV največjem dovoljenem obsegu po veljavni zakonodaji avtor, razvijalec, imetnik pravic, sodelavci projekta in povezane osebe ne odgovarjajo za kakršno koli neposredno, posredno, naključno, posebno, kaznovalno ali posledično škodo, vključno z, a ne omejeno na:\n\n- poškodbo naprave;\n- škodo na premoženju;\n- izgubo podatkov;\n- izgubo dobička;\n- prekinitev delovanja sistema;\n- stroške popravila ali zamenjave opreme;\n- motnje v avtomatizacijah;\n- škodo za zdravje;\n- posledice nepravilne namestitve ali delovanja;\n- posledice uporabe Vdelane programske opreme na napravah, ki niso namenjene takšni uporabi.\n\nTa izključitev odgovornosti velja ne glede na pravno podlago odgovornosti, vključno s pogodbo, odškodninsko odgovornostjo, malomarnostjo, objektivno odgovornostjo ali katero koli drugo pravno podlago.\n\n7. Integracija s Home Assistant in API\n\nVdelana programska oprema lahko uporablja API-je, omrežne vmesnike ali druge mehanizme za interakcijo s Home Assistant.\n\nUporabnik razume, da:\n\n- je integracija odvisna od različice Home Assistant;\n- lahko spremembe API-ja, omrežnih nastavitev, konfiguracije Home Assistant ali komponent tretjih oseb vplivajo na delovanje Vdelane programske opreme;\n- avtor Vdelane programske opreme ne nadzoruje razvoja Home Assistant in ne odgovarja za spremembe njegove funkcionalnosti;\n- združljivost s Home Assistant ni zagotovljena za vse različice in konfiguracije.\n\nVdelana programska oprema ni uradna integracija Home Assistant, razen če avtor izrecno ne navede drugače.\n\n8. Blagovne znamke in sklicevanja na tretje osebe\n\nVse blagovne znamke, logotipi, imena izdelkov in storitev pripadajo njihovim lastnikom.\n\nHome Assistant je blagovna znamka ustreznih imetnikov pravic, vključno z Open Home Foundation in/ali organizacijami, povezanimi s projektom. Navedba Home Assistant se uporablja izključno za opis združljivosti ali interakcije z ustrezno programsko opremo.\n\nTa vdelana programska oprema ni uradni izdelek Home Assistant, Open Home Foundation ali Nabu Casa, ni podprta s strani njih in ni povezana z njimi, razen če izrecno ni navedeno drugače.\n\n9. Omejitve uporabe\n\nUporabnik ne sme uporabljati Vdelane programske opreme v sistemih, kjer lahko okvara, zamuda, napaka ali nepravilno delovanje naprave povzroči:\n\n- smrt ali telesne poškodbe;\n- požar;\n- nesrečo;\n- materialno škodo;\n- motnje v varnostnih sistemih;\n- okvare kritične infrastrukture;\n- motnje v medicinski, industrijski, transportni ali nujni opremi.\n\nVdelana programska oprema je namenjena uporabnikom, ki razumejo tehnična tveganja namestitve alternativne programske opreme in so sposobni samostojno oceniti posledice njene uporabe.\n\n10. Posodobitve in spremembe\n\nAvtor lahko izda posodobitve Vdelane programske opreme, vendar k temu ni zavezan.\n\nPosodobitve lahko spremenijo funkcionalnost, združljivost, nastavitve, komunikacijske protokole ali vedenje naprave.\n\nUporabnik se samostojno odloči, ali bo namestil posodobitve, in prevzema vsa tveganja, povezana s posodabljanjem ali zavrnitvijo posodobitve.\n\n11. Pravice uporabe\n\nOb upoštevanju te Pogodbe je uporabniku podeljena omejena, neizključna, neprenosljiva pravica do uporabe Vdelane programske opreme na združljivih napravah.\n\nČe ni drugače določeno v ločeni licenci, uporabnik ne sme:\n\n- predstavljati Vdelane programske opreme kot lasten razvoj;\n- odstranjevati obvestil o avtorstvu;\n- uporabljati imena projekta, logotipov ali avtorskega gradiva brez dovoljenja;\n- prodajati Vdelane programske opreme kot samostojnega izdelka brez pisnega dovoljenja avtorja;\n- distribuirati spremenjenih različic brez navedbe, da so bile spremenjene.\n\nČe Vdelana programska oprema vključuje odprtokodne komponente, se te komponente uporabljajo pod pogoji ustreznih odprtokodnih licenc.\n\n12. Komponente tretjih oseb\n\nVdelana programska oprema lahko vsebuje ali uporablja knjižnice, API-je, SDK-je, gonilnike ali druge programske komponente tretjih oseb.\n\nTake komponente se lahko distribuirajo pod ločenimi licencami. Uporabnik se strinja, da bo spoštoval take licence, kjer je to primerno.\n\nAvtor Vdelane programske opreme ne daje nobenih garancij glede komponent tretjih oseb in ne odgovarja za njihovo delovanje, varnost ali združljivost.\n\n13. Prenehanje licence\n\nPravica uporabnika do uporabe Vdelane programske opreme samodejno preneha ob kršitvi te Pogodbe.\n\nPo prenehanju licence mora uporabnik prenehati uporabljati Vdelano programsko opremo in jo odstraniti iz svojih naprav, kjer je to tehnično mogoče.\n\n14. Veljavno pravo\n\nTo Pogodbo ureja pravo Ruske federacije, razen če veljavna zakonodaja ne zahteva drugače.\n\nČe se katera koli določba te Pogodbe izkaže za neveljavno ali neizvršljivo, ostanejo preostale določbe v veljavi.\n\n15. Sprejem pogojev\n\nZ namestitvijo, prenosom, posodobitvijo ali uporabo Vdelane programske opreme uporabnik potrjuje, da:\n\n- je prebral to Pogodbo;\n- razume tveganja namestitve alternativne vdelane programske opreme;\n- se zaveda možnih posledic dela z napravami pod napetostjo;\n- sprejema Vdelano programsko opremo »takšno, kot je«;\n- se strinja z uporabo Vdelane programske opreme izključno na lastno odgovornost.\n\nČe se uporabnik ne strinja s pogoji te Pogodbe, ne sme namestiti, prenesti, posodobiti ali uporabljati Vdelane programske opreme."
+        },
+        "messages": {
+          "device_id_copied": "ID naprave kopiran",
+          "device_id_copy_failed": "Kopiranje ni uspelo. ID naprave je prikazan na strani.",
+          "activation_success": "Licenca uspešno aktivirana",
+          "license_key_empty": "Licenčni ključ je prazen",
+          "status_load_failed": "Nalaganje stanja licence ni uspelo"
+        },
+        "errors": {
+          "invalid_arg": "Licenčni ključ je prazen",
+          "invalid_format": "Neveljavna oblika licenčnega ključa",
+          "device_mismatch": "Ta licenčni ključ je za drugo napravo",
+          "signature_failed": "Preverjanje podpisa licence ni uspelo",
+          "store_failed": "Shranjevanje licence ni uspelo",
+          "invalid_body": "Neveljavno telo zahtevka",
+          "read_failed": "Branje telesa zahtevka ni uspelo",
+          "invalid_json": "Neveljaven JSON",
+          "missing_license_key": "Manjka licenčni ključ",
+          "activation_failed": "Aktivacija ni uspela"
+        }
+      },
+      "info": {
+        "name": "Informacije",
+        "tabs": {
+          "overview": "Pregled",
+          "home_assistant": "Home Assistant",
+          "screenshot": "Posnetek zaslona"
+        },
+        "actions": {
+          "refresh": "Osveži"
+        },
+        "sections": {
+          "system": "Sistem",
+          "processor": "Procesor",
+          "coprocessor": "Koprocesor",
+          "display": "Zaslon",
+          "io": "V/I",
+          "memory_storage": "Pomnilnik in shranjevanje",
+          "network": "Omrežje",
+          "home_assistant": "Home Assistant",
+          "entity": "Entiteta"
+        },
+        "labels": {
+          "model": "Model",
+          "chip_revision": "Rev. čipa",
+          "temperature": "Temperatura",
+          "firmware_version": "Razl. vdelane pr. opreme",
+          "driver": "Gonilnik",
+          "interface": "Vmesnik",
+          "resolution": "Ločljivost",
+          "color": "Barva",
+          "rotation": "Vrtenje",
+          "audio": "Zvok",
+          "microphones": "Mikrofoni",
+          "sd_card": "SD kartica",
+          "ssid": "SSID",
+          "ip": "IP",
+          "mac": "MAC",
+          "rssi": "RSSI",
+          "channel": "Kanal",
+          "security": "Varnost",
+          "total": "skupaj"
+        },
+        "network": {
+          "wifi": "Wi-Fi",
+          "ethernet": "Ethernet",
+          "wifi_ethernet": "Wi-Fi + Ethernet",
+          "cable_disconnected": "Kabel ni priključen",
+          "ethernet_unavailable": "Ethernet ni na voljo na tej plošči"
+        },
+        "domains": {
+          "media_player": "Predvajalnik",
+          "light": "Luč",
+          "camera": "Kamera",
+          "climate": "Klima",
+          "cover": "Pokrov",
+          "fan": "Ventilator",
+          "alarm_control_panel": "Alarm",
+          "vacuum": "Sesalnik",
+          "weather": "Vreme",
+          "sensor": "Senzor",
+          "binary_sensor": "Binarni senzor",
+          "input_boolean": "Vhodno stikalo",
+          "switch": "Stikalo",
+          "lock": "Ključavnica",
+          "humidifier": "Vlažilec",
+          "water_heater": "Grelnik vode",
+          "update": "Posodobitev",
+          "automation": "Avtomatizacija",
+          "air_quality": "Kakovost zraka",
+          "button": "Gumb",
+          "calendar": "Koledar",
+          "conversation": "Pogovor",
+          "date": "Datum",
+          "datetime": "Datum in čas",
+          "device_tracker": "Sledilnik naprav",
+          "event": "Dogodek",
+          "input_number": "Vhodno število",
+          "input_select": "Vhodni izbor",
+          "input_text": "Vhodno besedilo",
+          "lawn_mower": "Kosilnica",
+          "notify": "Obvestilo",
+          "number": "Število",
+          "person": "Oseba",
+          "script": "Skripta",
+          "select": "Izbira",
+          "siren": "Sirena",
+          "stt": "Govor v besedilo",
+          "sun": "Sonce",
+          "text": "Besedilo",
+          "time": "Čas",
+          "todo": "Seznam opravil",
+          "tts": "Besedilo v govor",
+          "valve": "Ventil",
+          "zone": "Cona",
+          "other": "Drugo"
+        },
+        "messages": {
+          "metrics_load_failed": "Nalaganje metrik ni uspelo",
+          "no_domains": "Domene entitet Home Assistant še niso na voljo."
+        },
+        "screenshot": {
+          "format": "Oblika",
+          "save": "Shrani",
+          "formats": {
+            "auto": "Samodejno",
+            "jpg": "JPEG",
+            "bmp": "BMP"
+          },
+          "messages": {
+            "saved": "Posnetek zaslona shranjen",
+            "failed": "Posnetek zaslona ni uspel"
+          }
+        }
+      },
+      "logs": {
+        "name": "Dnevniki",
+        "auto_scroll": "Samodejno drsenje",
+        "refresh": "Osveži",
+        "clear": "Počisti",
+        "empty": "Ni dnevniških zapisov",
+        "messages": {
+          "cleared": "Dnevniki počiščeni"
+        }
+      },
+      "not_found": {
+        "headline": "Ups, 404",
+        "title": "Stran ni najdena",
+        "text": "Stran, ki jo iščete, ne obstaja",
+        "back": "Nazaj"
+      }
+    },
+    "entity_picker": {
+      "entity": "Entiteta",
+      "select_entity": "Izberite entiteto",
+      "search_entity": "Išči entiteto",
+      "no_entities": "Ni najdenih entitet"
+    },
+    "flag_picker": {
+      "language": "Jezik",
+      "select_language": "Izberite jezik",
+      "search_language": "Išči jezik",
+      "no_languages": "Ni najdenih jezikov"
+    }
+  }
+}

@@ -1,0 +1,1104 @@
+{
+  "loading": {
+    "synchronization": "Synchronization...",
+    "connection_api": "Connecting to API...",
+    "title": "DarkForge UI",
+    "subtitle": "Breathing life into every pixel",
+    "starting": "Starting UI..."
+  },
+  "hass": {
+    "title": "Home Assistant",
+    "connecting": "Connecting to Home Assistant...",
+    "connecting_network": "Waiting for network connection",
+    "connecting_wifi": "Connecting to saved Wi-Fi...",
+    "waiting_config": "Waiting for Home Assistant configuration",
+    "syncing": "Synchronizing Home Assistant entities...",
+    "loading_entities": "Loading entities",
+    "ready": "Home Assistant ready",
+    "progress": "%d%%",
+    "entities_progress": "%d%%  ·  %d / %d",
+    "checking": "Checking connection...",
+    "cannot_reach": "Cannot reach Home Assistant. Check server and network",
+    "cannot_reach_with_url": "Cannot reach Home Assistant.\nCheck server and network.\n%s",
+    "initial_sync_complete": "Initial synchronization complete"
+  },
+  "ota": {
+    "start": {
+      "primary": "Starting OTA!",
+      "secondary": "Wait..."
+    },
+    "end": {
+      "primary": "Update complete!",
+      "secondary": "Rebooting..."
+    },
+    "error": {
+      "primary": "Update ERROR!",
+      "secondary": "Rebooting..."
+    },
+    "progress": "Firmware progress %0.1f%%"
+  },
+  "config": {
+    "title": "Configuration Required",
+    "instructions": "To configure the panel, please:\n\n1. Connect to the same network\n2. Open a web browser\n3. Navigate to the address below\n4. Enter your Home Assistant URL and Token",
+    "hint": "Make sure your device is on the same network",
+    "ip_placeholder": "http://..."
+  },
+  "network": {
+    "status": {
+      "connecting": "Connecting...",
+      "connected": "Connected",
+      "disconnecting": "Disconnecting...",
+      "disconnected": "Disconnected",
+      "scanning": "Scanning..."
+    },
+    "wifi": {
+      "title": "WiFi Settings",
+      "scan": "Scan",
+      "status": {
+        "no_networks": "No networks found",
+        "found": "Found networks",
+        "password_required": "Error: Password required!",
+        "ready": "Ready",
+        "connecting_saved": "Connecting using saved Wi-Fi credentials...",
+        "not_connected": "Network is not connected",
+        "wrong_password": "Wrong Wi-Fi password. Select network and try again",
+        "auth_failed": "Wi-Fi authentication failed",
+        "no_ap_found": "Saved Wi-Fi network was not found",
+        "connect_failed": "Wi-Fi connection failed",
+        "open_selected": "Open network selected",
+        "enter_password": "Enter password and press Connect",
+        "connection_timeout": "Connection timeout",
+        "connection_failed": "Connection failed",
+        "connected": "Connected",
+        "scanning": "Scanning..."
+      },
+      "popup": {
+        "title": "Connect to WiFi",
+        "network": "Network:",
+        "password": "Password:",
+        "password_placeholder": "Enter password",
+        "open_network": "Open network — no password",
+        "connect": "Connect",
+        "cancel": "Cancel"
+      }
+    }
+  },
+  "license_lock": {
+    "expired": {
+      "title": "License Required",
+      "message": "Trial period has expired.\nActivate a Full license to continue.",
+      "hint": "Open the web interface and go to the License page.\nThe web server remains available for activation."
+    },
+    "warning": {
+      "title": "Trial Version",
+      "message": "This device is running in trial mode.\nA Full license is required for regular use.",
+      "hint": "You can continue for now.\nOpen the web interface to activate a license."
+    },
+    "button": {
+      "ok": "OK"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "theme": {
+      "title": "Theme",
+      "themes": {
+        "light_black": "Light Black",
+        "dark_blue": "Dark Blue",
+        "swamp_green": "Swamp Green"
+      },
+      "colors": {
+        "default": "Default",
+        "blue": "Blue",
+        "red": "Red",
+        "yellow": "Yellow",
+        "green": "Green",
+        "orange": "Orange",
+        "cyan": "Cyan",
+        "purple": "Purple",
+        "dark_blue": "Dark Blue",
+        "mint": "Mint",
+        "gray": "Gray",
+        "crimson": "Crimson",
+        "sienna": "Sienna",
+        "magenta": "Magenta",
+        "pink": "Pink"
+      }
+    },
+    "color_of_elements": "Color of elements",
+    "times_format": "AM/PM format",
+    "timezone": "Timezone",
+    "backlight": "Backlight brightness",
+    "sleep_timeout": "Sleep timeout"
+  },
+  "sleep_time": {
+    "never": "Never",
+    "minute1": "1 minute",
+    "minute5": "5 minutes",
+    "minute10": "10 minutes",
+    "minute30": "30 minutes",
+    "hour1": "1 hour",
+    "hour6": "6 hours",
+    "hour12": "12 hours"
+  },
+  "weather": {
+    "title": "Weather",
+    "forecasts": {
+      "daily": "Daily",
+      "hourly": "Hourly"
+    },
+    "attributes": {
+      "humidity": "Humidity",
+      "pressure": "Pressure",
+      "wind": "Wind speed",
+      "uv": "UV Index"
+    },
+    "states": {
+      "clear-night": "Clear, night",
+      "cloudy": "Cloudy",
+      "exceptional": "Exceptional",
+      "fog": "Fog",
+      "hail": "Hail",
+      "lightning": "Lightning",
+      "lightning-rainy": "Lightning, rainy",
+      "partlycloudy": "Partly cloudy",
+      "pouring": "Pouring",
+      "rainy": "Rainy",
+      "snowy": "Snowy",
+      "snowy-rainy": "Snowy, rainy",
+      "sunny": "Sunny",
+      "windy": "Windy",
+      "windy-variant": "Windy, cloudy"
+    }
+  },
+  "datetime": {
+    "day_of_week": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday"
+    },
+    "day_of_week_short": {
+      "monday": "MON",
+      "tuesday": "TUE",
+      "wednesday": "WED",
+      "thursday": "THU",
+      "friday": "FRI",
+      "saturday": "SAT",
+      "sunday": "SUN"
+    },
+    "month": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    }
+  },
+  "common": {
+    "buttons": {
+      "ok": "OK",
+      "cancel": "Cancel",
+      "yes": "Yes",
+      "no": "No",
+      "close": "Close",
+      "delete": "Delete",
+      "save": "Save",
+      "edit": "Edit",
+      "add": "Add",
+      "remove": "Remove",
+      "update": "Update",
+      "confirm": "Confirm",
+      "back": "Back",
+      "next": "Next",
+      "submit": "Submit",
+      "retry": "Retry",
+      "continue": "Continue",
+      "enable": "Enable",
+      "disable": "Disable",
+      "on": "On",
+      "off": "Off"
+    },
+    "state": {
+      "off": "Off",
+      "on": "On",
+      "unavailable": "Unavailable",
+      "unknown": "Unknown",
+      "not_found": "Device not found"
+    }
+  },
+  "battery": {
+    "name": "Battery",
+    "state": {
+      "charging": "Charging"
+    }
+  },
+  "sensor": {
+    "name": "Sensor"
+  },
+  "light": {
+    "name": "Light",
+    "state": {
+      "on": "On",
+      "off": "Off"
+    }
+  },
+  "media_player": {
+    "name": "Media player",
+    "no_track": "No track",
+    "unknown_artist": "Unknown artist",
+    "state": {
+      "off": "Off",
+      "on": "On",
+      "idle": "Idle",
+      "playing": "Playing",
+      "paused": "Paused",
+      "standby": "Standby",
+      "buffering": "Buffering"
+    }
+  },
+  "camera": {
+    "name": "Camera",
+    "state": {
+      "idle": "Idle",
+      "streaming": "Streaming",
+      "recording": "Recording"
+    }
+  },
+  "vacuum": {
+    "name": "Vacuum",
+    "state": {
+      "cleaning": "Cleaning",
+      "docked": "Docked",
+      "error": "Error",
+      "idle": "Idle",
+      "off": "Off",
+      "on": "On",
+      "paused": "Paused",
+      "returning": "Returning to dock"
+    }
+  },
+  "lock": {
+    "name": "Lock",
+    "enter_pass": "Enter password",
+    "wrong_pass": "Wrong password",
+    "state": {
+      "jammed": "Jammed",
+      "locked": "Locked",
+      "unlocked": "Unlocked",
+      "locking": "Locking",
+      "unlocking": "Unlocking",
+      "open": "Open",
+      "opening": "Opening"
+    }
+  },
+  "binary_sensor": {
+    "name": "Binary sensor",
+    "state": {
+      "on": "On",
+      "off": "Off",
+      "low": "Low",
+      "normal": "Normal",
+      "charging": "Charging",
+      "not_charging": "Not charging",
+      "co_detected": "Carbon monoxide detected",
+      "clear": "Clear",
+      "cold": "Cold",
+      "connected": "Connected",
+      "disconnected": "Disconnected",
+      "open": "Open",
+      "closed": "Closed",
+      "gas_detected": "Gas detected",
+      "hot": "Hot",
+      "light_detected": "Light detected",
+      "no_light": "No light",
+      "locked": "Locked",
+      "unlocked": "Unlocked",
+      "wet": "Wet",
+      "dry": "Dry",
+      "detected": "Detected",
+      "moving": "Moving",
+      "stopped": "Stopped",
+      "plugged_in": "Plugged in",
+      "unplugged": "Unplugged",
+      "power_detected": "Power detected",
+      "no_power": "No power",
+      "home": "Home",
+      "away": "Away",
+      "problem": "Problem",
+      "ok": "OK",
+      "running": "Running",
+      "not_running": "Not running",
+      "unsafe": "Unsafe",
+      "safe": "Safe",
+      "smoke_detected": "Smoke detected",
+      "sound_detected": "Sound detected",
+      "tampering": "Tampering",
+      "update_available": "Update available",
+      "up_to_date": "Up-to-date",
+      "vibration_detected": "Vibration detected"
+    }
+  },
+  "cover": {
+    "name": "Cover",
+    "state": {
+      "closed": "Closed",
+      "closing": "Closing",
+      "open": "Open",
+      "opening": "Opening",
+      "stopped": "Stopped"
+    }
+  },
+  "alarm_panel": {
+    "name": "Alarm control panel",
+    "enter_pass": "Enter password",
+    "wrong_pass": "Wrong password",
+    "state": {
+      "armed": "Armed",
+      "armed_away": "Armed away",
+      "armed_custom_bypass": "Armed custom bypass",
+      "armed_home": "Armed home",
+      "armed_night": "Armed night",
+      "armed_vacation": "Armed vacation",
+      "arming": "Arming",
+      "disarmed": "Disarmed",
+      "disarming": "Disarming",
+      "pending": "Pending",
+      "triggered": "Triggered"
+    }
+  },
+  "fan": {
+    "name": "Fan",
+    "state": {
+      "on": "On",
+      "off": "Off"
+    }
+  },
+  "input_boolean": {
+    "name": "Input boolean",
+    "state": {
+      "on": "On",
+      "off": "Off"
+    }
+  },
+  "switch": {
+    "name": "Switch",
+    "state": {
+      "on": "On",
+      "off": "Off"
+    }
+  },
+  "button": {
+    "name": "Button"
+  },
+  "lawn_mower": {
+    "name": "Lawn mower",
+    "state": {
+      "docked": "Docked",
+      "error": "Error",
+      "mowing": "Mowing",
+      "paused": "Paused",
+      "returning": "Returning"
+    }
+  },
+  "water_heater": {
+    "name": "Water heater",
+    "state": {
+      "eco": "Eco",
+      "electric": "Electric",
+      "gas": "Gas",
+      "heat_pump": "Heat pump",
+      "high_demand": "High demand",
+      "off": "Off",
+      "performance": "Performance"
+    }
+  },
+  "humidifier": {
+    "name": "Humidifier",
+    "state": {
+      "off": "Off",
+      "on": "On"
+    },
+    "action": {
+      "drying": "Drying",
+      "humidifying": "Humidifying",
+      "idle": "Idle",
+      "off": "Off"
+    },
+    "mode": {
+      "auto": "Auto",
+      "away": "Away",
+      "baby": "Baby",
+      "boost": "Boost",
+      "comfort": "Comfort",
+      "eco": "Eco",
+      "home": "Home",
+      "normal": "Normal",
+      "sleep": "Sleep"
+    }
+  },
+  "climate": {
+    "name": "Climate",
+    "modes": {
+      "auto": "Auto",
+      "cool": "Cool",
+      "dry": "Dry",
+      "fan": "Fan",
+      "heat": "Heat",
+      "heat_cool": "Heat/Cool",
+      "off": "Off"
+    },
+    "actions": {
+      "cooling": "Cooling",
+      "defrosting": "Defrosting",
+      "drying": "Drying",
+      "fan": "Fan",
+      "heating": "Heating",
+      "idle": "Idle",
+      "off": "Off",
+      "preheating": "Preheating"
+    },
+    "fan_modes": {
+      "name": "Fan modes",
+      "states": {
+        "auto": "Auto",
+        "diffuse": "Diffuse",
+        "focus": "Focus",
+        "high": "High",
+        "low": "Low",
+        "medium": "Medium",
+        "middle": "Middle",
+        "off": "Off",
+        "on": "On",
+        "top": "Top"
+      }
+    },
+    "swing_modes": {
+      "name": "Swing mode",
+      "states": {
+        "both": "Both",
+        "horizontal": "Horizontal",
+        "off": "Off",
+        "on": "On",
+        "vertical": "Vertical"
+      }
+    },
+    "swing_horizontal_modes": {
+      "name": "Horizontal swing modes",
+      "states": {
+        "off": "Off",
+        "on": "On"
+      }
+    },
+    "presets": {
+      "name": "Presets",
+      "states": {
+        "activity": "Activity",
+        "away": "Away",
+        "boost": "Boost",
+        "comfort": "Comfort",
+        "eco": "Eco",
+        "home": "Home",
+        "none": "None",
+        "sleep": "Sleep"
+      }
+    }
+  },
+  "frontend": {
+    "common": {
+      "buttons": {
+        "ok": "OK",
+        "cancel": "Cancel",
+        "yes": "Yes",
+        "no": "No",
+        "close": "Close",
+        "delete": "Delete",
+        "save": "Save",
+        "edit": "Edit",
+        "add": "Add",
+        "remove": "Remove",
+        "update": "Update",
+        "confirm": "Confirm",
+        "back": "Back",
+        "next": "Next",
+        "done": "Done",
+        "submit": "Submit",
+        "retry": "Retry",
+        "continue": "Continue",
+        "enable": "Enable",
+        "disable": "Disable",
+        "on": "On",
+        "off": "Off",
+        "reset": "Reset",
+        "refresh": "Refresh",
+        "clear": "Clear",
+        "copy": "Copy",
+        "activate": "Activate",
+        "upload": "Upload",
+        "reload": "Reload",
+        "save_settings": "Save settings"
+      },
+      "states": {
+        "loading": "Loading",
+        "ready": "Ready",
+        "unsupported": "Unsupported",
+        "connected": "Connected",
+        "disconnected": "Disconnected",
+        "offline": "Offline",
+        "failed": "Failed",
+        "success": "Success",
+        "updating": "Updating",
+        "rebooting": "Rebooting",
+        "installed": "Installed",
+        "activated": "Activated",
+        "trial": "Trial",
+        "trial_expired": "Trial expired",
+        "available": "Available",
+        "not_available": "Not available",
+        "mounted": "Mounted",
+        "not_mounted": "Not mounted",
+        "down": "Down",
+        "unknown": "Unknown"
+      },
+      "labels": {
+        "name": "Name",
+        "type": "Type",
+        "size": "Size",
+        "date": "Date",
+        "actions": "Actions",
+        "status": "Status",
+        "progress": "Progress",
+        "selected_file": "Selected file",
+        "no_file_selected": "No file selected",
+        "format": "Format"
+      },
+      "messages": {
+        "saved": "Saved",
+        "copied": "Copied",
+        "failed": "Operation failed",
+        "no_data": "No data available"
+      }
+    },
+    "layout": {
+      "title": "DarkForgeUI",
+      "subtitle": "Admin Panel",
+      "nav": {
+        "dashboard": "Dashboard",
+        "storage": "Storage",
+        "setup": "Setup",
+        "firmware": "Firmware",
+        "license": "License",
+        "info": "Info",
+        "logs": "Logs",
+        "setup_wizard": "Setup Wizard"
+      },
+      "dashboard_tabs": {
+        "home": "Home",
+        "dashboards": "Dashboards"
+      },
+      "page_titles": {
+        "dashboard": "Dashboard",
+        "storage": "Storage",
+        "setup": "Setup",
+        "firmware": "Firmware",
+        "license": "License",
+        "info": "Info",
+        "logs": "Logs",
+        "hass_panel": "HASS Panel"
+      }
+    },
+    "setup_wizard": {
+      "title": "Initial Setup Wizard",
+      "step_counter": "Step {current} / {total}",
+      "steps": {
+        "language": "Language",
+        "agreement": "Agreement",
+        "ha": "Home Assistant",
+        "done": "Done"
+      },
+      "language": {
+        "title": "Language and timezone",
+        "description": "Choose the interface language and device timezone.",
+        "language_label": "Language",
+        "language_placeholder": "Select language",
+        "search_language": "Search language",
+        "no_languages": "No languages found",
+        "timezone_label": "Timezone"
+      },
+      "agreement": {
+        "title": "License Agreement",
+        "description": "Please read and accept the license agreement to continue.",
+        "accept_label": "I have read and accept the license agreement"
+      },
+      "ha": {
+        "title": "Connect Home Assistant",
+        "description": "Enter your Home Assistant address and long-lived access token.",
+        "url_label": "Home Assistant URL",
+        "url_placeholder": "http://homeassistant.local:8123",
+        "token_label": "Long-lived access token"
+      },
+      "done": {
+        "title": "Setup Complete",
+        "description": "Home Assistant connection settings were saved successfully.",
+        "hint": "You can now open the Dashboard page and continue configuration."
+      }
+    },
+    "pages": {
+      "dashboard": {
+        "name": "Dashboard",
+        "tabs": {
+          "home": "Home",
+          "dashboards": "Dashboards"
+        },
+        "common": {
+          "portrait": "Portrait",
+          "landscape": "Landscape",
+          "entities": "Entities",
+          "save": "Save",
+          "reload": "Reload",
+          "drag_cards": "Drag cards here"
+        },
+        "dashboards": {
+          "dashboard_name": "Dashboard name",
+          "default_dashboard_name": "Dashboard {number}",
+          "card_properties": "Card properties",
+          "select_card": "Select a card on the canvas.",
+          "dashboard_saved": "Dashboard saved",
+          "dashboard_save_failed": "Failed to save dashboard",
+          "fix_dashboard_name": "Fix dashboard name before saving",
+          "entities_load_failed": "Failed to load entities",
+          "drag_to_canvas": "Drag to canvas",
+          "tabs": {
+            "short": "Short",
+            "wide": "Wide",
+            "dividers": "Dividers"
+          },
+          "palette": {
+            "mini_light_small": "Mini Light Small",
+            "mini_camera_short": "Mini Camera Short",
+            "mini_sensor_short": "Mini Sensor Short",
+            "mini_binary_sensor_short": "Mini Binary Sensor Short",
+            "mini_lock_short": "Mini Lock Short",
+            "mini_media_player": "Mini Media Player",
+            "mini_light_wide": "Mini Light Wide",
+            "mini_climate_wide": "Mini Climate Wide",
+            "mini_vacuum": "Mini Vacuum",
+            "mini_camera_wide": "Mini Camera Wide",
+            "mini_sensor_wide": "Mini Sensor Wide",
+            "mini_binary_sensor_wide": "Mini Binary Sensor Wide",
+            "mini_cover_wide": "Mini Cover Wide",
+            "mini_lock_wide": "Mini Lock Wide",
+            "mini_alarm_panel": "Mini Alarm Panel",
+            "divider": "Divider"
+          },
+          "icons": {
+            "light": "Light",
+            "home": "Home",
+            "sofa": "Sofa",
+            "music": "Music",
+            "shield_home": "Shield Home",
+            "thermostat": "Thermostat"
+          },
+          "props": {
+            "divider_label": "Divider label",
+            "divider_icon": "Divider icon",
+            "title": "Title",
+            "title_placeholder": "Optional",
+            "entity": "Entity",
+            "select_entity": "Select entity",
+            "battery_entity": "Battery entity",
+            "select_battery_sensor": "Select battery sensor",
+            "charging_entity": "Charging entity",
+            "select_charging_binary_sensor": "Select charging binary sensor",
+            "alarm_actions": "Alarm actions",
+            "show_arm_home": "Show Arm Home",
+            "show_arm_away": "Show Arm Away",
+            "show_arm_night": "Show Arm Night",
+            "show_arm_vacation": "Show Arm Vacation",
+            "show_custom_bypass": "Show Custom Bypass"
+          }
+        },
+        "home": {
+          "home_cards": "Home cards",
+          "home_time": "Time",
+          "home_weather": "Weather",
+          "home_saved": "Home configuration saved",
+          "home_reloaded": "Home configuration reloaded",
+          "home_save_failed": "Failed to save Home configuration",
+          "home_reload_failed": "Failed to reload Home configuration",
+          "loading": "Loading Home configuration…"
+        }
+      },
+      "setup": {
+        "name": "Setup",
+        "tabs": {
+          "settings": "Settings",
+          "auth": "Auth"
+        },
+        "timezone": {
+          "title": "Timezone",
+          "label": "Timezone"
+        },
+        "rotation": {
+          "title": "Display Rotation",
+          "label": "Screen rotation",
+          "hint": "Changing screen rotation requires device reboot. The reboot starts automatically after saving."
+        },
+        "language": {
+          "title": "Language",
+          "label": "Interface language",
+          "placeholder": "Select language",
+          "search": "Search language",
+          "no_items": "No languages found"
+        },
+        "auth": {
+          "url_label": "Home Assistant URL",
+          "url_placeholder": "http://homeassistant.local:8123",
+          "token_label": "Home Assistant Long-lived access token"
+        },
+        "actions": {
+          "save_settings": "Save settings"
+        },
+        "messages": {
+          "saved": "Settings saved.",
+          "auth_saved": "Home Assistant settings saved.",
+          "rebooting": "Display rotation was saved. Device is rebooting to apply the new screen orientation.",
+          "save_failed": "Settings save failed"
+        }
+      },
+      "firmware": {
+        "name": "Firmware",
+        "tabs": {
+          "main": "Main",
+          "radio": "Radio"
+        },
+        "version": {
+          "main": "Main Version",
+          "radio": "Radio Version",
+          "built_time": "Built Time"
+        },
+        "ota": {
+          "main_title": "Main firmware OTA",
+          "radio_title": "Radio firmware OTA",
+          "radio_unsupported": "Radio OTA is not supported on this board.",
+          "select_main_image": "Select main firmware image",
+          "select_radio_image": "Select radio firmware image",
+          "upload_firmware": "Upload firmware",
+          "ready_main": "Ready to upload main firmware",
+          "ready_radio": "Ready to upload radio firmware",
+          "receiving_image": "Receiving image…",
+          "writing_image": "Writing image…",
+          "erasing_partition": "Erasing partition…",
+          "uploading": "Uploading…",
+          "installed_successfully": "Installed successfully.",
+          "installed_rebooting": "Installed successfully. Rebooting…",
+          "update_failed": "Update failed",
+          "firmware_uploaded_rebooting": "Firmware uploaded. Rebooting.",
+          "radio_uploaded_activated": "Radio firmware uploaded and activated."
+        }
+      },
+      "storage": {
+        "name": "Storage",
+        "alerts": {
+          "sd_not_supported": "SD card is not supported by this board profile.",
+          "sd_not_mounted": "SD card is not mounted. Insert a card and reboot the device."
+        },
+        "usage": {
+          "title": "SD card usage",
+          "images": "Images",
+          "sounds": "Sounds",
+          "video": "Video",
+          "others": "Others"
+        },
+        "actions": {
+          "new_folder": "New Folder",
+          "upload": "Upload",
+          "go_parent": "Go to parent folder",
+          "refresh": "Refresh",
+          "rename": "Rename",
+          "delete": "Delete",
+          "create": "Create"
+        },
+        "table": {
+          "name": "Name",
+          "type": "Type",
+          "size": "Size",
+          "date": "Date",
+          "actions": "Actions"
+        },
+        "dialogs": {
+          "delete_title": "Delete File?",
+          "delete_confirm": "Are you sure you want to delete {name}?",
+          "folder_must_be_empty": "Folder must be empty to delete.",
+          "rename_title": "Rename",
+          "new_name": "New name",
+          "new_folder_title": "New Folder",
+          "folder_name": "Folder name"
+        },
+        "empty": "Folder is empty",
+        "uploading": "Uploading...",
+        "types": {
+          "folder": "Folder",
+          "file": "File",
+          "pdf": "PDF Document",
+          "png": "PNG Image",
+          "jpg": "JPEG Image",
+          "jpeg": "JPEG Image",
+          "webp": "WebP Image",
+          "gif": "GIF Image",
+          "bmp": "BMP Image",
+          "svg": "SVG Image",
+          "ico": "Icon Image",
+          "zip": "ZIP Archive",
+          "rar": "RAR Archive",
+          "seven_zip": "7Z Archive",
+          "tar": "TAR Archive",
+          "gz": "GZip Archive",
+          "txt": "Text File",
+          "log": "Log File",
+          "md": "Markdown Document",
+          "json": "JSON File",
+          "yaml": "YAML File",
+          "xml": "XML File",
+          "csv": "CSV Table",
+          "html": "HTML Document",
+          "css": "CSS File",
+          "js": "JavaScript File",
+          "ts": "TypeScript File",
+          "vue": "Vue Component",
+          "c": "C Source",
+          "h": "C Header",
+          "cpp": "C++ Source",
+          "hpp": "C++ Header",
+          "py": "Python Script",
+          "mp3": "MP3 Audio",
+          "wav": "WAV Audio",
+          "aac": "AAC Audio",
+          "ogg": "OGG Audio",
+          "flac": "FLAC Audio",
+          "m4a": "M4A Audio",
+          "mp4": "MP4 Video",
+          "avi": "AVI Video",
+          "mkv": "MKV Video",
+          "mov": "MOV Video",
+          "webm": "WebM Video",
+          "mpeg": "MPEG Video",
+          "bin": "Binary File",
+          "elf": "ELF Binary",
+          "img": "Disk Image"
+        },
+        "messages": {
+          "upload_success": "Upload successful",
+          "deleted": "Deleted",
+          "renamed": "Renamed",
+          "folder_created": "Folder created",
+          "load_failed": "Failed to load list",
+          "upload_failed": "Upload failed",
+          "delete_failed": "Delete failed",
+          "rename_failed": "Rename failed",
+          "create_folder_failed": "Create folder failed",
+          "folder_not_empty": "Folder is not empty"
+        }
+      },
+      "license": {
+        "name": "License",
+        "tabs": {
+          "license": "License",
+          "agreement": "Agreement"
+        },
+        "status": {
+          "title": "License Status",
+          "activated": "License activated.",
+          "trial_mode": "Trial mode",
+          "trial_remaining": "Time remaining: {time}",
+          "trial_expired": "Trial period has expired. Please activate a license.",
+          "device_id": "Device ID",
+          "device_id_hint": "Use this ID for license key.",
+          "license_key": "License key",
+          "activated_label": "Activated",
+          "trial_label": "Trial",
+          "expired_label": "Trial expired",
+          "loading_label": "Loading"
+        },
+        "agreement": {
+          "title": "License Agreement",
+          "description": "Please read and accept the license agreement to continue.",
+          "accept_label": "I have read and accept the license agreement",
+          "text": "End User License Agreement for the Firmware\n\nRevision date: 10.07.2026\n\nThis End User License Agreement, hereinafter referred to as the “Agreement”, governs the terms of installation, use, and distribution of the DarkForgeUI firmware software, hereinafter referred to as the “Firmware”.\n\nBy installing, downloading, flashing to a device, updating, or using the Firmware, the user confirms that they have read, understood, and accepted the terms of this Agreement.\n\n1. General Provisions\n\nThe Firmware is software intended to be installed on compatible devices for the purpose of modifying, extending, or replacing their original software.\n\nThe Firmware may change the behavior of the device, its network functions, control logic, and interaction with external services, including integration with Home Assistant through an API.\n\nThe user independently decides whether to install and use the Firmware and assumes all risks associated with such actions.\n\n2. Installation and Use at the User’s Own Risk\n\nThe user understands and agrees that installing the Firmware may result in:\n\n- complete or partial device malfunction;\n- inability to restore the factory firmware;\n- loss of the manufacturer’s warranty;\n- loss of user settings and data;\n- incorrect device operation;\n- damage to the device or connected equipment;\n- unstable operation of the network, automations, or external integrations.\n\nThe Firmware is installed and used solely at the user’s own risk.\n\nThe author, developer, rights holder, project contributors, and other related parties shall not be liable for any consequences of installing or using the Firmware.\n\n3. Warning About High Voltage and Hazardous Operating Conditions\n\nSome devices on which the Firmware may be installed may operate with electrical circuits carrying dangerous or high voltage.\n\nThe user confirms that they understand the potential risks, including but not limited to:\n\n- electric shock;\n- fire;\n- short circuit;\n- damage to electrical wiring;\n- damage to connected equipment;\n- harm to health or property.\n\nAny work with devices connected to the electrical mains must be performed only in compliance with electrical safety requirements. If the user does not have sufficient knowledge and qualifications, they must contact a qualified specialist.\n\nIt is prohibited to install or use the Firmware in conditions where incorrect device operation may create a threat to life, health, fire safety, cause an accident, or result in significant property damage.\n\n4. Non-Certified Devices and Compliance Requirements\n\nThe user understands that a device with the Firmware installed may differ in functionality and behavior from the device in its factory state.\n\nInstalling the Firmware may result in the device:\n\n- no longer complying with the manufacturer’s certification requirements;\n- no longer complying with local legal requirements;\n- not complying with electrical safety, radio frequency regulation, industrial operation, or other applicable standards;\n- being unsuitable for use in certain countries, premises, systems, or scenarios.\n\nThe user is solely responsible for complying with all applicable laws, technical regulations, safety rules, and operating requirements.\n\n5. Provided “As Is”\n\nThe Firmware is provided “as is” and “as available”, without any express or implied warranties.\n\nThe author does not warrant that the Firmware:\n\n- will operate without errors;\n- will be compatible with all devices;\n- will meet the user’s expectations;\n- will be safe for every use case;\n- will receive updates or support;\n- will remain compatible with future versions of Home Assistant, APIs, libraries, or hardware platforms.\n\nThe user assumes all risks related to the quality, performance, safety, and suitability of the Firmware for specific purposes.\n\n6. Disclaimer of Liability\n\nTo the maximum extent permitted by applicable law, the author, developer, rights holder, project contributors, and related parties shall not be liable for any direct, indirect, incidental, special, punitive, or consequential damages, including but not limited to:\n\n- damage to the device;\n- damage to property;\n- loss of data;\n- loss of profit;\n- interruption of system operation;\n- costs of repair or equipment replacement;\n- disruption of automations;\n- harm to health;\n- consequences of incorrect installation or operation;\n- consequences of using the Firmware on devices not intended for such use.\n\nThis limitation of liability applies regardless of the legal basis of liability, including contract, tort, negligence, strict liability, or any other legal grounds.\n\n7. Integration with Home Assistant and API\n\nThe Firmware may use APIs, network interfaces, or other mechanisms for interaction with Home Assistant.\n\nThe user understands that:\n\n- integration depends on the version of Home Assistant;\n- changes to the API, network settings, Home Assistant configuration, or third-party components may affect the operation of the Firmware;\n- the author of the Firmware does not control the development of Home Assistant and is not responsible for changes in its functionality;\n- compatibility with Home Assistant is not guaranteed for all versions and configurations.\n\nThe Firmware is not an official Home Assistant integration unless explicitly stated otherwise by the author.\n\n8. Trademarks and Third-Party References\n\nAll trademarks, logos, product names, and service names belong to their respective owners.\n\nHome Assistant is a trademark of its respective rights holders, including Open Home Foundation and/or organizations associated with the project. The mention of Home Assistant is used solely to describe compatibility or interaction with the corresponding software.\n\nThis Firmware is not an official product of Home Assistant, Open Home Foundation, or Nabu Casa, is not endorsed by them, and is not affiliated with them unless explicitly stated otherwise.\n\n9. Restrictions on Use\n\nThe user must not use the Firmware in systems where failure, delay, error, or incorrect operation of the device may result in:\n\n- death or personal injury;\n- fire;\n- accident;\n- property damage;\n- disruption of security systems;\n- failures of critical infrastructure;\n- disruption of medical, industrial, transportation, or emergency equipment.\n\nThe Firmware is intended for users who understand the technical risks of installing alternative software and are capable of independently assessing the consequences of its use.\n\n10. Updates and Changes\n\nThe author may release Firmware updates but is not obligated to do so.\n\nUpdates may change functionality, compatibility, settings, communication protocols, or device behavior.\n\nThe user independently decides whether to install updates and assumes all risks associated with updating or refusing to update.\n\n11. Rights of Use\n\nSubject to compliance with this Agreement, the user is granted a limited, non-exclusive, non-transferable right to use the Firmware on compatible devices.\n\nUnless otherwise specified in a separate license, the user may not:\n\n- present the Firmware as their own development;\n- remove authorship notices;\n- use the project name, logos, or author’s materials without permission;\n- sell the Firmware as a standalone product without the author’s written permission;\n- distribute modified versions without indicating that they have been modified.\n\nIf the Firmware includes open-source components, such components are used under the terms of their respective open-source licenses.\n\n12. Third-Party Components\n\nThe Firmware may contain or use third-party libraries, APIs, SDKs, drivers, or other software components.\n\nSuch components may be distributed under separate licenses. The user agrees to comply with such licenses where applicable.\n\nThe author of the Firmware provides no warranties regarding third-party components and is not responsible for their operation, security, or compatibility.\n\n13. Termination of License\n\nThe user’s right to use the Firmware terminates automatically upon violation of this Agreement.\n\nAfter termination of the license, the user must stop using the Firmware and remove it from their devices where technically possible.\n\n14. Governing Law\n\nThis Agreement is governed by the laws of the Russian Federation, unless otherwise required by applicable law.\n\nIf any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions shall remain in effect.\n\n15. Acceptance of Terms\n\nBy installing, downloading, updating, or using the Firmware, the user confirms that they:\n\n- have read this Agreement;\n- understand the risks of installing alternative firmware;\n- are aware of the possible consequences of working with devices under voltage;\n- accept the Firmware “as is”;\n- agree to use the Firmware solely at their own risk.\n\nIf the user does not agree to the terms of this Agreement, they must not install, download, update, or use the Firmware."
+        },
+        "messages": {
+          "device_id_copied": "Device ID copied",
+          "device_id_copy_failed": "Copy failed. Device ID is shown on the page.",
+          "activation_success": "License activated successfully",
+          "license_key_empty": "License key is empty",
+          "status_load_failed": "Failed to load license status"
+        },
+        "errors": {
+          "invalid_arg": "License key is empty",
+          "invalid_format": "Invalid license key format",
+          "device_mismatch": "This license key is for another device",
+          "signature_failed": "License signature verification failed",
+          "store_failed": "Failed to save license",
+          "invalid_body": "Invalid request body",
+          "read_failed": "Failed to read request body",
+          "invalid_json": "Invalid JSON",
+          "missing_license_key": "License key is missing",
+          "activation_failed": "Activation failed"
+        }
+      },
+      "info": {
+        "name": "Info",
+        "tabs": {
+          "overview": "Overview",
+          "home_assistant": "Home Assistant",
+          "screenshot": "Screenshot"
+        },
+        "actions": {
+          "refresh": "Refresh"
+        },
+        "sections": {
+          "system": "System",
+          "processor": "Processor",
+          "coprocessor": "Co-Processor",
+          "display": "Display",
+          "io": "I/O",
+          "memory_storage": "Memory & Storage",
+          "network": "Network",
+          "home_assistant": "Home Assistant",
+          "entity": "Entity"
+        },
+        "labels": {
+          "model": "Model",
+          "chip_revision": "Chip rev.",
+          "temperature": "Temperature",
+          "firmware_version": "Firmware ver.",
+          "driver": "Driver",
+          "interface": "Interface",
+          "resolution": "Resolution",
+          "color": "Color",
+          "rotation": "Rotation",
+          "audio": "Audio",
+          "microphones": "Microphones",
+          "sd_card": "SD Card",
+          "ssid": "SSID",
+          "ip": "IP",
+          "mac": "MAC",
+          "rssi": "RSSI",
+          "channel": "Channel",
+          "security": "Security",
+          "total": "total"
+        },
+        "network": {
+          "wifi": "Wi-Fi",
+          "ethernet": "Ethernet",
+          "wifi_ethernet": "Wi-Fi + Ethernet",
+          "cable_disconnected": "Cable disconnected",
+          "ethernet_unavailable": "Ethernet is not available on this board"
+        },
+        "domains": {
+          "media_player": "Media player",
+          "light": "Light",
+          "camera": "Camera",
+          "climate": "Climate",
+          "cover": "Cover",
+          "fan": "Fan",
+          "alarm_control_panel": "Alarm",
+          "vacuum": "Vacuum",
+          "weather": "Weather",
+          "sensor": "Sensor",
+          "binary_sensor": "Binary sensor",
+          "input_boolean": "Input boolean",
+          "switch": "Switch",
+          "lock": "Lock",
+          "humidifier": "Humidifier",
+          "water_heater": "Water heater",
+          "update": "Update",
+          "automation": "Automation",
+          "air_quality": "Air quality",
+          "button": "Button",
+          "calendar": "Calendar",
+          "conversation": "Conversation",
+          "date": "Date",
+          "datetime": "Date & time",
+          "device_tracker": "Device tracker",
+          "event": "Event",
+          "input_number": "Input number",
+          "input_select": "Input select",
+          "input_text": "Input text",
+          "lawn_mower": "Lawn Mower",
+          "notify": "Notification",
+          "number": "Number",
+          "person": "Person",
+          "script": "Script",
+          "select": "Select",
+          "siren": "Siren",
+          "stt": "Speech-to-text",
+          "sun": "Sun",
+          "text": "Text",
+          "time": "Time",
+          "todo": "To-do list",
+          "tts": "Text-to-speech",
+          "valve": "Valve",
+          "zone": "Zone",
+          "other": "Other"
+        },
+        "messages": {
+          "metrics_load_failed": "Failed to load metrics",
+          "no_domains": "No Home Assistant entity domains are available yet."
+        },
+        "screenshot": {
+          "format": "Format",
+          "save": "Save",
+          "formats": {
+            "auto": "Auto",
+            "jpg": "JPEG",
+            "bmp": "BMP"
+          },
+          "messages": {
+            "saved": "Screenshot saved",
+            "failed": "Screenshot failed"
+          }
+        }
+      },
+      "logs": {
+        "name": "Logs",
+        "auto_scroll": "Auto-scroll",
+        "refresh": "Refresh",
+        "clear": "Clear",
+        "empty": "No logs available",
+        "messages": {
+          "cleared": "Logs cleared"
+        }
+      },
+      "not_found": {
+        "headline": "Whoops, 404",
+        "title": "Page not found",
+        "text": "The page you were looking for does not exist",
+        "back": "Back"
+      }
+    },
+    "entity_picker": {
+      "entity": "Entity",
+      "select_entity": "Select entity",
+      "search_entity": "Search entity",
+      "no_entities": "No entities found"
+    },
+    "flag_picker": {
+      "language": "Language",
+      "select_language": "Select language",
+      "search_language": "Search language",
+      "no_languages": "No languages found"
+    }
+  }
+}
