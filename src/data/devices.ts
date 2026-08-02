@@ -16,7 +16,6 @@ export const devices: DeviceDefinition[] = [
     chip: 'ESP32-S3',
     fullManifestUrl: 'firmware/guition-esp32-4848s040/full/flash_args.json',
     updateManifestUrl: 'firmware/guition-esp32-4848s040/update/flash_args.json',
-    disabled: true,
   },
   {
     id: 'guition-jc1060p470c-i-w',

@@ -42,6 +42,8 @@ Support for new devices will be added gradually. Check the project website for t
 
 ## License and Trial Period
 
+**S3 version is free**
+
 DarkForge UI uses a license key model.
 
 A trial period is provided, during which you can set up your device and evaluate the firmware’s functionality.
