@@ -1,0 +1,1105 @@
+{
+  "loading": {
+    "synchronization": "Synchroniseren...",
+    "connection_api": "Verbinden met API...",
+    "title": "DarkForge UI",
+    "subtitle": "Brengt elke pixel tot leven",
+    "starting": "UI starten..."
+  },
+  "hass": {
+    "title": "Home Assistant",
+    "connecting": "Verbinden met Home Assistant...",
+    "connecting_network": "Wachten op netwerkverbinding",
+    "connecting_wifi": "Verbinden met opgeslagen Wi-Fi...",
+    "waiting_config": "Wachten op Home Assistant-configuratie",
+    "syncing": "Home Assistant-entiteiten synchroniseren...",
+    "loading_entities": "Entiteiten laden",
+    "ready": "Home Assistant gereed",
+    "progress": "%d%%",
+    "entities_progress": "%d%%  ·  %d / %d",
+    "checking": "Verbinding controleren...",
+    "cannot_reach": "Kan Home Assistant niet bereiken. Controleer de server en het netwerk",
+    "cannot_reach_with_url": "Kan Home Assistant niet bereiken.\nControleer de server en het netwerk.\n%s",
+    "initial_sync_complete": "Eerste synchronisatie voltooid"
+  },
+  "ota": {
+    "start": {
+      "primary": "OTA starten!",
+      "secondary": "Even geduld..."
+    },
+    "end": {
+      "primary": "Update voltooid!",
+      "secondary": "Opnieuw opstarten..."
+    },
+    "error": {
+      "primary": "Update FOUT!",
+      "secondary": "Opnieuw opstarten..."
+    },
+    "progress": "Firmware voortgang %0.1f%%"
+  },
+  "config": {
+    "title": "Configuratie vereist",
+    "instructions": "Om het paneel te configureren:\n\n1. Verbind met hetzelfde netwerk\n2. Open een webbrowser\n3. Ga naar het onderstaande adres\n4. Voer je Home Assistant URL en token in",
+    "hint": "Zorg ervoor dat je apparaat zich op hetzelfde netwerk bevindt",
+    "ip_placeholder": "http://..."
+  },
+  "network": {
+    "status": {
+      "connecting": "Verbinden...",
+      "connected": "Verbonden",
+      "disconnecting": "Verbinding verbreken...",
+      "disconnected": "Niet verbonden",
+      "scanning": "Scannen..."
+    },
+    "wifi": {
+      "title": "Wi-Fi instellingen",
+      "scan": "Scannen",
+      "status": {
+        "no_networks": "Geen netwerken gevonden",
+        "found": "Netwerken gevonden",
+        "password_required": "Fout: Wachtwoord vereist!",
+        "ready": "Gereed",
+        "connecting_saved": "Verbinden met opgeslagen Wi-Fi-gegevens...",
+        "not_connected": "Netwerk is niet verbonden",
+        "wrong_password": "Verkeerd Wi-Fi-wachtwoord. Selecteer het netwerk en probeer het opnieuw",
+        "auth_failed": "Wi-Fi-authenticatie mislukt",
+        "no_ap_found": "Opgeslagen Wi-Fi-netwerk niet gevonden",
+        "connect_failed": "Wi-Fi-verbinding mislukt",
+        "open_selected": "Open netwerk geselecteerd",
+        "enter_password": "Voer wachtwoord in en druk op Verbinden",
+        "connection_timeout": "Verbinding is verlopen",
+        "connection_failed": "Verbinding mislukt",
+        "connected": "Verbonden",
+        "scanning": "Scannen..."
+      },
+      "popup": {
+        "title": "Verbinden met Wi-Fi",
+        "network": "Netwerk:",
+        "password": "Wachtwoord:",
+        "password_placeholder": "Voer wachtwoord in",
+        "open_network": "Open netwerk — geen wachtwoord",
+        "connect": "Verbinden",
+        "cancel": "Annuleren"
+      }
+    }
+  },
+  "license_lock": {
+    "expired": {
+      "title": "Licentie vereist",
+      "message": "Proefperiode is verlopen.\nActiveer een volledige licentie om door te gaan.",
+      "hint": "Open de webinterface en ga naar de licentiepagina.\nDe webserver blijft beschikbaar voor activatie."
+    },
+    "warning": {
+      "title": "Proefversie",
+      "message": "Dit apparaat werkt in de proefmodus.\nEen volledige licentie is vereist voor normaal gebruik.",
+      "hint": "Je kunt voorlopig doorgaan.\nOpen de webinterface om een licentie te activeren."
+    },
+    "button": {
+      "ok": "OK"
+    }
+  },
+  "settings": {
+    "title": "Instellingen",
+    "language": "Taal",
+    "theme": {
+      "title": "Thema",
+      "themes": {
+        "light_black": "Lichtzwart",
+        "dark_blue": "Donkerblauw",
+        "swamp_green": "Moerasgroen"
+      },
+      "colors": {
+        "default": "Standaard",
+        "blue": "Blauw",
+        "red": "Rood",
+        "yellow": "Geel",
+        "green": "Groen",
+        "orange": "Oranje",
+        "cyan": "Cyaan",
+        "purple": "Paars",
+        "dark_blue": "Donkerblauw",
+        "mint": "Munt",
+        "gray": "Grijs",
+        "crimson": "Karmozijnrood",
+        "sienna": "Sienna",
+        "magenta": "Magenta",
+        "pink": "Roze"
+      }
+    },
+    "color_of_elements": "Kleur van elementen",
+    "times_format": "AM/PM-indeling",
+    "timezone": "Tijdzone",
+    "backlight": "Schermhelderheid",
+    "sleep_timeout": "Slaapstand-timer"
+  },
+  "sleep_time": {
+    "never": "Nooit",
+    "minute1": "1 minuut",
+    "minute5": "5 minuten",
+    "minute10": "10 minuten",
+    "minute30": "30 minuten",
+    "hour1": "1 uur",
+    "hour6": "6 uur",
+    "hour12": "12 uur"
+  },
+  "weather": {
+    "title": "Weer",
+    "forecasts": {
+      "daily": "Dagelijks",
+      "hourly": "Per uur"
+    },
+    "attributes": {
+      "humidity": "Luchtvochtigheid",
+      "pressure": "Luchtdruk",
+      "wind": "Windsnelheid",
+      "uv": "UV-index"
+    },
+    "states": {
+      "clear-night": "Helder, nacht",
+      "cloudy": "Bewolkt",
+      "exceptional": "Uitzonderlijk",
+      "fog": "Mist",
+      "hail": "Hagel",
+      "lightning": "Bliksem",
+      "lightning-rainy": "Bliksem, regen",
+      "partlycloudy": "Licht bewolkt",
+      "pouring": "Stortregen",
+      "rainy": "Regen",
+      "snowy": "Sneeuw",
+      "snowy-rainy": "Natte sneeuw",
+      "sunny": "Zonnig",
+      "windy": "Windig",
+      "windy-variant": "Windig, bewolkt"
+    }
+  },
+  "datetime": {
+    "day_of_week": {
+      "monday": "Maandag",
+      "tuesday": "Dinsdag",
+      "wednesday": "Woensdag",
+      "thursday": "Donderdag",
+      "friday": "Vrijdag",
+      "saturday": "Zaterdag",
+      "sunday": "Zondag"
+    },
+    "day_of_week_short": {
+      "monday": "MAA",
+      "tuesday": "DIN",
+      "wednesday": "WOE",
+      "thursday": "DON",
+      "friday": "VRI",
+      "saturday": "ZAT",
+      "sunday": "ZON"
+    },
+    "month": {
+      "january": "Januari",
+      "february": "Februari",
+      "march": "Maart",
+      "april": "April",
+      "may": "Mei",
+      "june": "Juni",
+      "july": "Juli",
+      "august": "Augustus",
+      "september": "September",
+      "october": "Oktober",
+      "november": "November",
+      "december": "December"
+    }
+  },
+  "common": {
+    "buttons": {
+      "ok": "OK",
+      "cancel": "Annuleren",
+      "yes": "Ja",
+      "no": "Nee",
+      "close": "Sluiten",
+      "delete": "Verwijderen",
+      "save": "Opslaan",
+      "edit": "Bewerken",
+      "add": "Toevoegen",
+      "remove": "Verwijderen",
+      "update": "Bijwerken",
+      "confirm": "Bevestigen",
+      "back": "Terug",
+      "next": "Volgende",
+      "submit": "Versturen",
+      "retry": "Opnieuw proberen",
+      "continue": "Doorgaan",
+      "enable": "Inschakelen",
+      "disable": "Uitschakelen",
+      "on": "Aan",
+      "off": "Uit"
+    },
+    "state": {
+      "off": "Uit",
+      "on": "Aan",
+      "unavailable": "Niet beschikbaar",
+      "unknown": "Onbekend",
+      "not_found": "Apparaat niet gevonden"
+    }
+  },
+  "battery": {
+    "name": "Batterij",
+    "state": {
+      "charging": "Opladen"
+    }
+  },
+  "sensor": {
+    "name": "Sensor"
+  },
+  "light": {
+    "name": "Verlichting",
+    "state": {
+      "on": "Aan",
+      "off": "Uit"
+    }
+  },
+  "media_player": {
+    "name": "Mediaspeler",
+    "no_track": "Geen nummer",
+    "unknown_artist": "Onbekende artiest",
+    "state": {
+      "off": "Uit",
+      "on": "Aan",
+      "idle": "Inactief",
+      "playing": "Apspelen",
+      "paused": "Gepauzeerd",
+      "standby": "Stand-by",
+      "buffering": "Bufferen"
+    }
+  },
+  "camera": {
+    "name": "Camera",
+    "state": {
+      "idle": "Inactief",
+      "streaming": "Streamen",
+      "recording": "Opnemen"
+    }
+  },
+  "vacuum": {
+    "name": "Stofzuiger",
+    "state": {
+      "cleaning": "Schoonmaken",
+      "docked": "Gedockt",
+      "error": "Fout",
+      "idle": "Inactief",
+      "off": "Uit",
+      "on": "Aan",
+      "paused": "Gepauzeerd",
+      "returning": "Terugkeren naar station"
+    }
+  },
+  "lock": {
+    "name": "Slot",
+    "enter_pass": "Voer wachtwoord in",
+    "wrong_pass": "Verkeerd wachtwoord",
+    "state": {
+      "jammed": "Geforceerd / Vastgelopen",
+      "locked": "Vergrendeld",
+      "unlocked": "Ontgrendeld",
+      "locking": "Vergrendelen...",
+      "unlocking": "Ontgrendelen...",
+      "open": "Open",
+      "opening": "Openen..."
+    }
+  },
+  "binary_sensor": {
+    "name": "Binaire sensor",
+    "state": {
+      "on": "Aan",
+      "off": "Uit",
+      "low": "Laag",
+      "normal": "Normaal",
+      "charging": "Opladen",
+      "not_charging": "Niet opladen",
+      "co_detected": "Koolmonoxide gedetecteerd",
+      "clear": "In orde",
+      "cold": "Koud",
+      "connected": "Verbonden",
+      "disconnected": "Niet verbonden",
+      "open": "Open",
+      "closed": "Gesloten",
+      "gas_detected": "Gas gedetecteerd",
+      "hot": "Heet",
+      "light_detected": "Licht gedetecteerd",
+      "no_light": "Geen licht",
+      "locked": "Vergrendeld",
+      "unlocked": "Ontgrendeld",
+      "wet": "Nat",
+      "dry": "Droog",
+      "detected": "Gedetecteerd",
+      "moving": "Beweging",
+      "stopped": "Gestopt",
+      "plugged_in": "Aangesloten",
+      "unplugged": "Niet aangesloten",
+      "power_detected": "Stroom gedetecteerd",
+      "no_power": "Geen stroom",
+      "home": "Thuis",
+      "away": "Afwezig",
+      "problem": "Probleem",
+      "ok": "OK",
+      "running": "Actief",
+      "not_running": "Niet actief",
+      "unsafe": "Onveilig",
+      "safe": "Veilig",
+      "smoke_detected": "Rook gedetecteerd",
+      "sound_detected": "Geluid gedetecteerd",
+      "tampering": "Sabbatage",
+      "update_available": "Update beschikbaar",
+      "up_to_date": "Up-to-date",
+      "vibration_detected": "Trilling gedetecteerd"
+    }
+  },
+  "cover": {
+    "name": "Koppeling / Raambekleding",
+    "state": {
+      "closed": "Dicht",
+      "closing": "Sluiten...",
+      "open": "Open",
+      "opening": "Openen...",
+      "stopped": "Gestopt"
+    }
+  },
+  "alarm_panel": {
+    "name": "Alarmsysteem",
+    "enter_pass": "Voer wachtwoord in",
+    "wrong_pass": "Verkeerd wachtwoord",
+    "state": {
+      "armed": "Ingeschakeld",
+      "armed_away": "Ingeschakeld (afwezig)",
+      "armed_custom_bypass": "Ingeschakeld (aangepast)",
+      "armed_home": "Ingeschakeld (thuis)",
+      "armed_night": "Ingeschakeld (nacht)",
+      "armed_vacation": "Ingeschakeld (vakantie)",
+      "arming": "Inschakelen...",
+      "disarmed": "Uitgeschakeld",
+      "disarming": "Uitschakelen...",
+      "pending": "In afwachting",
+      "triggered": "Getriggerd"
+    }
+  },
+  "fan": {
+    "name": "Ventilator",
+    "state": {
+      "on": "Aan",
+      "off": "Uit"
+    }
+  },
+  "input_boolean": {
+    "name": "Virtuele schakelaar",
+    "state": {
+      "on": "Aan",
+      "off": "Uit"
+    }
+  },
+  "switch": {
+    "name": "Schakelaar",
+    "state": {
+      "on": "Aan",
+      "off": "Uit"
+    }
+  },
+  "button": {
+    "name": "Knop"
+  },
+  "lawn_mower": {
+    "name": "Gasmaaier",
+    "state": {
+      "docked": "Gedockt",
+      "error": "Fout",
+      "mowing": "Maaien",
+      "paused": "Gepauzeerd",
+      "returning": "Terugkeren"
+    }
+  },
+  "water_heater": {
+    "name": "Boiler / Waterverwarmer",
+    "state": {
+      "eco": "Eco",
+      "electric": "Elektrisch",
+      "gas": "Gas",
+      "heat_pump": "Warmtepomp",
+      "high_demand": "Hoge vraag",
+      "off": "Uit",
+      "performance": "Prestatie"
+    }
+  },
+  "humidifier": {
+    "name": "Luchtbevochtiger",
+    "state": {
+      "off": "Uit",
+      "on": "Aan"
+    },
+    "action": {
+      "drying": "Drogen",
+      "humidifying": "Bevchtigen",
+      "idle": "Inactief",
+      "off": "Uit"
+    },
+    "mode": {
+      "auto": "Auto",
+      "away": "Afwezig",
+      "baby": "Baby",
+      "boost": "Boost",
+      "comfort": "Comfort",
+      "eco": "Eco",
+      "home": "Thuis",
+      "normal": "Normaal",
+      "sleep": "Slaap"
+    }
+  },
+  "climate": {
+    "name": "Klimaat",
+    "modes": {
+      "auto": "Auto",
+      "cool": "Koelen",
+      "dry": "Drogen",
+      "fan": "Ventilatie",
+      "heat": "Verwarmen",
+      "heat_cool": "Verwarmen/Koelen",
+      "off": "Uit"
+    },
+    "actions": {
+      "cooling": "Koelen",
+      "defrosting": "Ontdooien",
+      "drying": "Drogen",
+      "fan": "Ventilatie",
+      "heating": "Verwarmen",
+      "idle": "Inactief",
+      "off": "Uit",
+      "preheating": "Voorverwarmen"
+    },
+    "fan_modes": {
+      "name": "Ventilatiemodi",
+      "states": {
+        "auto": "Auto",
+        "diffuse": "Diffuus",
+        "focus": "Focus",
+        "high": "Hoog",
+        "low": "Laag",
+        "medium": "Gemiddeld",
+        "middle": "Midden",
+        "off": "Uit",
+        "on": "Aan",
+        "top": "Max"
+      }
+    },
+    "swing_modes": {
+      "name": "Zwaaimodus",
+      "states": {
+        "both": "Beide",
+        "horizontal": "Horizontaal",
+        "off": "Uit",
+        "on": "Aan",
+        "vertical": "Verticaal"
+      }
+    },
+    "swing_horizontal_modes": {
+      "name": "Horizontale zwaaimodi",
+      "states": {
+        "off": "Uit",
+        "on": "Aan"
+      }
+    },
+    "presets": {
+      "name": "Voorinstellingen",
+      "states": {
+        "activity": "Activiteit",
+        "away": "Afwezig",
+        "boost": "Boost",
+        "comfort": "Comfort",
+        "eco": "Eco",
+        "home": "Thuis",
+        "none": "Geen",
+        "sleep": "Slaap"
+      }
+    }
+  },
+  "frontend": {
+    "common": {
+      "buttons": {
+        "ok": "OK",
+        "cancel": "Annuleren",
+        "yes": "Ja",
+        "no": "Nee",
+        "close": "Sluiten",
+        "delete": "Verwijderen",
+        "save": "Opslaan",
+        "edit": "Bewerken",
+        "add": "Toevoegen",
+        "remove": "Verwijderen",
+        "update": "Bijwerken",
+        "confirm": "Bevestigen",
+        "back": "Terug",
+        "next": "Volgende",
+        "done": "Gereed",
+        "submit": "Versturen",
+        "retry": "Opnieuw proberen",
+        "continue": "Doorgaan",
+        "enable": "Inschakelen",
+        "disable": "Uitschakelen",
+        "on": "Aan",
+        "off": "Uit",
+        "reset": "Resetten",
+        "refresh": "Vernieuwen",
+        "clear": "Wissen",
+        "copy": "Kopiëren",
+        "activate": "Activeren",
+        "upload": "Uploaden",
+        "reload": "Herladen",
+        "save_settings": "Instellingen opslaan"
+      },
+      "states": {
+        "loading": "Laden",
+        "ready": "Gereed",
+        "unsupported": "Niet ondersteund",
+        "connected": "Verbonden",
+        "disconnected": "Niet verbonden",
+        "offline": "Offline",
+        "failed": "Mislukt",
+        "success": "Succes",
+        "updating": "Bijwerken",
+        "rebooting": "Opnieuw opstarten",
+        "installed": "Geïnstalleerd",
+        "activated": "Geactiveerd",
+        "trial": "Proefversie",
+        "trial_expired": "Proefperiode verlopen",
+        "available": "Beschikbaar",
+        "not_available": "Niet beschikbaar",
+        "mounted": "Gekoppeld",
+        "not_mounted": "Niet gekoppeld",
+        "down": "Omlaag",
+        "unknown": "Onbekend"
+      },
+      "labels": {
+        "name": "Naam",
+        "type": "Type",
+        "size": "Grootte",
+        "date": "Datum",
+        "actions": "Acties",
+        "status": "Status",
+        "progress": "Voortgang",
+        "selected_file": "Geselecteerd bestand",
+        "no_file_selected": "Geen bestand geselecteerd",
+        "format": "Formaat"
+      },
+      "messages": {
+        "saved": "Opgeslagen",
+        "copied": "Gekopieerd",
+        "failed": "Bewerking mislukt",
+        "no_data": "Geen gegevens beschikbaar"
+      }
+    },
+    "layout": {
+      "title": "DarkForgeUI",
+      "subtitle": "Beheerderspaneel",
+      "nav": {
+        "dashboard": "Dashboard",
+        "storage": "Opslag",
+        "setup": "Instellingen",
+        "firmware": "Firmware",
+        "license": "Licentie",
+        "info": "Info",
+        "logs": "Logboeken",
+        "setup_wizard": "Installatiewizard"
+      },
+      "dashboard_tabs": {
+        "home": "Home",
+        "dashboards": "Dashboards"
+      },
+      "page_titles": {
+        "dashboard": "Dashboard",
+        "storage": "Opslag",
+        "setup": "Instellingen",
+        "firmware": "Firmware",
+        "license": "Licentie",
+        "info": "Info",
+        "logs": "Logboeken",
+        "hass_panel": "HASS Paneel"
+      }
+    },
+    "setup_wizard": {
+      "title": "Eerste installatiewizard",
+      "step_counter": "Stap {current} / {total}",
+      "steps": {
+        "language": "Taal",
+        "agreement": "Overeenkomst",
+        "ha": "Home Assistant",
+        "done": "Gereed"
+      },
+      "language": {
+        "title": "Taal en tijdzone",
+        "description": "Kies de interfacetaal en de tijdzone van het apparaat.",
+        "language_label": "Taal",
+        "language_placeholder": "Selecteer taal",
+        "search_language": "Zoek taal",
+        "no_languages": "Geen talen gevonden",
+        "timezone_label": "Tijdzone"
+      },
+      "agreement": {
+        "title": "Licentieovereenkomst",
+        "description": "Lees de licentieovereenkomst en ga akkoord om door te gaan.",
+        "accept_label": "Ik heb de licentieovereenkomst gelezen en ga akkoord"
+      },
+      "ha": {
+        "title": "Verbind met Home Assistant",
+        "description": "Voer je Home Assistant-adres en langdurige toegangstoken (Long-lived access token) in.",
+        "url_label": "Home Assistant URL",
+        "url_placeholder": "http://homeassistant.local:8123",
+        "token_label": "Langdurige toegangstoken"
+      },
+      "done": {
+        "title": "Installatie voltooid",
+        "description": "Home Assistant-verbindingsinstellingen zijn succesvol opgeslagen.",
+        "hint": "Je kunt nu de Dashboard-pagina openen en de configuratie voortzetten."
+      }
+    },
+    "pages": {
+      "dashboard": {
+        "name": "Dashboard",
+        "tabs": {
+          "home": "Home",
+          "dashboards": "Dashboards"
+        },
+        "common": {
+          "portrait": "Staand",
+          "landscape": "Liggend",
+          "entities": "Entiteiten",
+          "save": "Opslaan",
+          "reload": "Herladen",
+          "drag_cards": "Sleep kaarten hierheen"
+        },
+        "dashboards": {
+          "dashboard_name": "Dashboardnaam",
+          "default_dashboard_name": "Dashboard {number}",
+          "card_properties": "Kaart-eigenschappen",
+          "select_card": "Selecteer een kaart op het canvas.",
+          "dashboard_saved": "Dashboard opgeslagen",
+          "dashboard_save_failed": "Opslaan van dashboard mislukt",
+          "fix_dashboard_name": "Corrigeer de dashboardnaam voordat je opslaat",
+          "entities_load_failed": "Laden van entiteiten mislukt",
+          "drag_to_canvas": "Sleep naar canvas",
+          "tabs": {
+            "short": "Kort",
+            "wide": "Breed",
+            "dividers": "Scheidingslijnen"
+          },
+          "palette": {
+            "mini_light_small": "Mini Licht Klein",
+            "mini_camera_short": "Mini Camera Kort",
+            "mini_sensor_short": "Mini Sensor Kort",
+            "mini_binary_sensor_short": "Mini Binaire Sensor Kort",
+            "mini_lock_short": "Mini Slot Kort",
+            "mini_media_player": "Mini Mediaspeler",
+            "mini_light_wide": "Mini Licht Breed",
+            "mini_climate_wide": "Mini Klimaat Breed",
+            "mini_vacuum": "Mini Stofzuiger",
+            "mini_camera_wide": "Mini Camera Breed",
+            "mini_sensor_wide": "Mini Sensor Breed",
+            "mini_binary_sensor_wide": "Mini Binaire Sensor Breed",
+            "mini_cover_wide": "Mini Raambekleding Breed",
+            "mini_lock_wide": "Mini Slot Breed",
+            "mini_alarm_panel": "Mini Alarm Paneel",
+            "divider": "Scheidingslijn"
+          },
+          "icons": {
+            "light": "Licht",
+            "home": "Home",
+            "sofa": "Bank",
+            "music": "Muziek",
+            "shield_home": "Beveiliging Thuis",
+            "thermostat": "Thermostaat"
+          },
+          "props": {
+            "divider_label": "Label voor scheidingslijn",
+            "divider_icon": "Icoon voor scheidingslijn",
+            "title": "Titel",
+            "title_placeholder": "Optioneel",
+            "entity": "Entiteit",
+            "select_entity": "Selecteer entiteit",
+            "battery_entity": "Batterij-entiteit",
+            "select_battery_sensor": "Selecteer batterijsensor",
+            "charging_entity": "Oplaad-entiteit",
+            "select_charging_binary_sensor": "Selecteer binaire oplaadsensor",
+            "alarm_actions": "Alarm-acties",
+            "show_arm_home": "Toon Inschakelen Thuis",
+            "show_arm_away": "Toon Inschakelen Afwezig",
+            "show_arm_night": "Toon Inschakelen Nacht",
+            "show_arm_vacation": "Toon Inschakelen Vakantie",
+            "show_custom_bypass": "Toon Aangepaste Omleiding"
+          }
+        },
+        "home": {
+          "home_cards": "Home-kaarten",
+          "home_time": "Tijd",
+          "home_weather": "Weer",
+          "home_saved": "Home-configuratie opgeslagen",
+          "home_reloaded": "Home-configuratie herladen",
+          "home_save_failed": "Opslaan van Home-configuratie mislukt",
+          "home_reload_failed": "Herladen van Home-configuratie mislukt",
+          "loading": "Home-configuratie laden…"
+        }
+      },
+      "setup": {
+        "name": "Instellingen",
+        "tabs": {
+          "settings": "Instellingen",
+          "auth": "Authenticatie"
+        },
+        "timezone": {
+          "title": "Tijdzone",
+          "label": "Tijdzone"
+        },
+        "rotation": {
+          "title": "Schermrotatie",
+          "label": "Schermrotatie",
+          "hint": "Het wijzigen van de schermrotatie vereist het opnieuw opstarten van het apparaat. Het herstarten begint automatisch na het opslaan."
+        },
+        "language": {
+          "title": "Taal",
+          "label": "Interfacetaal",
+          "placeholder": "Selecteer taal",
+          "search": "Zoek taal",
+          "no_items": "Geen talen gevonden"
+        },
+        "auth": {
+          "url_label": "Home Assistant URL",
+          "url_placeholder": "http://homeassistant.local:8123",
+          "token_label": "Home Assistant langdurige toegangstoken"
+        },
+        "actions": {
+          "save_settings": "Instellingen opslaan"
+        },
+        "messages": {
+          "saved": "Instellingen opgeslagen.",
+          "auth_saved": "Home Assistant-instellingen opgeslagen.",
+          "rebooting": "Schermrotatie is opgeslagen. Apparaat start opnieuw op om de nieuwe schermoriëntatie toe te passen.",
+          "save_failed": "Opslaan van instellingen mislukt"
+        }
+      },
+      "firmware": {
+        "name": "Firmware",
+        "tabs": {
+          "main": "Hoofd",
+          "radio": "Radio"
+        },
+        "version": {
+          "main": "Hoofdversie",
+          "radio": "Radioversie",
+          "built_time": "Kompilatietijd"
+        },
+        "ota": {
+          "main_title": "Hoofdfirmware OTA",
+          "radio_title": "Radiofirmware OTA",
+          "radio_unsupported": "Radio OTA wordt niet ondersteund op dit bord.",
+          "select_main_image": "Selecteer hoofdfirmware-bestand",
+          "select_radio_image": "Selecteer radiofirmware-bestand",
+          "upload_firmware": "Firmware uploaden",
+          "ready_main": "Gereed om hoofdfirmware te uploaden",
+          "ready_radio": "Gereed om radiofirmware te uploaden",
+          "receiving_image": "Bestand ontvangen…",
+          "writing_image": "Bestand schrijven…",
+          "erasing_partition": "Partitie wissen…",
+          "uploading": "Uploaden…",
+          "installed_successfully": "Succesvol geïnstalleerd.",
+          "installed_rebooting": "Succesvol geïnstalleerd. Opnieuw opstarten…",
+          "update_failed": "Update mislukt",
+          "firmware_uploaded_rebooting": "Firmware geüpload. Opnieuw opstarten.",
+          "radio_uploaded_activated": "Radiofirmware geüpload en geactiveerd."
+        }
+      },
+      "storage": {
+        "name": "Opslag",
+        "alerts": {
+          "sd_not_supported": "SD-kaart wordt niet ondersteund door dit bordprofiel.",
+          "sd_not_mounted": "SD-kaart is niet gekoppeld. Plaats een kaart en start het apparaat opnieuw op."
+        },
+        "usage": {
+          "title": "SD-kaartgebruik",
+          "images": "Afbeeldingen",
+          "sounds": "Geluiden",
+          "video": "Video",
+          "others": "Overige"
+        },
+        "actions": {
+          "new_folder": "Nieuwe map",
+          "upload": "Uploaden",
+          "go_parent": "Ga naar bovenliggende map",
+          "refresh": "Vernieuwen",
+          "rename": "Hernoemen",
+          "delete": "Verwijderen",
+          "create": "Aanmaken"
+        },
+        "table": {
+          "name": "Naam",
+          "type": "Type",
+          "size": "Grootte",
+          "date": "Datum",
+          "actions": "Acties"
+        },
+        "dialogs": {
+          "delete_title": "Bestand verwijderen?",
+          "delete_confirm": "Weet je zeker dat je {name} wilt verwijderen?",
+          "folder_must_be_empty": "Map moet leeg zijn om te verwijderen.",
+          "rename_title": "Hernoemen",
+          "new_name": "Nieuwe naam",
+          "new_folder_title": "Nieuwe map",
+          "folder_name": "Mapnaam"
+        },
+        "empty": "Map is leeg",
+        "uploading": "Uploaden...",
+        "types": {
+          "folder": "Map",
+          "file": "Bestand",
+          "pdf": "PDF-document",
+          "png": "PNG-afbeelding",
+          "jpg": "JPEG-afbeelding",
+          "jpeg": "JPEG-afbeelding",
+          "webp": "WebP-afbeelding",
+          "gif": "GIF-afbeelding",
+          "bmp": "BMP-afbeelding",
+          "svg": "SVG-afbeelding",
+          "ico": "Icoon-afbeelding",
+          "zip": "ZIP-archief",
+          "rar": "RAR-archief",
+          "seven_zip": "7Z-archief",
+          "tar": "TAR-archief",
+          "gz": "GZip-archief",
+          "txt": "Tekstbestand",
+          "log": "Logbestand",
+          "md": "Markdown-document",
+          "json": "JSON-bestand",
+          "yaml": "YAML-bestand",
+          "xml": "XML-bestand",
+          "csv": "CSV-tabel",
+          "html": "HTML-document",
+          "css": "CSS-bestand",
+          "js": "JavaScript-bestand",
+          "ts": "TypeScript-bestand",
+          "vue": "Vue-component",
+          "c": "C-bronbestand",
+          "h": "C-header",
+          "cpp": "C++-bronbestand",
+          "hpp": "C++-header",
+          "py": "Python-script",
+          "mp3": "MP3-audio",
+          "wav": "WAV-audio",
+          "aac": "AAC-audio",
+          "ogg": "OGG-audio",
+          "flac": "FLAC-audio",
+          "m4a": "M4A-audio",
+          "mp4": "MP4-video",
+          "avi": "AVI-video",
+          "mkv": "MKV-video",
+          "mov": "MOV-video",
+          "webm": "WebM-video",
+          "mpeg": "MPEG-video",
+          "bin": "Binair bestand",
+          "elf": "ELF-binair bestand",
+          "img": "Schijfkopie"
+        },
+        "messages": {
+          "upload_success": "Uploaden geslaagd",
+          "deleted": "Verwijderd",
+          "renamed": "Hernoemd",
+          "folder_created": "Map aangemaakt",
+          "load_failed": "Laden van lijst mislukt",
+          "upload_failed": "Uploaden mislukt",
+          "delete_failed": "Verwijderen mislukt",
+          "rename_failed": "Hernoemen mislukt",
+          "create_folder_failed": "Aanmaken van map mislukt",
+          "folder_not_empty": "Map is niet leeg"
+        }
+      },
+      "license": {
+        "name": "Licentie",
+        "tabs": {
+          "license": "Licentie",
+          "agreement": "Overeenkomst"
+        },
+        "status": {
+          "title": "Licentiestatus",
+          "activated": "Licentie geactiveerd.",
+          "trial_mode": "Proefmodus",
+          "trial_remaining": "Resterende tijd: {time}",
+          "trial_expired": "Proefperiode is verlopen. Activeer een licentie.",
+          "device_id": "Apparaat-ID",
+          "device_id_hint": "Gebruik dit ID voor de licentiesleutel.",
+          "license_key": "Licentiesleutel",
+          "activated_label": "Geactiveerd",
+          "trial_label": "Proefversie",
+          "expired_label": "Proefperiode verlopen",
+          "loading_label": "Laden"
+        },
+        "agreement": {
+          "title": "Licentieovereenkomst",
+          "description": "Lees de licentieovereenkomst en ga akkoord om door te gaan.",
+          "accept_label": "Ik heb de licentieovereenkomst gelezen en ga akkoord",
+          "text": "Eindgebruikerslicentieovereenkomst voor de Firmware\n\nHerzieningsdatum: 10.07.2026\n\nDeze Eindgebruikerslicentieovereenkomst, hierna te noemen de \"Overeenkomst\", regelt de voorwaarden voor installatie, gebruik en distributie van de DarkForgeUI firmware-software, hierna te noemen de \"Firmware\".\n\nDoor de Firmware te installeren, te downloaden, op een apparaat te flashen, bij te werken of te gebruiken, bevestigt de gebruiker dat hij deze Overeenkomst heeft gelezen, begrepen en geaccepteerd.\n\n1. Algemene Bepalingen\n\nDe Firmware is software die bedoeld is om te worden geïnstalleerd op compatibele apparaten met als doel hun oorspronkelijke software te wijzigen, uit te breiden of te vervangen.\n\nDe Firmware kan het gedrag van het apparaat, de netwerkfuncties, de besturingslogica en de interactie met externe diensten wijzigen, inclusief integratie met Home Assistant via een API.\n\nDe gebruiker beslist zelfstandig om de Firmware te installeren en te gebruiken en neemt alle risico's die aan dergelijke acties zijn verbonden op zich.\n\n2. Installatie en Gebruik op Eigen Risico van de Gebruiker\n\nDe gebruiker begrijpt en gaat ermee akkoord dat het installeren van de Firmware kan leiden tot:\n\n- volledige of gedeeltelijke storing van het apparaat;\n- onmogelijkheid om de fabrieksfirmware te herstellen;\n- verlies van de fabrieksgarantie;\n- verlies van gebruikersinstellingen en gegevens;\n- onjuiste werking van het apparaat;\n- schade aan het apparaat of aangesloten apparatuur;\n- instabiele werking van het netwerk, automatiseringen of externe integraties.\n\nDe Firmware wordt uitsluitend op eigen risico van de gebruiker geïnstalleerd en gebruikt.\n\nDe auteur, ontwikkelaar, rechthebbende, projectmedewerkers en andere gerelateerde partijen zijn niet aansprakelijk voor eventuele gevolgen van het installeren of gebruiken van de Firmware.\n\n3. Waarschuwing voor Hoogspanning en Gevaarlijke Bedrijfsomstandigheden\n\nSommige apparaten waarop de Firmware kan worden geïnstalleerd, kunnen werken met elektrische circuits die gevaarlijke of hoge spanning voeren.\n\nDe gebruiker bevestigt dat hij de potentiële risico's begrijpt, waaronder maar niet beperkt tot:\n\n- elektrische schok;\n- brand;\n- kortsluiting;\n- schade aan de elektrische bedrading;\n- schade aan aangesloten apparatuur;\n- schade aan de gezondheid of eigendommen.\n\nAlle werkzaamheden aan apparaten die op het lichtnet zijn aangesloten, mogen alleen worden uitgevoerd met inachtneming van de elektrische veiligheidsvoorschriften. Als de gebruiker niet over voldoende kennis en kwalificaties beschikt, moet hij contact opnemen met een gekwalificeerde specialist.\n\nHet is verboden de Firmware te installeren of te gebruiken in omstandigheden waarin onjuiste werking van het apparaat een bedreiging kan vormen voor het leven, de gezondheid, de brandveiligheid, een ongeval kan veroorzaken of kan leiden tot aanzienlijke materiële schade.\n\n4. Niet-Gecertificeerde Apparaten en Nalevingsvereisten\n\nDe gebruiker begrijpt dat een apparaat waarop de Firmware is geïnstalleerd qua functionaliteit en gedrag kan verschillen van het apparaat in de fabriekstoestand.\n\nHet installeren van de Firmware kan tot gevolg hebben dat het apparaat:\n\n- niet langer voldoet aan de certificeringseisen van de fabrikant;\n- niet langer voldoet aan de lokale wettelijke vereisten;\n- niet voldoet aan de normen voor elektrische veiligheid, radiofrequentiewetgeving, industrieel gebruik of andere toepasselijke normen;\n- ongeschikt is voor gebruik in bepaalde landen, ruimtes, systemen of scenario's.\n\nDe gebruiker is als enige verantwoordelijk voor de naleving van alle toepasselijke wetten, technische voorschriften, veiligheidsregels en bedieningsvereisten.\n\n5. Geleverd \"Zoals Het Is\" (As Is)\n\nDe Firmware wordt geleverd \"zoals het is\" en \"zoals beschikbaar\", zonder enige expliciete of impliciete garanties.\n\nDe auteur garandeert niet dat de Firmware:\n\n- zal werken zonder fouten;\n- compatibel zal zijn met alle apparaten;\n- aan de verwachtingen van de gebruiker zal voldoen;\n- veilig zal zijn voor elk gebruiksscenario;\n- updates of ondersteuning zal ontvangen;\n- compatibel zal blijven met toekomstige versies van Home Assistant, API's, bibliotheken of hardwareplatforms.\n\nDe gebruiker neemt alle risico's op zich met betrekking tot de kwaliteit, prestaties, veiligheid en geschiktheid van de Firmware voor specifieke doeleinden.\n\n6. Uitsluiting van Aansprakelijkheid\n\nVoor zover maximaal toegestaan door de toepasselijke wetgeving, zijn de auteur, ontwikkelaar, rechthebbende, projectmedewerkers en gerelateerde partijen niet aansprakelijk voor enige directe, indirecte, incidentele, speciale, punitieve of gevolgschade, waaronder maar niet beperkt tot:\n\n- schade aan het apparaat;\n- schade aan eigendommen;\n- verlies van gegevens;\n- gederfde winst;\n- onderbreking van het systeem;\n- kosten van reparatie of vervanging van apparatuur;\n- verstoring van automatiseringen;\n- schade aan de gezondheid;\n- gevolgen van onjuiste installatie of werking;\n- gevolgen van het gebruik van de Firmware op apparaten die daarvoor niet bestemd zijn.\n\nDeze beperking van aansprakelijkheid geldt ongeacht de juridische grondslag van aansprakelijkheid, inclusief contract, onrechtmatige daad, nalatigheid, risico-aansprakelijkheid of enige andere juridische grond.\n\n7. Integratie met Home Assistant en API\n\nDe Firmware kan API's, netwerkinterfaces of andere mechanismen gebruiken voor interactie met Home Assistant.\n\nDe gebruiker begrijpt dat:\n\n- integratie afhankelijk is van de versie van Home Assistant;\n- wijzigingen in de API, netwerkinstellingen, Home Assistant-configuratie of onderdelen van derden de werking van de Firmware kunnen beïnvloeden;\n- de auteur van de Firmware de ontwikkeling van Home Assistant niet controleert en niet verantwoordelijk is voor wijzigingen in de functionaliteit ervan;\n- compatibiliteit met Home Assistant niet gegarandeerd is voor alle versies en configuraties.\n\nDe Firmware is geen officiële Home Assistant-integratie, tenzij uitdrukkelijk anders vermeld door de auteur.\n\n8. Handelsmerken en Verwijzingen van Derden\n\nAlle handelsmerken, logo's, productnamen en servicenamen behoren toe aan hun respectievelijke eigenaren.\n\nHome Assistant is een handelsmerk van de respectievelijke rechthebbenden, waaronder Open Home Foundation en/of organisaties die aan het project zijn verbonden. De vermelding van Home Assistant wordt uitsluitend gebruikt om de compatibiliteit of interactie met de desbetreffende software te beschrijven.\n\nDeze Firmware is geen officieel product van Home Assistant, Open Home Foundation of Nabu Casa, wordt niet door hen ondersteund en is niet aan hen gelieerd, tenzij uitdrukkelijk anders vermeld.\n\n9. Gebruiksbeperkingen\n\nDe gebruiker mag de Firmware niet gebruiken in systemen waar storing, vertraging, fouten of onjuiste werking van het apparaat kunnen leiden tot:\n\n- overlijden of letsel;\n- brand;\n- ongevallen;\n- materiële schade;\n- verstoring van beveiligingssystemen;\n- uitval van kritieke infrastructuur;\n- verstoring van medische, industriële, transport- of noodapparatuur.\n\nDe Firmware is bedoeld voor gebruikers die de technische risico's begrijpen van het installeren van alternatieve software en in staat zijn om zelfstandig de gevolgen van het gebruik ervan in te schatten.\n\n10. Updates en Wijzigingen\n\nDe auteur kan Firmware-updates uitbrengen, maar is daartoe niet verplicht.\n\nUpdates kunnen de functionaliteit, compatibiliteit, instellingen, communicatieprotocollen of het gedrag van het apparaat wijzigen.\n\nDe gebruiker beslist zelfstandig om updates te installeren en neemt alle risico's op zich die verbonden zijn aan het bijwerken of weigeren bij te werken.\n\n11. Gebruiksrechten\n\nBehoudens naleving van deze Overeenkomst krijgt de gebruiker een beperkt, niet-exclusief, niet-overdraagbaar recht om de Firmware te gebruiken op compatibele apparaten.\n\nTenzij anders vermeld in een afzonderlijke licentie, mag de gebruiker niet:\n\n- de Firmware presenteren als zijn eigen ontwikkeling;\n- auteursrechtvermeldingen verwijderen;\n- de projectnaam, logo's of materialen van de auteur zonder toestemming gebruiken;\n- de Firmware als een op zichzelf staand product verkopen zonder schriftelijke toestemming van de auteur;\n- gewijzigde versies verspreiden zonder aan te geven dat deze zijn gewijzigd.\n\nAls de Firmware open-source componenten bevat, worden deze componenten gebruikt onder de voorwaarden van hun respectievelijke open-source licenties.\n\n12. Componenten van Derden\n\nDe Firmware kan bibliotheken, API's, SDK's, stuurprogramma's of andere softwarecomponenten van derden bevatten of gebruiken.\n\nZulke componenten kunnen worden gedistribueerd onder afzonderlijke licenties. De gebruiker gaat ermee akkoord om deze licenties na te leven waar van toepassing.\n\nDe auteur van de Firmware geeft geen garanties met betrekking tot componenten van derden en is niet verantwoordelijk voor hun werking, veiligheid of compatibiliteit.\n\n13. Beëindiging van Licentie\n\nHet recht van de gebruiker om de Firmware te gebruiken vervalt automatisch bij schending van deze Overeenkomst.\n\nNa beëindiging van de licentie moet de gebruiker het gebruik van de Firmware staken en deze, waar technisch mogelijk, van zijn apparaten verwijderen.\n\n14. Toepasselijk Recht\n\nDeze Overeenkomst wordt beheerst door het recht van de Russische Federatie, tenzij anders vereist door toepasselijk recht.\n\nAls een bepaling van deze Overeenkomst ongeldig of niet-afdwingbaar blijkt te zijn, blijven de overige bepalingen van kracht.\n\n15. Aanvaarding van Voorwaarden\n\nDoor de Firmware te installeren, te downloaden, bij te werken of te gebruiken, bevestigt de gebruiker dat hij:\n\n- deze Overeenkomst heeft gelezen;\n- de risico's begrijpt van het installeren van alternatieve firmware;\n- zich bewust is van de mogelijke gevolgen van het werken met apparaten onder spanning;\n- de Firmware accepteert \"zoals het is\";\n- ermee akkoord gaat de Firmware uitsluitend op eigen risico te gebruiken.\n\nAls de gebruiker niet akkoord gaat met de voorwaarden van deze Overeenkomst, mag hij de Firmware niet installeren, downloaden, bijwerken of gebruiken."
+        },
+        "messages": {
+          "device_id_copied": "Apparaat-ID gekopieerd",
+          "device_id_copy_failed": "Kopiëren mislukt. Apparaat-ID wordt getoond op de pagina.",
+          "activation_success": "Licentie succesvol geactiveerd",
+          "license_key_empty": "Licentiesleutel is leeg",
+          "status_load_failed": "Laden van licentiestatus mislukt"
+        },
+        "errors": {
+          "invalid_arg": "Licentiesleutel is leeg",
+          "invalid_format": "Ongeldig formaat van licentiesleutel",
+          "device_mismatch": "Deze licentiesleutel is voor een ander apparaat",
+          "signature_failed": "Verificatie van licentiehandtekening mislukt",
+          "store_failed": "Opslaan van licentie mislukt",
+          "invalid_body": "Ongeldige verzoektekst",
+          "read_failed": "Lezen van verzoektekst mislukt",
+          "invalid_json": "Ongeldige JSON",
+          "missing_license_key": "Licentiesleutel ontbreekt",
+          "activation_failed": "Activatie mislukt"
+        }
+      },
+      "info": {
+        "name": "Info",
+        "tabs": {
+          "overview": "Overzicht",
+          "home_assistant": "Home Assistant",
+          "screenshot": "Schermafbeelding"
+        },
+        "actions": {
+          "refresh": "Vernieuwen"
+        },
+        "sections": {
+          "system": "Systeem",
+          "processor": "Processor",
+          "coprocessor": "Co-processor",
+          "display": "Scherm",
+          "io": "I/O",
+          "memory_storage": "Geheugen & Opslag",
+          "network": "Netwerk",
+          "home_assistant": "Home Assistant",
+          "entity": "Entiteit"
+        },
+        "labels": {
+          "model": "Model",
+          "chip_revision": "Chip-revisie",
+          "temperature": "Temperatuur",
+          "firmware_version": "Firmware-versie",
+          "driver": "Stuurprogramma",
+          "interface": "Interface",
+          "resolution": "Resolutie",
+          "color": "Kleur",
+          "rotation": "Rotatie",
+          "audio": "Audio",
+          "microphones": "Microfoons",
+          "sd_card": "SD-kaart",
+          "ssid": "SSID",
+          "ip": "IP",
+          "mac": "MAC",
+          "rssi": "RSSI",
+          "channel": "Kanaal",
+          "security": "Beveiliging",
+          "total": "totaal"
+        },
+        "network": {
+          "wifi": "Wi-Fi",
+          "ethernet": "Ethernet",
+          "wifi_ethernet": "Wi-Fi + Ethernet",
+          "cable_disconnected": "Kabel niet aangesloten",
+          "ethernet_unavailable": "Ethernet is niet beschikbaar op dit bord"
+        },
+        "domains": {
+          "media_player": "Mediaspeler",
+          "light": "Verlichting",
+          "camera": "Camera",
+          "climate": "Klimaat",
+          "cover": "Raambekleding",
+          "fan": "Ventilator",
+          "alarm_control_panel": "Alarmsysteem",
+          "vacuum": "Stofzuiger",
+          "weather": "Weer",
+          "sensor": "Sensor",
+          "binary_sensor": "Binaire sensor",
+          "input_boolean": "Virtuele schakelaar",
+          "switch": "Schakelaar",
+          "lock": "Slot",
+          "humidifier": "Luchtbevochtiger",
+          "water_heater": "Boiler / Waterverwarmer",
+          "update": "Update",
+          "automation": "Automatisering",
+          "air_quality": "Luchtkwaliteit",
+          "button": "Knop",
+          "calendar": "Agenda",
+          "conversation": "Gesprek",
+          "date": "Datum",
+          "datetime": "Datum & Tijd",
+          "device_tracker": "Apparaat-tracker",
+          "event": "Gebeurtenis",
+          "input_number": "Invoergetal",
+          "input_select": "Invoerselectie",
+          "input_text": "Invoertekst",
+          "lawn_mower": "Gasmaaier",
+          "notify": "Melding",
+          "number": "Nummer",
+          "person": "Persoon",
+          "script": "Script",
+          "select": "Selectie",
+          "siren": "Sirene",
+          "stt": "Spraak-naar-tekst",
+          "sun": "Zon",
+          "text": "Tekst",
+          "time": "Tijd",
+          "todo": "To-do lijst",
+          "tts": "Tekst-naar-spraak",
+          "valve": "Klep / Ventiel",
+          "zone": "Zone",
+          "other": "Overige"
+        },
+        "messages": {
+          "metrics_load_failed": "Laden van metrieken mislukt",
+          "no_domains": "Er zijn nog geen Home Assistant-entiteitsdomeinen beschikbaar."
+        },
+        "screenshot": {
+          "format": "Formaat",
+          "save": "Opslaan",
+          "formats": {
+            "auto": "Auto",
+            "jpg": "JPEG",
+            "bmp": "BMP"
+          },
+          "messages": {
+            "saved": "Schermafbeelding opgeslagen",
+            "failed": "Schermafbeelding maken mislukt"
+          }
+        }
+      },
+      "logs": {
+        "name": "Logboeken",
+        "auto_scroll": "Automatisch scrollen",
+        "refresh": "Vernieuwen",
+        "clear": "Wissen",
+        "empty": "Geen logboeken beschikbaar",
+        "messages": {
+          "cleared": "Logboeken gewist"
+        }
+      },
+      "not_found": {
+        "headline": "Oeps, 404",
+        "title": "Pagina niet gevonden",
+        "text": "De pagina die je zoekt bestaat niet",
+        "back": "Terug"
+      }
+    },
+    "entity_picker": {
+      "entity": "Entiteit",
+      "select_entity": "Selecteer entiteit",
+      "search_entity": "Zoek entiteit",
+      "no_entities": "Geen entiteiten gevonden"
+    },
+    "flag_picker": {
+      "language": "Taal",
+      "select_language": "Selecteer taal",
+      "search_language": "Zoek taal",
+      "no_languages": "Geen talen gevonden"
+    }
+  }
+}
+
