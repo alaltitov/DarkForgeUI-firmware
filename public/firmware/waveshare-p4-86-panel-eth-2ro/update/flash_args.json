@@ -1,5 +1,5 @@
 {
-  "flash_mode": "dio",
+  "flash_mode": "dout",
   "flash_freq": "80m",
   "flash_size": "32MB",
   "files": [
