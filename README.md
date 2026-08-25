@@ -142,14 +142,3 @@ After the device starts up, the weather forecast card may not appear immediately
 If the forecast fails to load at startup, it should refresh automatically during the next data update cycle.
 
 Estimated update time: **up to 10 minutes**.
-
----
-
-### License price: 29.99 USD
-
----
-
-### Legal contacts
-
-Alexey Titov
-503203178278
